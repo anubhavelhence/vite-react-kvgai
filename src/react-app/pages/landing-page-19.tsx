@@ -6,7 +6,7 @@ import { Button } from "@/components/base/buttons/button";
 import { Form } from "@/components/base/form/form";
 import { Input } from "@/components/base/input/input";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
-import { UntitledLogo } from "@/components/foundations/logo/untitledui-logo";
+import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { SectionDivider } from "@/components/shared-assets/section-divider";
 import { cx } from "@/utils/cx";
@@ -113,10 +113,10 @@ const HeroSplitImage05 = () => {
                 <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-160 lg:items-center">
                     <div className="z-10 flex max-w-200 flex-col items-start">
                         <h1 className="text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
-                            Customer service software for customer-first teams
+                            Build and Deploy Ambitious AI Applications
                         </h1>
                         <p className="mt-4 max-w-xl text-lg text-tertiary md:mt-6 md:text-xl">
-                            The best customer service software for customer-first teams. Industry-leading email and live chat support.{" "}
+                            Run serverless AI on GPU. From zero to production in weeks. Expert in Agentic RAG, MCP servers, and Conversational AI agents.
                         </p>
 
                         <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 md:mt-12 md:flex-row md:items-start">
@@ -296,17 +296,10 @@ const FeaturesLargeScreenMockup02 = () => {
             <div className="mx-auto -mt-17 w-full max-w-container px-4 pt-1 md:-mt-26 md:overflow-hidden md:px-8 md:pt-2">
                 <div className="flex flex-col md:items-start">
                     <div className="flex h-full w-full items-center justify-center md:max-h-105 md:w-full md:items-start lg:max-h-140">
-                        {/* Light mode image (hidden in dark mode) */}
                         <img
-                            alt="Dashboard mockup showing application interface"
-                            src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-light-01.webp"
-                            className="size-full rounded object-cover ring-4 ring-screen-mockup-border md:rounded-xl md:ring-8 dark:hidden"
-                        />
-                        {/* Dark mode image (hidden in light mode) */}
-                        <img
-                            alt="Dashboard mockup showing application interface"
-                            src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-dark-01.webp"
-                            className="size-full rounded object-cover ring-4 ring-screen-mockup-border not-dark:hidden md:rounded-xl md:ring-8"
+                            alt="Dashboard mockup"
+                            src="/sample-dashboard.svg"
+                            className="size-full rounded object-cover ring-4 ring-screen-mockup-border md:rounded-xl md:ring-8"
                         />
                     </div>
                 </div>
@@ -328,9 +321,9 @@ const MetricsSimpleCenteredText = () => {
 
                     <dl className="flex w-full flex-col justify-center gap-8 md:max-w-3xl md:flex-row md:gap-4 md:self-center">
                         {[
-                            { title: "400+", subtitle: "Projects completed" },
-                            { title: "600%", subtitle: "Return on investment" },
-                            { title: "10k", subtitle: "Global downloads" },
+                            { title: "5+", subtitle: "AI Projects Delivered" },
+                            { title: "99.9%", subtitle: "Uptime SLA" },
+                            { title: "<100ms", subtitle: "Average Latency" },
                         ].map((item, index) => (
                             <Fragment key={item.title}>
                                 {index !== 0 && <div className="hidden border-l border-secondary md:block" />}
@@ -589,8 +582,8 @@ const FooterLarge01 = () => {
                     </ul>
                 </nav>
                 <div className="mt-12 flex flex-col justify-between gap-6 border-t border-secondary pt-8 md:mt-16 md:flex-row md:items-center">
-                    <UntitledLogo className="h-8 w-min" />
-                    <p className="text-md text-quaternary">© 2077 Untitled UI. All rights reserved.</p>
+                    <KVGAILogo className="h-8 w-min" />
+                    <p className="text-md text-quaternary">© 2025 KVGAI Tech. All rights reserved.</p>
                 </div>
             </div>
         </footer>
