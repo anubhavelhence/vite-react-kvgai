@@ -296,10 +296,17 @@ const FeaturesLargeScreenMockup02 = () => {
             <div className="mx-auto -mt-17 w-full max-w-container px-4 pt-1 md:-mt-26 md:overflow-hidden md:px-8 md:pt-2">
                 <div className="flex flex-col md:items-start">
                     <div className="flex h-full w-full items-center justify-center md:max-h-105 md:w-full md:items-start lg:max-h-140">
+                        {/* Light mode image (hidden in dark mode) */}
                         <img
-                            alt="Dashboard mockup"
-                            src="/sample-dashboard.svg"
-                            className="size-full rounded object-cover ring-4 ring-screen-mockup-border md:rounded-xl md:ring-8"
+                            alt="Dashboard mockup showing application interface"
+                            src="https://bitsiotlab.com/wp-content/uploads/2025/10/sampledash.png"
+                            className="size-full rounded object-cover ring-4 ring-screen-mockup-border md:rounded-xl md:ring-8 dark:hidden"
+                        />
+                        {/* Dark mode image (hidden in light mode) */}
+                        <img
+                            alt="Dashboard mockup showing application interface"
+                            src="https://bitsiotlab.com/wp-content/uploads/2025/10/sampledash.png"
+                            className="size-full rounded object-cover ring-4 ring-screen-mockup-border not-dark:hidden md:rounded-xl md:ring-8"
                         />
                     </div>
                 </div>
