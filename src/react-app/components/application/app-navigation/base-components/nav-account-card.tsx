@@ -27,14 +27,14 @@ type NavAccountType = {
 const placeholderAccounts: NavAccountType[] = [
     {
         id: "olivia",
-        name: "Olivia Rhye",
+        name: "Hardik Batwal",
         email: "olivia@untitledui.com",
         avatar: "https://www.untitledui.com/images/avatars/olivia-rhye?fm=webp&q=80",
         status: "online",
     },
     {
         id: "sienna",
-        name: "Sienna Hewitt",
+        name: "Kartik Jain",
         email: "sienna@untitledui.com",
         avatar: "https://www.untitledui.com/images/avatars/transparent/sienna-hewitt?bg=%23E0E0E0",
         status: "online",

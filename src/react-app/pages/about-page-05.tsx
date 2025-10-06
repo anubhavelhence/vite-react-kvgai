@@ -575,24 +575,24 @@ const RoundButton = ({ icon: Icon, ...props }: RoundButtonProps) => {
 
 const reviews = [
     {
-        quote: "I've been welcomed warmly to the team and now I never want to leave.",
+        quote: "I’ve been coding with the GenAI team, and every line feels like progress.",
         author: {
-            name: "Sienna Hewitt",
-            title: "Project Manager, Warpspeed",
-            avatarUrl: "https://www.untitledui.com/images/avatars/sienna-hewitt?fm=webp&q=80",
+            name: "Kartik Jain",
+            title: "Backend GenAI Engineer",
+            avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGedTmtVDkjgA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721106144959?e=1762387200&v=beta&t=QQW3GE8frPIoyGzKTnliWLibT3oejHfB4SIC-bfJy_0",
         },
     },
     {
-        quote: "I've been welcomed warmly to the team and now I never want to leave.",
+        quote: "I’ve been building GenAI systems, and the learning never stops here.",
         author: {
-            name: "Caitlyn King",
-            title: "Data Engineer, Sisyphus",
-            avatarUrl: "https://www.untitledui.com/images/avatars/caitlyn-king?fm=webp&q=80",
+            name: "Hardik Batwal",
+            title: "Backend GenAI Engineer",
+            avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQGYCC8Erf0Nyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724496368878?e=1762387200&v=beta&t=UL3tTBrfIV8YOtsPUhsR3UTI9VO-e8dW6D71c5l-bAY",
         },
     },
     {
-        quote: "I've been welcomed warmly to the team and now I never want to leave.",
-        author: { name: "Lulu Meyers", title: "PM, Hourglass", avatarUrl: "https://www.untitledui.com/images/avatars/lulu-meyers?fm=webp&q=80" },
+        quote: "I’ve been leading GenAI innovation, and the energy here is unmatched.",
+        author: { name: "Rishi Garg", title: "GenAI Expert", avatarUrl: "https://media.licdn.com/dms/image/v2/D4E03AQGCMthHyA25Bg/profile-displayphoto-scale_200_200/B4EZkFd89.IIAg-/0/1756733363576?e=1762387200&v=beta&t=54lgHQcnMc3FzTOihwS9LM1g8P-04B1EDfvpxvvpeG8" },
     },
 ];
 
