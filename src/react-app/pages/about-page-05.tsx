@@ -25,7 +25,7 @@ import { Input } from "@/components/base/input/input";
 import { NativeSelect } from "@/components/base/select/select-native";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
 import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
-import { UntitledLogo } from "@/components/foundations/logo/untitledui-logo";
+// import { UntitledLogo } from "@/components/foundations/logo/untitledui-logo";
 import { StarIcon } from "@/components/foundations/rating-stars";
 import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/components/foundations/social-icons";
 import { Header } from "@/components/marketing/header-navigation/header";

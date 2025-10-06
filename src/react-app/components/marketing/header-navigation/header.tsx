@@ -5,7 +5,7 @@ import { ChevronDown, Moon01, Sun } from "@untitledui/icons";
 import { Button as AriaButton, Dialog as AriaDialog, DialogTrigger as AriaDialogTrigger, Popover as AriaPopover } from "react-aria-components";
 import { Button } from "@/components/base/buttons/button";
 import { KVGAILogo, KVGAILogoMinimal } from "@/components/foundations/logo/kvgai-logo";
-import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
+// import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
 import { useTheme } from "@/providers/theme-provider";
 import { cx } from "@/utils/cx";
 
