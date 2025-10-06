@@ -34,7 +34,7 @@ const footerNavList = [
     {
         label: "Company",
         items: [
-            { label: "About us", href: "#" },
+            { label: "About us", href: "/about" },
             { label: "Careers", href: "#" },
             { label: "Press", href: "#" },
             { label: "News", href: "#" },
@@ -79,7 +79,7 @@ const footerNavList = [
         label: "Legal",
         items: [
             { label: "Terms", href: "#" },
-            { label: "Privacy", href: "#" },
+            { label: "FAQ", href: "/faq" },
             { label: "Cookies", href: "#" },
             { label: "Licenses", href: "#" },
             { label: "Settings", href: "#" },
@@ -110,8 +110,8 @@ const HeroSplitImage05 = () => {
             <Header />
 
             <section className="py-16 md:pb-24">
-                <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-160 lg:items-center">
-                    <div className="z-10 flex max-w-200 flex-col items-start">
+                <div className="mx-auto grid max-w-container grid-cols-1 gap-12 px-4 md:px-8 lg:grid-cols-2 lg:gap-16 lg:items-center">
+                    <div className="flex flex-col items-start">
                         <h1 className="text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
                             Build and Deploy Ambitious AI Applications
                         </h1>
@@ -119,17 +119,16 @@ const HeroSplitImage05 = () => {
                             Run serverless AI on GPU. From zero to production in weeks. Expert in Agentic RAG, MCP servers, and Conversational AI agentss.
                         </p>
 
-                        <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 md:mt-12 md:flex-row md:items-start">
-                            <Button color="secondary" size="xl" iconLeading={PlayCircle}>
+                        <div className="mt-8 md:mt-12">
+                            <Button color="secondary" size="xl" iconLeading={PlayCircle} className="px-8 py-4 text-lg">
                                 Demo
                             </Button>
-                            <Button size="xl">Sign up</Button>
                         </div>
                     </div>
 
-                    <div className="relative lg:absolute lg:top-0 lg:right-8 lg:h-full lg:w-140">
+                    <div className="relative">
                         <img
-                            className="inset-0 h-60 w-full rounded-tr-[32px] rounded-bl-[32px] object-cover md:h-110 md:rounded-tr-[64px] md:rounded-bl-[64px] lg:h-full"
+                            className="h-60 w-full rounded-tr-[32px] rounded-bl-[32px] object-cover md:h-96 md:rounded-tr-[64px] md:rounded-bl-[64px] lg:h-full"
                             src="https://www.untitledui.com/marketing/workspace.webp"
                             alt="Workspace"
                         />
@@ -141,51 +140,37 @@ const HeroSplitImage05 = () => {
 };
 
 const SocialProofFullWidth = () => {
+    const companies = [
+        { name: "Data Ripple", logo: "https://dataripple.ai/wp-content/uploads/2025/07/logo-data-ripple.svg" },
+        { name: "iMeld", logo: "https://cdn.prod.website-files.com/67e13517368064b6b75e9706/67eb9a2ffc44be3663899c9f_Logo%20imeld.svg" },
+        { name: "Zernyx", logo: "https://sujit.zernyx.com/assets/LogoPng-CbjajjHm.png" },
+        { name: "AskEagle", logo: "/AskEagle Logo.png" },
+        { name: "Draco", logo: "/dracoLogo.jpg" },
+    ];
+
     return (
         <section className="bg-secondary py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col gap-8">
-                    <p className="text-center text-md font-medium text-tertiary">Join 4,000+ companies already growing</p>
-                    <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 xl:gap-x-6">
-                        {/* Light mode images (hidden in dark mode) */}
-                        <img alt="Odeaolabs" src="https://www.untitledui.com/logos/logotype/color/odeaolabs.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Kintsugi" src="https://www.untitledui.com/logos/logotype/color/kintsugi.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Stackedlab" src="https://www.untitledui.com/logos/logotype/color/stackedlab.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Magnolia" src="https://www.untitledui.com/logos/logotype/color/magnolia.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Warpspeed" src="https://www.untitledui.com/logos/logotype/color/warpspeed.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Sisyphus" src="https://www.untitledui.com/logos/logotype/color/sisyphus.svg" className="h-9 md:h-12 dark:hidden" />
-
-                        {/* Dark mode images (hidden in light mode) */}
-                        <img
-                            alt="Odeaolabs"
-                            src="https://www.untitledui.com/logos/logotype/white/odeaolabs.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Kintsugi"
-                            src="https://www.untitledui.com/logos/logotype/white/kintsugi.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Stackedlab"
-                            src="https://www.untitledui.com/logos/logotype/white/stackedlab.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Magnolia"
-                            src="https://www.untitledui.com/logos/logotype/white/magnolia.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Warpspeed"
-                            src="https://www.untitledui.com/logos/logotype/white/warpspeed.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Sisyphus"
-                            src="https://www.untitledui.com/logos/logotype/white/sisyphus.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
+                    <p className="text-center text-lg font-medium text-tertiary md:text-xl">Trusted by innovative companies</p>
+                    <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-8 md:gap-x-12 lg:gap-x-16">
+                        {companies.map((company) => (
+                            <div key={company.name} className="flex flex-col items-center gap-4">
+                                <div className="flex h-16 w-32 items-center justify-center md:h-20 md:w-40">
+                                    <img
+                                        alt={company.name}
+                                        src={company.logo}
+                                        className={cx(
+                                            "h-full w-full object-scale-down",
+                                            company.name === "Data Ripple" && "invert dark:invert-0"
+                                        )}
+                                    />
+                                </div>
+                                <p className="text-lg font-semibold text-primary md:text-xl">
+                                    {company.name}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -206,7 +191,14 @@ interface FeatureTextIntegrationIcon extends TextCentered {
 const FeatureTextIntegrationIconBox = ({ imgUrl, title, subtitle, footer }: FeatureTextIntegrationIcon) => (
     <div className="mt-6 flex max-w-sm flex-col items-center gap-4 rounded-2xl bg-secondary px-6 pb-8 text-center">
         <span className="-mt-[26px] flex size-13 shrink-0 items-center justify-center rounded-lg bg-primary shadow-xs ring-1 ring-secondary ring-inset md:-mt-8 md:size-16 md:rounded-xl">
-            <img alt={title} src={imgUrl} className="size-12 md:size-14" />
+            <img
+                alt={title}
+                src={imgUrl}
+                className={cx(
+                    "size-12 md:size-14",
+                    (title === "LangGraph" || title === "neo4j") && "dark:invert"
+                )}
+            />
         </span>
 
         <div>
@@ -235,9 +227,9 @@ const FeaturesIntegrationsIcons04 = () => {
                     <ul className="grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
                         {[
                             {
-                                title: "Notion integration",
-                                subtitle: "Work faster and smarter by integrating directly with Notion, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/notion.svg",
+                                title: "Claude Code",
+                                subtitle: "Work faster and smarter by integrating directly with Claude Code, right in the app.",
+                                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/1200px-Claude_AI_symbol.svg.png",
                             },
                             {
                                 title: "Slack integration",
@@ -248,6 +240,21 @@ const FeaturesIntegrationsIcons04 = () => {
                                 title: "Google Drive integration",
                                 subtitle: "Work faster and smarter by integrating directly with Google Drive, right in the app.",
                                 logo: "https://www.untitledui.com/logos/integrations/google_drive.svg",
+                            },
+                            {
+                                title: "LangGraph",
+                                subtitle: "Work faster and smarter by integrating directly with LangGraph, right in the app.",
+                                logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.69.0/files/light/langgraph.png",
+                            },
+                            {
+                                title: "neo4j",
+                                subtitle: "Work faster and smarter by integrating directly with neo4j, right in the app.",
+                                logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/neo4j/neo4j-original-wordmark.svg",
+                            },
+                            {
+                                title: "Hugging Face",
+                                subtitle: "Work faster and smarter by integrating directly with Hugging Face, right in the app.",
+                                logo: "https://cdn.worldvectorlogo.com/logos/huggingface-2.svg",
                             },
                             {
                                 title: "Intercom integration",
@@ -376,31 +383,19 @@ const TestimonialSimpleCentered02 = () => {
         <section className="bg-secondary py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <figure className="flex w-full shrink-0 snap-start flex-col gap-8 text-center">
-                    {/* Light mode image (hidden in dark mode) */}
-                    <img
-                        alt="Wildcrafted"
-                        src="https://www.untitledui.com/logos/logotype/color/wildcrafted.svg"
-                        className="h-10 dark:hidden"
-                        aria-hidden="true"
-                    />
-
-                    {/* Dark mode image (hidden in light mode) */}
-                    <img
-                        alt="Wildcrafted"
-                        src="https://www.untitledui.com/logos/logotype/white/wildcrafted.svg"
-                        className="h-10 opacity-85 not-dark:hidden"
-                        aria-hidden="true"
-                    />
+                    <div className="flex justify-center">
+                        <KVGAILogo className="h-10" />
+                    </div>
 
                     <blockquote className="text-display-sm font-medium text-primary md:text-display-lg">
                         Love the simplicity of the service and the prompt customer support. We can't imagine working without it.
                     </blockquote>
                     <figcaption className="flex justify-center">
                         <div className="flex flex-col items-center gap-4">
-                            <Avatar src="https://www.untitledui.com/images/avatars/amelie-laurent?fm=webp&q=80" alt="Amelie Laurent" size="2xl" />
+                            <Avatar src="https://media.licdn.com/dms/image/v2/D4D03AQGhVAVv_nS-Ew/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1676404308950?e=1762387200&v=beta&t=AziGvTXTNDia9GdUIq8OcopN_jqJR7DXlUNRcz1uvF8" alt="Amelie Laurent" size="2xl" />
                             <div className="flex flex-col gap-1">
-                                <p className="text-lg font-semibold text-primary">Amélie Laurent</p>
-                                <cite className="text-md text-tertiary not-italic">CX Manager, Sisyphus</cite>
+                                <p className="text-lg font-semibold text-primary">Anubhav Elhence</p>
+                                <cite className="text-md text-tertiary not-italic">CEO, KVGAI Tech </cite>
                             </div>
                         </div>
                     </figcaption>

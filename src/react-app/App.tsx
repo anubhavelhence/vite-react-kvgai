@@ -2,12 +2,12 @@ import { Routes, Route } from 'react-router-dom';
 import LandingPage19 from '@/pages/landing-page-19';
 import AboutPage05 from '@/pages/about-page-05';
 import FAQPage05 from '@/pages/faq-page-05';
-import { ThemeToggle } from '@/components/theme-toggle';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 function App() {
   return (
     <>
-      <ThemeToggle />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage19 />} />
         <Route path="/about" element={<AboutPage05 />} />

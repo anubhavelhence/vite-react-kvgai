@@ -24,9 +24,10 @@ import { Form } from "@/components/base/form/form";
 import { Input } from "@/components/base/input/input";
 import { NativeSelect } from "@/components/base/select/select-native";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
+import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
 import { UntitledLogo } from "@/components/foundations/logo/untitledui-logo";
 import { StarIcon } from "@/components/foundations/rating-stars";
-import { Dribbble, LinkedIn, X } from "@/components/foundations/social-icons";
+import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/components/foundations/social-icons";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
@@ -86,10 +87,10 @@ const jobs: JobCard01Props[] = [
 
 const teamMembers = [
     {
-        name: "Amélie Laurent",
-        title: "Founder & CEO",
-        summary: "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-        avatarUrl: "https://www.untitledui.com/images/avatars/amelie-laurent?fm=webp&q=80",
+        name: "Anubhav Elhence",
+        title: "CEO",
+        summary: "Ph.D. BITS Pilani",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGhVAVv_nS-Ew/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1676404308950?e=1762387200&v=beta&t=AziGvTXTNDia9GdUIq8OcopN_jqJR7DXlUNRcz1uvF8",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -97,9 +98,9 @@ const teamMembers = [
         ],
     },
     {
-        name: "Nikolas Gibbons",
-        title: "Engineering Manager",
-        summary: "Lead engineering teams at Figma, Pitch, and Protocol Labs.",
+        name: "Mehul Gera",
+        title: "Managing Director",
+        summary: "Ph.D. NTU Business School",
         avatarUrl: "https://www.untitledui.com/images/avatars/nikolas-gibbons?fm=webp&q=80",
         socials: [
             { icon: X, href: "https://x.com/" },
@@ -108,9 +109,9 @@ const teamMembers = [
         ],
     },
     {
-        name: "Sienna Hewitt",
-        title: "Product Manager",
-        summary: "Former PM for Linear, Lambda School, and On Deck.",
+        name: "Gaurang Bansal",
+        title: "Technical Project Manager",
+        summary: "Leading AI project delivery and team coordination",
         avatarUrl: "https://www.untitledui.com/images/avatars/sienna-hewitt?fm=webp&q=80",
         socials: [
             { icon: X, href: "https://x.com/" },
@@ -119,9 +120,9 @@ const teamMembers = [
         ],
     },
     {
-        name: "Lily-Rose Chedjou",
-        title: "Frontend Developer",
-        summary: "Former frontend dev for Linear, Coinbase, and Postscript.",
+        name: "Shashwat Gupta",
+        title: "Business Development Manager",
+        summary: "US Based - Driving business growth and partnerships",
         avatarUrl: "https://www.untitledui.com/images/avatars/lily-rose-chedjou?fm=webp&q=80",
         socials: [
             { icon: X, href: "https://x.com/" },
@@ -130,10 +131,10 @@ const teamMembers = [
         ],
     },
     {
-        name: "Zahra Christensen",
-        title: "Backend Developer",
-        summary: "Lead backend dev at Clearbit. Former Clearbit and Loom.",
-        avatarUrl: "https://www.untitledui.com/images/avatars/zahra-christensen?fm=webp&q=80",
+        name: "Rishi Garg",
+        title: "GenAI Expert",
+        summary: "Hackathon Winner - Specializing in cutting-edge AI solutions",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D4E03AQGCMthHyA25Bg/profile-displayphoto-scale_200_200/B4EZkFd89.IIAg-/0/1756733363576?e=1762387200&v=beta&t=54lgHQcnMc3FzTOihwS9LM1g8P-04B1EDfvpxvvpeG8",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -141,10 +142,10 @@ const teamMembers = [
         ],
     },
     {
-        name: "Caitlyn King",
-        title: "Product Designer",
-        summary: "Founding design team at Figma. Former Pleo, Stripe, and Tile.",
-        avatarUrl: "https://www.untitledui.com/images/avatars/caitlyn-king?fm=webp&q=80",
+        name: "Hardik Batwal",
+        title: "Backend GenAI Engineer",
+        summary: "Building robust AI backend systems and infrastructure",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQGYCC8Erf0Nyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724496368878?e=1762387200&v=beta&t=UL3tTBrfIV8YOtsPUhsR3UTI9VO-e8dW6D71c5l-bAY",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -152,10 +153,10 @@ const teamMembers = [
         ],
     },
     {
-        name: "Zaid Schwartz",
-        title: "UX Researcher",
-        summary: "Lead user research for Slack. Contractor for Netflix and Udacity.",
-        avatarUrl: "https://www.untitledui.com/images/avatars/zaid-schwartz?fm=webp&q=80",
+        name: "Kartik Jain",
+        title: "Backend GenAI Engineer",
+        summary: "Developing advanced GenAI backend solutions",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGedTmtVDkjgA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721106144959?e=1762387200&v=beta&t=QQW3GE8frPIoyGzKTnliWLibT3oejHfB4SIC-bfJy_0",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -163,16 +164,26 @@ const teamMembers = [
         ],
     },
     {
-        name: "Marco Kelly",
-        title: "Customer Success",
-        summary: "Lead CX at Wealthsimple. Former PagerDuty and Sqreen.",
-        avatarUrl: "https://www.untitledui.com/images/avatars/marco-kelly?fm=webp&q=80",
+        name: "Sujit Kumar Pradhan",
+        title: "Frontend Developer",
+        summary: "Crafting beautiful and responsive user interfaces",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQFduKp9okD2MQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730548581594?e=1762387200&v=beta&t=rJxl2djKyEo7bwFqVDremiLyWf9TDHZHr4h1zYGT6O0",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
             { icon: Dribbble, href: "https://dribbble.com/" },
         ],
     },
+];
+
+const footerSocials = [
+    { label: "X (formerly Twitter)", icon: X, href: "https://x.com/" },
+    { label: "LinkedIn", icon: LinkedIn, href: "https://www.linkedin.com/" },
+    { label: "Facebook", icon: Facebook, href: "https://www.facebook.com/" },
+    { label: "GitHub", icon: GitHub, href: "https://github.com/" },
+    { label: "AngelList", icon: AngelList, href: "https://angel.co/" },
+    { label: "Dribbble", icon: Dribbble, href: "https://dribbble.com/" },
+    { label: "Layers", icon: Layers, href: "https://layers.com/" },
 ];
 
 const footerNavList = [
@@ -198,7 +209,7 @@ const footerNavList = [
     {
         label: "Company",
         items: [
-            { label: "About us", href: "#" },
+            { label: "About us", href: "/about" },
             { label: "Careers", href: "#" },
             { label: "Press", href: "#" },
             { label: "News", href: "#" },
@@ -218,17 +229,6 @@ const footerNavList = [
         ],
     },
     {
-        label: "Use cases",
-        items: [
-            { label: "Startups", href: "#" },
-            { label: "Enterprise", href: "#" },
-            { label: "Government", href: "#" },
-            { label: "SaaS centre", href: "#" },
-            { label: "Marketplaces", href: "#" },
-            { label: "Ecommerce", href: "#" },
-        ],
-    },
-    {
         label: "Social",
         items: [
             { label: "Twitter", href: "#" },
@@ -243,7 +243,7 @@ const footerNavList = [
         label: "Legal",
         items: [
             { label: "Terms", href: "#" },
-            { label: "Privacy", href: "#" },
+            { label: "FAQ", href: "/faq" },
             { label: "Cookies", href: "#" },
             { label: "Licenses", href: "#" },
             { label: "Settings", href: "#" },
@@ -746,66 +746,99 @@ const SimpleCentered = () => {
 
 const FooterLarge05 = () => {
     return (
-        <footer className="dark-mode bg-primary py-12 md:pt-16">
-            <div className="mx-auto max-w-container px-4 md:px-8">
-                <div className="flex flex-col items-start justify-between gap-8 border-secondary md:flex-row md:border-b md:pb-16">
-                    <div className="flex flex-col gap-2">
-                        <p id="newsletter-label" className="text-lg font-semibold text-primary md:text-xl">
-                            Join our newsletter
-                        </p>
-                        <p id="newsletter-hint" className="text-md text-tertiary">
-                            We'll send you a nice letter once per week. No spam.
-                        </p>
-                    </div>
-                    <Form
-                        onSubmit={(e) => {
-                            e.preventDefault();
-                            const data = Object.fromEntries(new FormData(e.currentTarget));
-                            console.log("Form data:", data);
-                        }}
-                        className="w-full sm:w-100"
-                    >
-                        <div className="flex flex-col gap-4 sm:flex-row">
-                            <Input
-                                isRequired
-                                aria-labelledby="newsletter-label"
-                                aria-describedby="newsletter-hint"
-                                id="email"
-                                name="email"
-                                type="email"
-                                placeholder="Enter your email"
-                                size="md"
-                                wrapperClassName="flex-1"
-                            />
-                            <Button type="submit" size="lg">
-                                Subscribe
-                            </Button>
+        <footer>
+            <div className="relative bg-brand-section py-10 md:py-12">
+                <div className="mx-auto max-w-container px-4 md:px-8">
+                    <div className="flex flex-col items-start justify-between gap-8 md:flex-row">
+                        <div className="flex flex-col gap-2">
+                            <p id="newsletter-label" className="text-lg font-semibold text-primary_on-brand md:text-xl">
+                                Join our newsletter
+                            </p>
+                            <p id="newsletter-hint" className="text-md text-tertiary_on-brand">
+                                We'll send you a nice letter once per week. No spam.
+                            </p>
                         </div>
-                    </Form>
+                        <Form
+                            onSubmit={(e) => {
+                                e.preventDefault();
+                                const data = Object.fromEntries(new FormData(e.currentTarget));
+                                console.log("Form data:", data);
+                            }}
+                            className="w-full sm:w-100"
+                        >
+                            <div className="flex flex-col gap-4 sm:flex-row">
+                                <Input
+                                    isRequired
+                                    aria-labelledby="newsletter-label"
+                                    aria-describedby="newsletter-hint"
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    size="md"
+                                    wrapperClassName="flex-1"
+                                />
+                                <Button type="submit" size="lg">
+                                    Subscribe
+                                </Button>
+                            </div>
+                        </Form>
+                    </div>
                 </div>
+                <div className="absolute bottom-0 left-0 h-px w-full bg-border-brand_alt"></div>
+            </div>
 
-                <nav className="mt-12 md:mt-16">
-                    <ul className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
-                        {footerNavList.map((category) => (
-                            <li key={category.label}>
-                                <h4 className="text-sm font-semibold text-quaternary">{category.label}</h4>
-                                <ul className="mt-4 flex flex-col gap-3">
-                                    {category.items.map((item) => (
-                                        <li key={item.label}>
-                                            <Button color="link-gray" size="lg" href={item.href} iconTrailing={item.badge} className="gap-1">
-                                                {item.label}
-                                            </Button>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
+            <div className="bg-brand-section py-12 md:pt-16">
+                <div className="mx-auto max-w-container px-4 md:px-8">
+                    <div className="flex flex-col gap-12 md:gap-16 xl:flex-row">
+                        <div className="flex flex-col gap-6 md:w-80 md:gap-8">
+                            <KVGAILogo className="h-8" />
+                            <p className="text-md text-tertiary_on-brand">Build and Deploy Ambitious AI Applications with serverless GPU infrastructure and cutting-edge AI technologies.</p>
+                        </div>
+                        <nav className="flex-1">
+                            <ul className="grid grid-cols-2 gap-8 md:grid-cols-5">
+                                {footerNavList.map((category) => (
+                                    <li key={category.label}>
+                                        <h4 className="text-sm font-semibold text-quaternary_on-brand">{category.label}</h4>
+                                        <ul className="mt-4 flex flex-col gap-3">
+                                            {category.items.map((item) => (
+                                                <li key={item.label}>
+                                                    <Button
+                                                        className="gap-1 text-footer-button-fg hover:text-footer-button-fg_hover"
+                                                        color="link-color"
+                                                        size="lg"
+                                                        href={item.href}
+                                                        iconTrailing={item.badge}
+                                                    >
+                                                        {item.label}
+                                                    </Button>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                    </div>
 
-                <div className="mt-12 flex flex-col justify-between gap-6 border-t border-secondary pt-8 md:mt-16 md:flex-row md:items-center">
-                    <UntitledLogo className="h-8 w-min" />
-                    <p className="text-md text-quaternary">© 2077 Untitled UI. All rights reserved.</p>
+                    <div className="relative mt-12 flex flex-col-reverse justify-between gap-6 pt-8 md:mt-16 md:flex-row">
+                        <div className="absolute top-0 left-0 h-px w-full bg-border-brand_alt"></div>
+                        <p className="text-md text-quaternary_on-brand">© 2025 KVGAI Tech. All rights reserved.</p>
+                        <ul className="flex gap-6">
+                            {footerSocials.map(({ label, icon: Icon, href }) => (
+                                <li key={label}>
+                                    <a
+                                        href={href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-icon-fg-brand_on-brand outline-focus-ring transition duration-100 ease-linear hover:text-fg-quaternary_hover focus-visible:outline-2 focus-visible:outline-offset-2"
+                                    >
+                                        <Icon size={24} aria-label={label} />
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -815,7 +848,7 @@ const FooterLarge05 = () => {
 const AboutPage05 = () => {
     return (
         <div className="bg-primary">
-            <Header />
+            <Header isFloating />
 
             <HeaderCentered />
 

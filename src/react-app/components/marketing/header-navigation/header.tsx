@@ -1,11 +1,12 @@
 import type { ReactNode } from "react";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown } from "@untitledui/icons";
+import { ChevronDown, Moon01, Sun } from "@untitledui/icons";
 import { Button as AriaButton, Dialog as AriaDialog, DialogTrigger as AriaDialogTrigger, Popover as AriaPopover } from "react-aria-components";
 import { Button } from "@/components/base/buttons/button";
 import { KVGAILogo, KVGAILogoMinimal } from "@/components/foundations/logo/kvgai-logo";
 import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
+import { useTheme } from "@/providers/theme-provider";
 import { cx } from "@/utils/cx";
 
 type HeaderNavItem = {
@@ -15,10 +16,6 @@ type HeaderNavItem = {
 };
 
 const headerNavItems: HeaderNavItem[] = [
-    { label: "Products", href: "/products", menu: <DropdownMenuSimple /> },
-    { label: "Services", href: "/Services", menu: <DropdownMenuSimple /> },
-    { label: "Pricing", href: "/pricing" },
-    { label: "Resources", href: "/resources", menu: <DropdownMenuSimple /> },
     { label: "About", href: "/about" },
     { label: "FAQ", href: "/faq" },
 ];
@@ -64,7 +61,7 @@ const MobileNavItem = (props: { className?: string; label: string; href?: string
     );
 };
 
-const MobileFooter = () => {
+const MobileFooter = ({ theme, toggleTheme }: { theme: string; toggleTheme: () => void }) => {
     return (
         <div className="flex flex-col gap-8 border-t border-secondary px-4 py-6">
             <div>
@@ -79,10 +76,16 @@ const MobileFooter = () => {
                 </ul>
             </div>
             <div className="flex flex-col gap-3">
-                <Button size="lg">Sign up</Button>
-                <Button color="secondary" size="lg">
-                    Log in
+                <Button
+                    onClick={toggleTheme}
+                    color="secondary"
+                    size="lg"
+                    iconLeading={theme === "light" ? Moon01 : Sun}
+                    aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+                >
+                    {theme === "light" ? "Dark mode" : "Light mode"}
                 </Button>
+                <Button size="lg">Get started</Button>
             </div>
         </div>
     );
@@ -97,6 +100,11 @@ interface HeaderProps {
 
 export const Header = ({ items = headerNavItems, isFullWidth, isFloating, className }: HeaderProps) => {
     const headerRef = useRef<HTMLElement>(null);
+    const { theme, setTheme } = useTheme();
+
+    const toggleTheme = () => {
+        setTheme(theme === "light" ? "dark" : "light");
+    };
 
     return (
         <header
@@ -111,76 +119,82 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
             <div className="flex size-full max-w-container flex-1 items-center pr-3 pl-4 md:px-8">
                 <div
                     className={cx(
-                        "flex w-full justify-between gap-4",
+                        "flex w-full items-center justify-between gap-4",
                         isFloating && "ring-secondary_alt md:rounded-2xl md:bg-primary md:py-3 md:pr-3 md:pl-4 md:shadow-xs md:ring-1",
                     )}
                 >
-                    <div className="flex flex-1 items-center gap-5">
+                    {/* Logo on the left */}
+                    <Link to="/" className="flex items-center">
                         <KVGAILogo className="h-8 md:max-lg:hidden" />
                         <KVGAILogoMinimal className="hidden h-8 md:inline-block lg:hidden" />
+                    </Link>
 
-                        {/* Desktop navigation */}
-                        <nav className="max-md:hidden">
-                            <ul className="flex items-center gap-0.5">
-                                {items.map((navItem) => (
-                                    <li key={navItem.label}>
-                                        {navItem.menu ? (
-                                            <AriaDialogTrigger>
-                                                <AriaButton className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus-visible:outline-2 focus-visible:outline-offset-2">
-                                                    <span className="px-0.5">{navItem.label}</span>
-
-                                                    <ChevronDown className="size-4 rotate-0 stroke-[2.625px] text-fg-quaternary transition duration-100 ease-linear in-aria-expanded:-rotate-180" />
-                                                </AriaButton>
-
-                                                <AriaPopover
-                                                    className={({ isEntering, isExiting }) =>
-                                                        cx(
-                                                            "hidden origin-top will-change-transform md:block",
-                                                            isFullWidth && "w-full",
-                                                            isEntering && "duration-200 ease-out animate-in fade-in slide-in-from-top-1",
-                                                            isExiting && "duration-150 ease-in animate-out fade-out slide-out-to-top-1",
-                                                        )
-                                                    }
-                                                    offset={isFloating || isFullWidth ? 0 : 8}
-                                                    containerPadding={0}
-                                                    triggerRef={(isFloating && isFullWidth) || isFullWidth ? headerRef : undefined}
-                                                >
-                                                    {({ isEntering, isExiting }) => (
-                                                        <AriaDialog
-                                                            className={cx(
-                                                                "mx-auto origin-top outline-hidden",
-                                                                isFloating && "max-w-7xl px-8 pt-3",
-                                                                // Have to use the scale animation inside the popover to avoid
-                                                                // miscalculating the popover's position when opening.
-                                                                isEntering && !isFullWidth && "duration-200 ease-out animate-in zoom-in-95",
-                                                                isExiting && !isFullWidth && "duration-150 ease-in animate-out zoom-out-95",
-                                                            )}
-                                                        >
-                                                            {navItem.menu}
-                                                        </AriaDialog>
-                                                    )}
-                                                </AriaPopover>
-                                            </AriaDialogTrigger>
-                                        ) : (
-                                            <Link
-                                                to={navItem.href || "#"}
-                                                className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus:outline-offset-2 focus-visible:outline-2"
-                                            >
+                    {/* Desktop navigation - centered */}
+                    <nav className="absolute left-1/2 -translate-x-1/2 max-md:hidden">
+                        <ul className="flex items-center gap-0.5">
+                            {items.map((navItem) => (
+                                <li key={navItem.label}>
+                                    {navItem.menu ? (
+                                        <AriaDialogTrigger>
+                                            <AriaButton className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus-visible:outline-2 focus-visible:outline-offset-2">
                                                 <span className="px-0.5">{navItem.label}</span>
-                                            </Link>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav>
-                    </div>
 
+                                                <ChevronDown className="size-4 rotate-0 stroke-[2.625px] text-fg-quaternary transition duration-100 ease-linear in-aria-expanded:-rotate-180" />
+                                            </AriaButton>
+
+                                            <AriaPopover
+                                                className={({ isEntering, isExiting }) =>
+                                                    cx(
+                                                        "hidden origin-top will-change-transform md:block",
+                                                        isFullWidth && "w-full",
+                                                        isEntering && "duration-200 ease-out animate-in fade-in slide-in-from-top-1",
+                                                        isExiting && "duration-150 ease-in animate-out fade-out slide-out-to-top-1",
+                                                    )
+                                                }
+                                                offset={isFloating || isFullWidth ? 0 : 8}
+                                                containerPadding={0}
+                                                triggerRef={(isFloating && isFullWidth) || isFullWidth ? headerRef : undefined}
+                                            >
+                                                {({ isEntering, isExiting }) => (
+                                                    <AriaDialog
+                                                        className={cx(
+                                                            "mx-auto origin-top outline-hidden",
+                                                            isFloating && "max-w-7xl px-8 pt-3",
+                                                            // Have to use the scale animation inside the popover to avoid
+                                                            // miscalculating the popover's position when opening.
+                                                            isEntering && !isFullWidth && "duration-200 ease-out animate-in zoom-in-95",
+                                                            isExiting && !isFullWidth && "duration-150 ease-in animate-out zoom-out-95",
+                                                        )}
+                                                    >
+                                                        {navItem.menu}
+                                                    </AriaDialog>
+                                                )}
+                                            </AriaPopover>
+                                        </AriaDialogTrigger>
+                                    ) : (
+                                        <Link
+                                            to={navItem.href || "#"}
+                                            className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus:outline-offset-2 focus-visible:outline-2"
+                                        >
+                                            <span className="px-0.5">{navItem.label}</span>
+                                        </Link>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+
+                    {/* Right side - Dark mode toggle and Get started button */}
                     <div className="hidden items-center gap-3 md:flex">
-                        <Button color="secondary" size={isFloating ? "md" : "lg"}>
-                            Log in
-                        </Button>
+                        <Button
+                            onClick={toggleTheme}
+                            color="secondary"
+                            size={isFloating ? "md" : "lg"}
+                            iconLeading={theme === "light" ? Moon01 : Sun}
+                            aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+                        />
                         <Button color="primary" size={isFloating ? "md" : "lg"}>
-                            Sign up
+                            Get started
                         </Button>
                     </div>
 
@@ -237,7 +251,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                                         )}
                                     </ul>
 
-                                    <MobileFooter />
+                                    <MobileFooter theme={theme} toggleTheme={toggleTheme} />
                                 </nav>
                             </AriaDialog>
                         </AriaPopover>

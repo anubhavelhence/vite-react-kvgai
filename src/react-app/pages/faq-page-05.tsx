@@ -77,7 +77,7 @@ const footerNavList = [
     {
         label: "Company",
         items: [
-            { label: "About us", href: "#" },
+            { label: "About us", href: "/about" },
             { label: "Careers", href: "#" },
             { label: "Press", href: "#" },
             { label: "News", href: "#" },
@@ -111,7 +111,7 @@ const footerNavList = [
         label: "Legal",
         items: [
             { label: "Terms", href: "#" },
-            { label: "Privacy", href: "#" },
+            { label: "FAQ", href: "/faq" },
             { label: "Cookies", href: "#" },
             { label: "Licenses", href: "#" },
             { label: "Settings", href: "#" },
@@ -214,20 +214,20 @@ const FAQAccordion01 = () => {
                 <div className="mt-12 flex flex-col items-center gap-6 rounded-2xl bg-secondary px-6 py-8 text-center md:mt-16 md:gap-8 md:pt-8 md:pb-10">
                     <div className="flex items-end -space-x-4">
                         <Avatar
-                            src="https://www.untitledui.com/images/avatars/marco-kelly?fm=webp&q=80"
-                            alt="Marco Kelly"
+                            src="https://media.licdn.com/dms/image/v2/D4E03AQGCMthHyA25Bg/profile-displayphoto-scale_200_200/B4EZkFd89.IIAg-/0/1756733363576?e=1762387200&v=beta&t=54lgHQcnMc3FzTOihwS9LM1g8P-04B1EDfvpxvvpeG8"
+                            alt="Rishi Garg"
                             size="lg"
                             className="ring-[1.5px] ring-fg-white"
                         />
                         <Avatar
-                            src="https://www.untitledui.com/images/avatars/amelie-laurent?fm=webp&q=80"
-                            alt="Amelie Laurent"
+                            src="https://media.licdn.com/dms/image/v2/D4D03AQGhVAVv_nS-Ew/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1676404308950?e=1762387200&v=beta&t=AziGvTXTNDia9GdUIq8OcopN_jqJR7DXlUNRcz1uvF8"
+                            alt="Anubhav Elhence"
                             size="xl"
                             className="z-10 ring-[1.5px] ring-fg-white"
                         />
                         <Avatar
-                            src="https://www.untitledui.com/images/avatars/jaya-willis?fm=webp&q=80"
-                            alt="Jaya Willis"
+                            src="https://media.licdn.com/dms/image/v2/D5603AQFduKp9okD2MQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730548581594?e=1762387200&v=beta&t=rJxl2djKyEo7bwFqVDremiLyWf9TDHZHr4h1zYGT6O0"
+                            alt="Sujit Kumar Pradhan"
                             size="lg"
                             className="ring-[1.5px] ring-fg-white"
                         />
