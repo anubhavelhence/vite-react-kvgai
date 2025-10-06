@@ -20,6 +20,7 @@ const headerNavItems: HeaderNavItem[] = [
     { label: "Pricing", href: "/pricing" },
     { label: "Resources", href: "/resources", menu: <DropdownMenuSimple /> },
     { label: "About", href: "/about" },
+    { label: "FAQ", href: "/faq" },
 ];
 
 const footerNavItems = [
