@@ -116,7 +116,7 @@ const HeroSplitImage05 = () => {
                             Build and Deploy Ambitious AI Applications
                         </h1>
                         <p className="mt-4 max-w-xl text-lg text-tertiary md:mt-6 md:text-xl">
-                            Run serverless AI on GPU. From zero to production in weeks. Expert in Agentic RAG, MCP servers, and Conversational AI agents.
+                            Run serverless AI on GPU. From zero to production in weeks. Expert in Agentic RAG, MCP servers, and Conversational AI agentss.
                         </p>
 
                         <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 md:mt-12 md:flex-row md:items-start">
