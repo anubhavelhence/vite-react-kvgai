@@ -503,13 +503,13 @@ const CTAScreenMockup01 = () => {
                                 {/* Light mode image (hidden in dark mode) */}
                                 <img
                                     alt="Dashboard mockup showing application interface"
-                                    src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-light-01.webp"
+                                    src="https://bitsiotlab.com/wp-content/uploads/2025/10/sampledash.png"
                                     className="object-cover object-left-top dark:hidden"
                                 />
                                 {/* Dark mode image (hidden in light mode) */}
                                 <img
                                     alt="Dashboard mockup showing application interface"
-                                    src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-dark-01.webp"
+                                    src="https://bitsiotlab.com/wp-content/uploads/2025/10/sampledash.png"
                                     className="object-cover object-left-top not-dark:hidden"
                                 />
                             </div>
