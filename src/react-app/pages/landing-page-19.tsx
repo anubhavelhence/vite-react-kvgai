@@ -1,7 +1,7 @@
 import { Fragment, type ReactNode } from "react";
 import { CheckCircle, ZapFast } from "@untitledui/icons";
 import { Avatar } from "@/components/base/avatar/avatar";
-import { Badge } from "@/components/base/badges/badges";
+// import { Badge } from "@/components/base/badges/badges";
 import { Button } from "@/components/base/buttons/button";
 import { Form } from "@/components/base/form/form";
 import { Input } from "@/components/base/input/input";
@@ -11,82 +11,82 @@ import { Header } from "@/components/marketing/header-navigation/header";
 import { SectionDivider } from "@/components/shared-assets/section-divider";
 import { cx } from "@/utils/cx";
 
-const footerNavList = [
-    {
-        label: "Product",
-        items: [
-            { label: "Overview", href: "#" },
-            { label: "Features", href: "#" },
-            {
-                label: "Solutions",
-                href: "#",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        New
-                    </Badge>
-                ),
-            },
-            { label: "Tutorials", href: "#" },
-            { label: "Pricing", href: "#" },
-            { label: "Releases", href: "#" },
-        ],
-    },
-    {
-        label: "Company",
-        items: [
-            { label: "About us", href: "/about" },
-            { label: "Careers", href: "#" },
-            { label: "Press", href: "#" },
-            { label: "News", href: "#" },
-            { label: "Media kit", href: "#" },
-            { label: "Contact", href: "#" },
-        ],
-    },
-    {
-        label: "Resources",
-        items: [
-            { label: "Blog", href: "#" },
-            { label: "Newsletter", href: "#" },
-            { label: "Events", href: "#" },
-            { label: "Help centre", href: "#" },
-            { label: "Tutorials", href: "#" },
-            { label: "Support", href: "#" },
-        ],
-    },
-    {
-        label: "Use cases",
-        items: [
-            { label: "Startups", href: "#" },
-            { label: "Enterprise", href: "#" },
-            { label: "Government", href: "#" },
-            { label: "SaaS centre", href: "#" },
-            { label: "Marketplaces", href: "#" },
-            { label: "Ecommerce", href: "#" },
-        ],
-    },
-    {
-        label: "Social",
-        items: [
-            { label: "Twitter", href: "#" },
-            { label: "LinkedIn", href: "#" },
-            { label: "Facebook", href: "#" },
-            { label: "GitHub", href: "#" },
-            { label: "AngelList", href: "#" },
-            { label: "Dribbble", href: "#" },
-        ],
-    },
-    {
-        label: "Legal",
-        items: [
-            { label: "Terms", href: "#" },
-            { label: "FAQ", href: "/faq" },
-            { label: "Cookies", href: "#" },
-            { label: "Licenses", href: "#" },
-            { label: "Settings", href: "#" },
-            { label: "Contact", href: "#" },
-        ],
-    },
-];
+// const footerNavList = [
+//     {
+//         label: "Product",
+//         items: [
+//             { label: "Overview", href: "#" },
+//             { label: "Features", href: "#" },
+//             {
+//                 label: "Solutions",
+//                 href: "#",
+//                 badge: (
+//                     <Badge color="gray" type="modern" size="sm" className="ml-1">
+//                         New
+//                     </Badge>
+//                 ),
+//             },
+//             { label: "Tutorials", href: "#" },
+//             { label: "Pricing", href: "#" },
+//             { label: "Releases", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Company",
+//         items: [
+//             { label: "About us", href: "/about" },
+//             { label: "Careers", href: "#" },
+//             { label: "Press", href: "#" },
+//             { label: "News", href: "#" },
+//             { label: "Media kit", href: "#" },
+//             { label: "Contact", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Resources",
+//         items: [
+//             { label: "Blog", href: "#" },
+//             { label: "Newsletter", href: "#" },
+//             { label: "Events", href: "#" },
+//             { label: "Help centre", href: "#" },
+//             { label: "Tutorials", href: "#" },
+//             { label: "Support", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Use cases",
+//         items: [
+//             { label: "Startups", href: "#" },
+//             { label: "Enterprise", href: "#" },
+//             { label: "Government", href: "#" },
+//             { label: "SaaS centre", href: "#" },
+//             { label: "Marketplaces", href: "#" },
+//             { label: "Ecommerce", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Social",
+//         items: [
+//             { label: "Twitter", href: "#" },
+//             { label: "LinkedIn", href: "#" },
+//             { label: "Facebook", href: "#" },
+//             { label: "GitHub", href: "#" },
+//             { label: "AngelList", href: "#" },
+//             { label: "Dribbble", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Legal",
+//         items: [
+//             { label: "Terms", href: "#" },
+//             { label: "FAQ", href: "/faq" },
+//             { label: "Cookies", href: "#" },
+//             { label: "Licenses", href: "#" },
+//             { label: "Settings", href: "#" },
+//             { label: "Contact", href: "#" },
+//         ],
+//     },
+// ];
 
 const HeroSplitImage05 = () => {
     return (
@@ -563,7 +563,7 @@ export const FooterLarge01 = () => {
     return (
         <footer className="bg-secondary_alt py-12 md:pt-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
-                <nav>
+                {/* <nav>
                     <ul className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
                         {footerNavList.map((category) => (
                             <li key={category.label}>
@@ -580,7 +580,7 @@ export const FooterLarge01 = () => {
                             </li>
                         ))}
                     </ul>
-                </nav>
+                </nav> */}
                 <div className="mt-12 flex flex-col justify-between gap-6 border-t border-secondary pt-8 md:mt-16 md:flex-row md:items-center">
                     <KVGAILogo className="h-8 w-min" />
                     <p className="text-md text-quaternary">© 2025 KVGAI Tech. All rights reserved.</p>
