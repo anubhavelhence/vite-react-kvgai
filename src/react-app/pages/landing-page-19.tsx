@@ -129,7 +129,7 @@ const HeroSplitImage05 = () => {
                     <div className="relative">
                         <img
                             className="h-60 w-full rounded-tr-[32px] rounded-bl-[32px] object-cover md:h-96 md:rounded-tr-[64px] md:rounded-bl-[64px] lg:h-full"
-                            src="/officeImage.jpg"
+                            src="/officeImage1.jpg"
                             alt="Workspace"
                         />
                     </div>

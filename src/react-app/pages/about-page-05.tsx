@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
     ArrowLeft,
     ArrowRight,
-    ArrowUpRight,
     ChartBreakoutSquare,
     Clock,
     Command,
@@ -49,36 +48,6 @@ const jobs: JobCard01Props[] = [
         href: "#",
         badgeColor: "pink",
         badgeText: "Software",
-        location: "Remote",
-        type: "Full-time",
-    },
-    {
-        title: "Customer Success Manager",
-        department: "Customer Success",
-        description: "We're looking for a mid-level product designer to join our team.",
-        href: "#",
-        badgeColor: "success",
-        badgeText: "CX",
-        location: "Remote",
-        type: "Full-time",
-    },
-    {
-        title: "Account Executive",
-        department: "Sales",
-        description: "We're looking for a mid-level product designer to join our team.",
-        href: "#",
-        badgeColor: "indigo",
-        badgeText: "Sales",
-        location: "Remote",
-        type: "Full-time",
-    },
-    {
-        title: "SEO Marketing Manager",
-        department: "Marketing",
-        description: "We're looking for a mid-level product designer to join our team.",
-        href: "#",
-        badgeColor: "orange",
-        badgeText: "Marketing",
         location: "Remote",
         type: "Full-time",
     },
@@ -466,10 +435,7 @@ const JobCard01 = (props: JobCard01Props) => {
         >
             <div className="flex items-center justify-between py-0.5 md:py-0">
                 <span className="text-sm font-semibold text-brand-secondary">{props.department}</span>
-                <Button color="link-color" size="sm" className="hidden md:flex" iconTrailing={ArrowUpRight}>
-                    View job
-                </Button>
-                <div className="flex md:hidden">
+                <div className="flex">
                     <BadgeWithDot color={props.badgeColor} size="md">
                         {props.badgeText}
                     </BadgeWithDot>
@@ -477,11 +443,6 @@ const JobCard01 = (props: JobCard01Props) => {
             </div>
             <div className="flex items-center gap-2 md:mt-0.5">
                 <h3 className="text-md font-semibold text-primary">{props.title}</h3>
-                <div className="hidden md:flex">
-                    <BadgeWithDot color={props.badgeColor} size="md">
-                        {props.badgeText}
-                    </BadgeWithDot>
-                </div>
             </div>
             <p className="mt-2 text-md text-tertiary">{props.description}</p>
             <div className="mt-5 flex gap-4">

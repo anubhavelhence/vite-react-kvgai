@@ -18,6 +18,7 @@ type HeaderNavItem = {
 const headerNavItems: HeaderNavItem[] = [
     { label: "About", href: "/about" },
     { label: "FAQ", href: "/faq" },
+    { label: "Contact", href: "/contact" },
 ];
 
 // const footerNavItems = [
