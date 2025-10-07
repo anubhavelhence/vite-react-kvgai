@@ -248,7 +248,7 @@ const FeaturesIntegrationsIcons02 = () => {
                         <span className="text-sm font-semibold text-brand-secondary md:text-md">Integrations</span>
                         <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Seamlessly Orchestrate Your AI Workflows</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                            Bring all your enterprise tools under one intelligent orchestration layer. Quagly Tech enables AI agents to interact with your favorite platforms autonomously—streamlining operations and reducing manual overhead.
+                            Bring all your enterprise tools under one intelligent orchestration layer. KVGAI Tech enables AI agents to interact with your favorite platforms autonomously—streamlining operations and reducing manual overhead.
                         </p>
                     </div>
                     <div className="grid grid-cols-4 gap-4 self-center px-3 lg:grid-cols-8 lg:gap-8 lg:px-14">
@@ -314,7 +314,7 @@ const FeaturesIntegrationsIcons02 = () => {
 //             <div className="mx-auto max-w-container px-4 md:px-8">
 //                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
 //                     <h1 className="text-display-sm font-semibold text-primary md:text-display-md">Stay Ahead in Generative AI</h1>
-//                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Get updates on cutting-edge architectures, real-world deployments, and Quagly Tech’s latest innovations.</p>
+//                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Get updates on cutting-edge architectures, real-world deployments, and KVGAI Tech’s latest innovations.</p>
 
 //                     <Form
 //                         onSubmit={(e) => {

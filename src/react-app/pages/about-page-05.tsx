@@ -259,7 +259,7 @@ const HeaderCentered = () => {
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">About Us</span>
                     <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Engineering Intelligence. Powering Impact.</h1>
                     <p className="mt-4 text-lg text-tertiary md:mt-6 md:text-xl">
-                        At Quagly Tech, we go beyond superficial GenAI. We design deep, knowledge-driven AI systems that are fast, cost-efficient, and production-ready. Our focus is on solving real enterprise problems with scalable architectures, autonomous agent orchestration, and structured knowledge systems—not just LLM wrappers.
+                        At KVGAI Tech, we go beyond superficial GenAI. We design deep, knowledge-driven AI systems that are fast, cost-efficient, and production-ready. Our focus is on solving real enterprise problems with scalable architectures, autonomous agent orchestration, and structured knowledge systems—not just LLM wrappers.
                     </p>
                 </div>
             </div>
@@ -573,7 +573,7 @@ const RoundButton = ({ icon: Icon, ...props }: RoundButtonProps) => {
 
 const reviews = [
     {
-        quote: "Working at Quagly Tech means solving problems that actually matter. We build systems that push the boundaries of what GenAI can do in real production environments.",
+        quote: "Working at KVGAI Tech means solving problems that actually matter. We build systems that push the boundaries of what GenAI can do in real production environments.",
         author: {
             name: "Kartik Jain",
             title: "Backend GenAI Engineer",
