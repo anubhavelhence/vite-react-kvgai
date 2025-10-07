@@ -218,7 +218,7 @@ const FeaturesIntegrationsIcons04 = () => {
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">Integrations</span>
                     <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Seamlessly Orchestrate Your AI Workflows</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Bring all your enterprise tools under one intelligent orchestration layer. KVGAI Tech enables AI agents to interact with your favorite platforms autonomously—streamlining operations and reducing manual overhead.
+                        Bring all your enterprise tools under one intelligent orchestration layer. KVGAITech enables AI agents to interact with your favorite platforms autonomously—streamlining operations and reducing manual overhead.
                     </p>
                 </div>
 
@@ -359,7 +359,7 @@ const CTACardHorizontal = () => {
                 <div className="flex flex-col gap-x-8 gap-y-8 rounded-2xl bg-secondary px-6 py-10 lg:flex-row lg:p-16">
                     <div className="flex max-w-3xl flex-1 flex-col">
                         <h2 className="text-display-sm font-semibold text-primary">
-                            <span className="hidden md:inline">Work with KVGAI Tech</span>
+                            <span className="hidden md:inline">Work with KVGAITech</span>
                             {/* <span className="md:hidden">Start your free trial</span> */}
                         </h2>
                         <p className="mt-4 text-lg text-tertiary lg:text-xl">Partner with us to design, deploy, and scale intelligent AI systems that deliver measurable business outcomes.</p>
@@ -386,7 +386,7 @@ const TestimonialSimpleCentered02 = () => {
                     </div>
 
                     <blockquote className="text-display-sm font-medium text-primary md:text-display-md">
-                        KVGAI Tech helped us move from fragmented AI experiments to a fully orchestrated, cost-efficient GenAI pipeline. Their deep technical expertise and responsiveness made a huge difference in accelerating our deployment
+                        KVGAITech helped us move from fragmented AI experiments to a fully orchestrated, cost-efficient GenAI pipeline. Their deep technical expertise and responsiveness made a huge difference in accelerating our deployment
                     </blockquote>
                     <figcaption className="flex justify-center">
                         <div className="flex flex-col items-center gap-4">
@@ -520,7 +520,7 @@ export const NewsletterSimpleLeft = () => {
             <div className="mx-auto flex w-full max-w-container flex-col items-start justify-between gap-8 px-4 md:px-8 lg:flex-row">
                 <div>
                     <h1 className="text-display-sm font-semibold text-primary md:text-display-md">Stay Ahead in Generative AI</h1>
-                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Get updates on cutting-edge architectures, real-world deployments, and KVGAI Tech’s latest innovations.</p>
+                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Get updates on cutting-edge architectures, real-world deployments, and KVGAITech’s latest innovations.</p>
                 </div>
                 <Form
                     onSubmit={(e) => {
