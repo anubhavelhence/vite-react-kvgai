@@ -573,7 +573,7 @@ const RoundButton = ({ icon: Icon, ...props }: RoundButtonProps) => {
 
 const reviews = [
     {
-        quote: "Working at KVGAI Tech means solving problems that actually matter. We build systems that push the boundaries of what GenAI can do in real production environments.",
+        quote: "Working at KVGAITech means solving problems that actually matter. We build systems that push the boundaries of what GenAI can do in real production environments.",
         author: {
             name: "Kartik Jain",
             title: "Backend GenAI Engineer",

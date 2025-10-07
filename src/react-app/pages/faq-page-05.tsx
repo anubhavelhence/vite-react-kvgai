@@ -9,7 +9,7 @@ import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
 
 const faqsExtended = [
     {
-        question: "What AI technologies does KVGAI Tech specialize in?",
+        question: "What AI technologies does KVGAITech specialize in?",
         answer: "We specialize in Agentic Flows, Agentic RAG (Retrieval-Augmented Generation), MCP Servers (Model Context Protocol), and Conversational AI Agents. Our expertise enables us to build sophisticated AI applications that run serverless on GPU infrastructure.",
         icon: Heart,
     },
@@ -248,7 +248,7 @@ const FeaturesIntegrationsIcons02 = () => {
                         <span className="text-sm font-semibold text-brand-secondary md:text-md">Integrations</span>
                         <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Seamlessly Orchestrate Your AI Workflows</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                            Bring all your enterprise tools under one intelligent orchestration layer. KVGAI Tech enables AI agents to interact with your favorite platforms autonomously—streamlining operations and reducing manual overhead.
+                            Bring all your enterprise tools under one intelligent orchestration layer. KVGAITech enables AI agents to interact with your favorite platforms autonomously—streamlining operations and reducing manual overhead.
                         </p>
                     </div>
                     <div className="grid grid-cols-4 gap-4 self-center px-3 lg:grid-cols-8 lg:gap-8 lg:px-14">
