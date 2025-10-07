@@ -2,12 +2,7 @@ import { useState } from "react";
 import { CreditCardRefresh, File05, Heart, Mail01, SlashCircle01, SwitchHorizontal01 } from "@untitledui/icons";
 import { motion } from "motion/react";
 import { Avatar } from "@/components/base/avatar/avatar";
-import { Badge } from "@/components/base/badges/badges";
 import { Button } from "@/components/base/buttons/button";
-import { Form } from "@/components/base/form/form";
-import { Input } from "@/components/base/input/input";
-import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
-import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/components/foundations/social-icons";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { cx } from "@/utils/cx";
 import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
@@ -45,81 +40,81 @@ const faqsExtended = [
     },
 ];
 
-const footerSocials = [
-    { label: "X (formerly Twitter)", icon: X, href: "https://x.com/" },
-    { label: "LinkedIn", icon: LinkedIn, href: "https://www.linkedin.com/" },
-    { label: "Facebook", icon: Facebook, href: "https://www.facebook.com/" },
-    { label: "GitHub", icon: GitHub, href: "https://github.com/" },
-    { label: "AngelList", icon: AngelList, href: "https://angel.co/" },
-    { label: "Dribbble", icon: Dribbble, href: "https://dribbble.com/" },
-    { label: "Layers", icon: Layers, href: "https://layers.com/" },
-];
+// const footerSocials = [
+//     { label: "X (formerly Twitter)", icon: X, href: "https://x.com/" },
+//     { label: "LinkedIn", icon: LinkedIn, href: "https://www.linkedin.com/" },
+//     { label: "Facebook", icon: Facebook, href: "https://www.facebook.com/" },
+//     { label: "GitHub", icon: GitHub, href: "https://github.com/" },
+//     { label: "AngelList", icon: AngelList, href: "https://angel.co/" },
+//     { label: "Dribbble", icon: Dribbble, href: "https://dribbble.com/" },
+//     { label: "Layers", icon: Layers, href: "https://layers.com/" },
+// ];
 
-const footerNavList = [
-    {
-        label: "Product",
-        items: [
-            { label: "Overview", href: "#" },
-            { label: "Features", href: "#" },
-            {
-                label: "Solutions",
-                href: "#",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        New
-                    </Badge>
-                ),
-            },
-            { label: "Tutorials", href: "#" },
-            { label: "Pricing", href: "#" },
-            { label: "Releases", href: "#" },
-        ],
-    },
-    {
-        label: "Company",
-        items: [
-            { label: "About us", href: "/about" },
-            { label: "Careers", href: "#" },
-            { label: "Press", href: "#" },
-            { label: "News", href: "#" },
-            { label: "Media kit", href: "#" },
-            { label: "Contact", href: "#" },
-        ],
-    },
-    {
-        label: "Resources",
-        items: [
-            { label: "Blog", href: "#" },
-            { label: "Newsletter", href: "#" },
-            { label: "Events", href: "#" },
-            { label: "Help centre", href: "#" },
-            { label: "Tutorials", href: "#" },
-            { label: "Support", href: "#" },
-        ],
-    },
-    {
-        label: "Social",
-        items: [
-            { label: "Twitter", href: "#" },
-            { label: "LinkedIn", href: "#" },
-            { label: "Facebook", href: "#" },
-            { label: "GitHub", href: "#" },
-            { label: "AngelList", href: "#" },
-            { label: "Dribbble", href: "#" },
-        ],
-    },
-    {
-        label: "Legal",
-        items: [
-            { label: "Terms", href: "#" },
-            { label: "FAQ", href: "/faq" },
-            { label: "Cookies", href: "#" },
-            { label: "Licenses", href: "#" },
-            { label: "Settings", href: "#" },
-            { label: "Contact", href: "#" },
-        ],
-    },
-];
+// const footerNavList = [
+//     {
+//         label: "Product",
+//         items: [
+//             { label: "Overview", href: "#" },
+//             { label: "Features", href: "#" },
+//             {
+//                 label: "Solutions",
+//                 href: "#",
+//                 badge: (
+//                     <Badge color="gray" type="modern" size="sm" className="ml-1">
+//                         New
+//                     </Badge>
+//                 ),
+//             },
+//             { label: "Tutorials", href: "#" },
+//             { label: "Pricing", href: "#" },
+//             { label: "Releases", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Company",
+//         items: [
+//             { label: "About us", href: "/about" },
+//             { label: "Careers", href: "#" },
+//             { label: "Press", href: "#" },
+//             { label: "News", href: "#" },
+//             { label: "Media kit", href: "#" },
+//             { label: "Contact", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Resources",
+//         items: [
+//             { label: "Blog", href: "#" },
+//             { label: "Newsletter", href: "#" },
+//             { label: "Events", href: "#" },
+//             { label: "Help centre", href: "#" },
+//             { label: "Tutorials", href: "#" },
+//             { label: "Support", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Social",
+//         items: [
+//             { label: "Twitter", href: "#" },
+//             { label: "LinkedIn", href: "#" },
+//             { label: "Facebook", href: "#" },
+//             { label: "GitHub", href: "#" },
+//             { label: "AngelList", href: "#" },
+//             { label: "Dribbble", href: "#" },
+//         ],
+//     },
+//     {
+//         label: "Legal",
+//         items: [
+//             { label: "Terms", href: "#" },
+//             { label: "FAQ", href: "/faq" },
+//             { label: "Cookies", href: "#" },
+//             { label: "Licenses", href: "#" },
+//             { label: "Settings", href: "#" },
+//             { label: "Contact", href: "#" },
+//         ],
+//     },
+// ];
 
 const HeaderCenteredButtons = () => {
     return (
@@ -313,152 +308,152 @@ const FeaturesIntegrationsIcons02 = () => {
     );
 };
 
-const SimpleCentered = () => {
-    return (
-        <section className="bg-secondary py-16 md:py-24">
-            <div className="mx-auto max-w-container px-4 md:px-8">
-                <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <h1 className="text-display-sm font-semibold text-primary md:text-display-md">Stay Ahead in Generative AI</h1>
-                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Get updates on cutting-edge architectures, real-world deployments, and Quagly Tech’s latest innovations.</p>
+// const SimpleCentered = () => {
+//     return (
+//         <section className="bg-secondary py-16 md:py-24">
+//             <div className="mx-auto max-w-container px-4 md:px-8">
+//                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
+//                     <h1 className="text-display-sm font-semibold text-primary md:text-display-md">Stay Ahead in Generative AI</h1>
+//                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Get updates on cutting-edge architectures, real-world deployments, and Quagly Tech’s latest innovations.</p>
 
-                    <Form
-                        onSubmit={(e) => {
-                            e.preventDefault();
-                            const data = Object.fromEntries(new FormData(e.currentTarget));
-                            console.log("Form data:", data);
-                        }}
-                        className="mt-8 grid grid-cols-1 items-start gap-4 self-stretch sm:grid-cols-[360px_max-content] sm:gap-0 sm:self-center"
-                    >
-                        <Input
-                            isRequired
-                            size="md"
-                            name="email"
-                            type="email"
-                            placeholder="Enter your email"
-                            wrapperClassName="py-0.5 md:max-w-[345px]"
-                            hint={
-                                <span>
-                                    We care about your data in our{" "}
-                                    <a
-                                        href="#"
-                                        className="rounded-xs underline underline-offset-3 outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
-                                    >
-                                        privacy policy
-                                    </a>
-                                    .
-                                </span>
-                            }
-                        />
-                        <Button type="submit" size="xl">
-                            Subscribe
-                        </Button>
-                    </Form>
-                </div>
-            </div>
-        </section>
-    );
-};
+//                     <Form
+//                         onSubmit={(e) => {
+//                             e.preventDefault();
+//                             const data = Object.fromEntries(new FormData(e.currentTarget));
+//                             console.log("Form data:", data);
+//                         }}
+//                         className="mt-8 grid grid-cols-1 items-start gap-4 self-stretch sm:grid-cols-[360px_max-content] sm:gap-0 sm:self-center"
+//                     >
+//                         <Input
+//                             isRequired
+//                             size="md"
+//                             name="email"
+//                             type="email"
+//                             placeholder="Enter your email"
+//                             wrapperClassName="py-0.5 md:max-w-[345px]"
+//                             hint={
+//                                 <span>
+//                                     We care about your data in our{" "}
+//                                     <a
+//                                         href="#"
+//                                         className="rounded-xs underline underline-offset-3 outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
+//                                     >
+//                                         privacy policy
+//                                     </a>
+//                                     .
+//                                 </span>
+//                             }
+//                         />
+//                         <Button type="submit" size="xl">
+//                             Subscribe
+//                         </Button>
+//                     </Form>
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// };
 
-const FooterLarge06 = () => {
-    return (
-        <footer>
-            <div className="relative bg-brand-section py-10 md:py-12">
-                <div className="mx-auto max-w-container px-4 md:px-8">
-                    <div className="flex flex-col items-start justify-between gap-8 md:flex-row">
-                        <div className="flex flex-col gap-2">
-                            <p id="newsletter-label" className="text-lg font-semibold text-primary_on-brand md:text-xl">
-                                Join our newsletter
-                            </p>
-                            <p id="newsletter-hint" className="text-md text-tertiary_on-brand">
-                                We'll send you a nice letter once per week. No spam.
-                            </p>
-                        </div>
-                        <Form
-                            onSubmit={(e) => {
-                                e.preventDefault();
-                                const data = Object.fromEntries(new FormData(e.currentTarget));
-                                console.log("Form data:", data);
-                            }}
-                            className="w-full sm:w-100"
-                        >
-                            <div className="flex flex-col gap-4 sm:flex-row">
-                                <Input
-                                    isRequired
-                                    aria-labelledby="newsletter-label"
-                                    aria-describedby="newsletter-hint"
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    size="md"
-                                    wrapperClassName="flex-1"
-                                />
-                                <Button type="submit" size="lg">
-                                    Subscribe
-                                </Button>
-                            </div>
-                        </Form>
-                    </div>
-                </div>
-                <div className="absolute bottom-0 left-0 h-px w-full bg-border-brand_alt"></div>
-            </div>
+// const FooterLarge06 = () => {
+//     return (
+//         <footer>
+//             <div className="relative bg-brand-section py-10 md:py-12">
+//                 <div className="mx-auto max-w-container px-4 md:px-8">
+//                     <div className="flex flex-col items-start justify-between gap-8 md:flex-row">
+//                         <div className="flex flex-col gap-2">
+//                             <p id="newsletter-label" className="text-lg font-semibold text-primary_on-brand md:text-xl">
+//                                 Join our newsletter
+//                             </p>
+//                             <p id="newsletter-hint" className="text-md text-tertiary_on-brand">
+//                                 We'll send you a nice letter once per week. No spam.
+//                             </p>
+//                         </div>
+//                         <Form
+//                             onSubmit={(e) => {
+//                                 e.preventDefault();
+//                                 const data = Object.fromEntries(new FormData(e.currentTarget));
+//                                 console.log("Form data:", data);
+//                             }}
+//                             className="w-full sm:w-100"
+//                         >
+//                             <div className="flex flex-col gap-4 sm:flex-row">
+//                                 <Input
+//                                     isRequired
+//                                     aria-labelledby="newsletter-label"
+//                                     aria-describedby="newsletter-hint"
+//                                     id="email"
+//                                     name="email"
+//                                     type="email"
+//                                     placeholder="Enter your email"
+//                                     size="md"
+//                                     wrapperClassName="flex-1"
+//                                 />
+//                                 <Button type="submit" size="lg">
+//                                     Subscribe
+//                                 </Button>
+//                             </div>
+//                         </Form>
+//                     </div>
+//                 </div>
+//                 <div className="absolute bottom-0 left-0 h-px w-full bg-border-brand_alt"></div>
+//             </div>
 
-            <div className="bg-brand-section py-12 md:pt-16">
-                <div className="mx-auto max-w-container px-4 md:px-8">
-                    <div className="flex flex-col gap-12 md:gap-16 xl:flex-row">
-                        <div className="flex flex-col gap-6 md:w-80 md:gap-8">
-                            <KVGAILogo className="h-8" />
-                            <p className="text-md text-tertiary_on-brand">Build and Deploy Ambitious AI Applications with serverless GPU infrastructure and cutting-edge AI technologies.</p>
-                        </div>
-                        <nav className="flex-1">
-                            <ul className="grid grid-cols-2 gap-8 md:grid-cols-5">
-                                {footerNavList.map((category) => (
-                                    <li key={category.label}>
-                                        <h4 className="text-sm font-semibold text-quaternary_on-brand">{category.label}</h4>
-                                        <ul className="mt-4 flex flex-col gap-3">
-                                            {category.items.map((item) => (
-                                                <li key={item.label}>
-                                                    <Button
-                                                        className="gap-1 text-footer-button-fg hover:text-footer-button-fg_hover"
-                                                        color="link-color"
-                                                        size="lg"
-                                                        href={item.href}
-                                                        iconTrailing={item.badge}
-                                                    >
-                                                        {item.label}
-                                                    </Button>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav>
-                    </div>
+//             <div className="bg-brand-section py-12 md:pt-16">
+//                 <div className="mx-auto max-w-container px-4 md:px-8">
+//                     <div className="flex flex-col gap-12 md:gap-16 xl:flex-row">
+//                         <div className="flex flex-col gap-6 md:w-80 md:gap-8">
+//                             <KVGAILogo className="h-8" />
+//                             <p className="text-md text-tertiary_on-brand">Build and Deploy Ambitious AI Applications with serverless GPU infrastructure and cutting-edge AI technologies.</p>
+//                         </div>
+//                         <nav className="flex-1">
+//                             <ul className="grid grid-cols-2 gap-8 md:grid-cols-5">
+//                                 {footerNavList.map((category) => (
+//                                     <li key={category.label}>
+//                                         <h4 className="text-sm font-semibold text-quaternary_on-brand">{category.label}</h4>
+//                                         <ul className="mt-4 flex flex-col gap-3">
+//                                             {category.items.map((item) => (
+//                                                 <li key={item.label}>
+//                                                     <Button
+//                                                         className="gap-1 text-footer-button-fg hover:text-footer-button-fg_hover"
+//                                                         color="link-color"
+//                                                         size="lg"
+//                                                         href={item.href}
+//                                                         iconTrailing={item.badge}
+//                                                     >
+//                                                         {item.label}
+//                                                     </Button>
+//                                                 </li>
+//                                             ))}
+//                                         </ul>
+//                                     </li>
+//                                 ))}
+//                             </ul>
+//                         </nav>
+//                     </div>
 
-                    <div className="relative mt-12 flex flex-col-reverse justify-between gap-6 pt-8 md:mt-16 md:flex-row">
-                        <div className="absolute top-0 left-0 h-px w-full bg-border-brand_alt"></div>
-                        <p className="text-md text-quaternary_on-brand">© 2025 KVGAI Tech. All rights reserved.</p>
-                        <ul className="flex gap-6">
-                            {footerSocials.map(({ label, icon: Icon, href }) => (
-                                <li key={label}>
-                                    <a
-                                        href={href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-icon-fg-brand_on-brand outline-focus-ring transition duration-100 ease-linear hover:text-fg-quaternary_hover focus-visible:outline-2 focus-visible:outline-offset-2"
-                                    >
-                                        <Icon size={24} aria-label={label} />
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
-};
+//                     <div className="relative mt-12 flex flex-col-reverse justify-between gap-6 pt-8 md:mt-16 md:flex-row">
+//                         <div className="absolute top-0 left-0 h-px w-full bg-border-brand_alt"></div>
+//                         <p className="text-md text-quaternary_on-brand">© 2025 KVGAI Tech. All rights reserved.</p>
+//                         <ul className="flex gap-6">
+//                             {footerSocials.map(({ label, icon: Icon, href }) => (
+//                                 <li key={label}>
+//                                     <a
+//                                         href={href}
+//                                         target="_blank"
+//                                         rel="noopener noreferrer"
+//                                         className="text-icon-fg-brand_on-brand outline-focus-ring transition duration-100 ease-linear hover:text-fg-quaternary_hover focus-visible:outline-2 focus-visible:outline-offset-2"
+//                                     >
+//                                         <Icon size={24} aria-label={label} />
+//                                     </a>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </div>
+//                 </div>
+//             </div>
+//         </footer>
+//     );
+// };
 
 const FAQPage05 = () => {
     return (

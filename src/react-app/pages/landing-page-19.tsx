@@ -1,5 +1,5 @@
 import { Fragment, type ReactNode } from "react";
-import { CheckCircle, PlayCircle, ZapFast } from "@untitledui/icons";
+import { CheckCircle, ZapFast } from "@untitledui/icons";
 import { Avatar } from "@/components/base/avatar/avatar";
 import { Badge } from "@/components/base/badges/badges";
 import { Button } from "@/components/base/buttons/button";
