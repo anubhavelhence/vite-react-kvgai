@@ -31,6 +31,7 @@ import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/co
 import { Header } from "@/components/marketing/header-navigation/header";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
+import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
 
 const jobs: JobCard01Props[] = [
     {
@@ -257,11 +258,10 @@ const HeaderCentered = () => {
         <section className="bg-primary py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">About us</span>
-                    <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">We do things differently...</h1>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">About Us</span>
+                    <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Engineering Intelligence. Powering Impact.</h1>
                     <p className="mt-4 text-lg text-tertiary md:mt-6 md:text-xl">
-                        We focus on the details of everything we do. All to help businesses around the world focus on what's most important to them. We take
-                        pride in this.
+                        At Quagly Tech, we go beyond superficial GenAI. We design deep, knowledge-driven AI systems that are fast, cost-efficient, and production-ready. Our focus is on solving real enterprise problems with scalable architectures, autonomous agent orchestration, and structured knowledge systems—not just LLM wrappers.
                     </p>
                 </div>
             </div>
@@ -282,9 +282,9 @@ const MetricsImageWithCards01 = () => {
                         />
 
                         {[
-                            { title: "400+", subtitle: "Projects completed", description: "We've helped build over 400 projects with great companies." },
-                            { title: "600%", subtitle: "Return on investment", description: "We've helped build over 400 projects with great companies." },
-                            { title: "10k", subtitle: "Global downloads", description: "Our free UI kit has been downloaded over 10k times." },
+                            { title: "10+", subtitle: "Production AI Deployments", description: "From pharma patent retrieval to automotive recommendation systems, we’ve delivered real deployments—not prototypes." },
+                            { title: "99.9%", subtitle: "Uptime Across Deployments", description: "Our serverless architectures and robust orchestration ensure reliable, low-latency performance." },
+                            { title: "<100 ms", subtitle: "Average Latency", description: "Optimized pipelines and intelligent caching make real-time AI a reality for our clients." },
                         ].map((item, index) => (
                             <div
                                 key={index}
@@ -338,33 +338,33 @@ const FeatureTextFeaturedIconTopCentered = ({
 
 const features = [
     {
-        title: "Share team inboxes",
-        subtitle: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
+        title: "Depth over Hype",
+        subtitle: "We prioritize core system design and robust knowledge representation over superficial LLM gimmicks.",
         icon: MessageChatCircle,
     },
     {
-        title: "Deliver instant answers",
-        subtitle: "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
+        title: "Efficiency at Scale",
+        subtitle: "Our architectures are optimized for serverless compute, minimizing latency and cost without sacrificing performance.",
         icon: Zap,
     },
     {
-        title: "Manage your team with reports",
-        subtitle: "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
+        title: "Partnership Mindset",
+        subtitle: "We work closely with clients as long-term partners, not vendors—building solutions around their vision.",
         icon: ChartBreakoutSquare,
     },
     {
-        title: "Connect with customers",
-        subtitle: "Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.",
+        title: "Global Collaboration",
+        subtitle: "With presence in India and the U.S., we operate across time zones to ensure smooth engagement and delivery.",
         icon: MessageSmileCircle,
     },
     {
-        title: "Connect the tools you already use",
-        subtitle: "Explore 100+ integrations that make your day-to-day workflow more efficient and familiar. Plus, our extensive developer tools.",
+        title: "Continuous Innovation",
+        subtitle: "From multi-agent orchestration to knowledge graph retrieval, we push boundaries to solve hard problems.",
         icon: Command,
     },
     {
-        title: "Our people make the difference",
-        subtitle: "We're an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.",
+        title: "People First",
+        subtitle: "Our diverse team combines academic depth with industry pragmatism to deliver world-class solutions.",
         icon: MessageHeartCircle,
     },
 ];
@@ -374,12 +374,11 @@ const FeaturesSimpleIcons02 = () => {
         <section className="bg-primary pb-16 md:pb-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Our values</span>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Our Values</span>
                     <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">
-                        We're an ambitious and smart team <br />
-                        with a shared mission
+                        Building Deep Tech. Delivering Real Impact. <br />
                     </h2>
-                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Our shared values keep us connected and guide us as one team.</p>
+                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">We’re a team of engineers, researchers, and builders who share a common mission—to make GenAI systems practical, powerful, and accessible for real businesses.</p>
                 </div>
 
                 <div className="mt-12 md:mt-16">
@@ -502,12 +501,12 @@ const JobCard01 = (props: JobCard01Props) => {
 };
 
 const departments = [
-    { id: "all", label: "View all" },
+    // { id: "all", label: "View all" },
     { id: "design", label: "Design" },
     { id: "softwareEngineering", label: "Software Engineering" },
-    { id: "customerSuccess", label: "Customer Success" },
+    // { id: "customerSuccess", label: "Customer Success" },
     { id: "sales", label: "Sales" },
-    { id: "marketing", label: "Marketing" },
+    // { id: "marketing", label: "Marketing" },
 ];
 
 const CareersCard01 = () => {
@@ -517,10 +516,11 @@ const CareersCard01 = () => {
         <section className="bg-primary py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <h2 className="text-display-sm font-semibold text-primary md:text-display-md">Open positions</h2>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Open Positions</span>
+                    <h2 className="text-display-sm font-semibold text-primary md:text-display-md">Open Positions Join Our Mission to Build the Future of GenAI</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        WWant to work with some of the best global talent and build software used by all the companies you know and love? Join the team—we're
-                        hiring!
+                       We're looking for builders, problem-solvers, and innovators who want to work at the intersection of deep tech, AI, and scalable systems.
+                        If you love working on complex problems—from orchestration flows to knowledge systems—we’d love to hear from you.
                     </p>
                 </div>
 
@@ -575,7 +575,7 @@ const RoundButton = ({ icon: Icon, ...props }: RoundButtonProps) => {
 
 const reviews = [
     {
-        quote: "I’ve been coding with the GenAI team, and every line feels like progress.",
+        quote: "Working at Quagly Tech means solving problems that actually matter. We build systems that push the boundaries of what GenAI can do in real production environments.",
         author: {
             name: "Kartik Jain",
             title: "Backend GenAI Engineer",
@@ -862,9 +862,11 @@ const AboutPage05 = () => {
 
             <TestimonialAbstractImage />
 
-            <SimpleCentered />
+            {/* <SimpleCentered /> */}
+            <NewsletterSimpleLeft/>
 
-            <FooterLarge05 />
+            {/* <FooterLarge05 /> */}
+            <FooterLarge01/>
         </div>
     );
 };

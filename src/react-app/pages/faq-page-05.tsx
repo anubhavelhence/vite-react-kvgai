@@ -10,6 +10,7 @@ import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
 import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/components/foundations/social-icons";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { cx } from "@/utils/cx";
+import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
 
 const faqsExtended = [
     {
@@ -250,10 +251,9 @@ const FeaturesIntegrationsIcons02 = () => {
                 <div className="flex flex-col items-center gap-12 md:gap-16">
                     <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                         <span className="text-sm font-semibold text-brand-secondary md:text-md">Integrations</span>
-                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Get more value from your tools</h2>
+                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Seamlessly Orchestrate Your AI Workflows</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                            Connect your tools, connect your teams. With over 200 apps already available in our directory, your team's favorite tools are just a
-                            click away.
+                            Bring all your enterprise tools under one intelligent orchestration layer. Quagly Tech enables AI agents to interact with your favorite platforms autonomously—streamlining operations and reducing manual overhead.
                         </p>
                     </div>
                     <div className="grid grid-cols-4 gap-4 self-center px-3 lg:grid-cols-8 lg:gap-8 lg:px-14">
@@ -318,8 +318,8 @@ const SimpleCentered = () => {
         <section className="bg-secondary py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <h1 className="text-display-sm font-semibold text-primary md:text-display-md">Sign up for our newsletter</h1>
-                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Be the first to know about releases and industry news and insights.</p>
+                    <h1 className="text-display-sm font-semibold text-primary md:text-display-md">Stay Ahead in Generative AI</h1>
+                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Get updates on cutting-edge architectures, real-world deployments, and Quagly Tech’s latest innovations.</p>
 
                     <Form
                         onSubmit={(e) => {
@@ -471,9 +471,11 @@ const FAQPage05 = () => {
 
             <FeaturesIntegrationsIcons02 />
 
-            <SimpleCentered />
+            {/* <SimpleCentered /> */}
+            <NewsletterSimpleLeft/>
 
-            <FooterLarge06 />
+            {/* <FooterLarge06 /> */}
+            <FooterLarge01/>
         </div>
     );
 };

@@ -119,11 +119,11 @@ const HeroSplitImage05 = () => {
                             Run serverless AI on GPU. From zero to production in weeks. Expert in Agentic RAG, MCP servers, and Conversational AI agentss.
                         </p>
 
-                        <div className="mt-8 md:mt-12">
+                        {/* <div className="mt-8 md:mt-12">
                             <Button color="secondary" size="xl" iconLeading={PlayCircle} className="px-8 py-4 text-lg">
                                 Demo
                             </Button>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="relative">
@@ -216,10 +216,9 @@ const FeaturesIntegrationsIcons04 = () => {
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">Integrations</span>
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Get more value from your tools</h2>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Seamlessly Orchestrate Your AI Workflows</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Connect your tools, connect your teams. With over 100 apps already available in our directory, your team's favorite tools are just a
-                        click away.
+                        Bring all your enterprise tools under one intelligent orchestration layer. Quagly Tech enables AI agents to interact with your favorite platforms autonomously—streamlining operations and reducing manual overhead.
                     </p>
                 </div>
 
@@ -228,47 +227,47 @@ const FeaturesIntegrationsIcons04 = () => {
                         {[
                             {
                                 title: "Claude Code",
-                                subtitle: "Work faster and smarter by integrating directly with Claude Code, right in the app.",
+                                subtitle: "Integrate Claude Code directly into your pipelines to power intelligent code understanding, refactoring, and AI-driven automation.",
                                 logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/1200px-Claude_AI_symbol.svg.png",
                             },
                             {
                                 title: "Slack integration",
-                                subtitle: "Work faster and smarter by integrating directly with Slack, right in the app.",
+                                subtitle: "Enable agents to collaborate with your teams natively in Slack—trigger workflows, summarize discussions, and file tickets seamlessly.",
                                 logo: "https://www.untitledui.com/logos/integrations/slack.svg",
                             },
                             {
                                 title: "Google Drive integration",
-                                subtitle: "Work faster and smarter by integrating directly with Google Drive, right in the app.",
+                                subtitle: "Connect to Google Drive to enable secure document retrieval, intelligent search, and structured knowledge extraction.",
                                 logo: "https://www.untitledui.com/logos/integrations/google_drive.svg",
                             },
                             {
                                 title: "LangGraph",
-                                subtitle: "Work faster and smarter by integrating directly with LangGraph, right in the app.",
+                                subtitle: "Build sophisticated multi-agent orchestration flows using LangGraph—allowing agents to coordinate, plan, and execute complex tasks intelligently.",
                                 logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.69.0/files/light/langgraph.png",
                             },
                             {
                                 title: "neo4j",
-                                subtitle: "Work faster and smarter by integrating directly with neo4j, right in the app.",
+                                subtitle: "Leverage graph databases for advanced knowledge representation, semantic search, and time-indexed retrieval.",
                                 logo: "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/neo4j/neo4j-original-wordmark.svg",
                             },
                             {
                                 title: "Hugging Face",
-                                subtitle: "Work faster and smarter by integrating directly with Hugging Face, right in the app.",
+                                subtitle: "Deploy and manage custom machine learning models as APIs using Hugging Face’s model hub, fully integrated with our orchestration layer.",
                                 logo: "https://cdn.worldvectorlogo.com/logos/huggingface-2.svg",
                             },
                             {
                                 title: "Intercom integration",
-                                subtitle: "Work faster and smarter by integrating directly with Intercom, right in the app.",
+                                subtitle: "Power conversational AI workflows by linking agents with Intercom—enabling contextual support, lead qualification, and ticket escalation.",
                                 logo: "https://www.untitledui.com/logos/integrations/intercom.svg",
                             },
                             {
                                 title: "Jira integration",
-                                subtitle: "Work faster and smarter by integrating directly with Jira, right in the app.",
+                                subtitle: "Let agents autonomously create, track, and manage Jira tickets as part of your multi-agent pipelines.",
                                 logo: "https://www.untitledui.com/logos/integrations/jira.svg",
                             },
                             {
                                 title: "Dropbox integration",
-                                subtitle: "Work faster and smarter by integrating directly with Dropbox, right in the app.",
+                                subtitle: "Securely fetch and analyze documents, enabling knowledge extraction and collaboration across Dropbox repositories.",
                                 logo: "https://www.untitledui.com/logos/integrations/dropbox.svg",
                             },
                         ].map((item) => (
@@ -291,10 +290,9 @@ const FeaturesLargeScreenMockup02 = () => {
                     <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                         <span className="text-sm font-semibold text-brand-secondary md:text-md">Features</span>
 
-                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Cutting-edge features for advanced analytics</h2>
+                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Deep Tech for Cost-Efficient, Scalable GenAI Systems</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                            Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000
-                            startups.
+                            From serverless compute to autonomous orchestration, our platform is designed for enterprises that want to move beyond superficial LLM calls and build reliable, intelligent systems.
                         </p>
                     </div>
                 </div>
@@ -329,13 +327,13 @@ const MetricsSimpleCenteredText = () => {
                 <div className="flex flex-col gap-12 md:gap-16">
                     <div className="flex w-full flex-col items-center self-center text-center md:max-w-3xl">
                         <FeaturedIcon icon={ZapFast} color="brand" theme="light" size="xl" />
-                        <h2 className="mt-4 text-display-sm font-semibold text-primary md:mt-6 md:text-display-md">Unleash the full power of data</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Everything you need to convert, engage, and retain more users.</p>
+                        <h2 className="mt-4 text-display-sm font-semibold text-primary md:mt-6 md:text-display-md">Unlock the Full Potential of Generative AI</h2>
+                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">We help enterprises deploy intelligent, high-performance GenAI systems tailored to their domain—backed by proven execution and robust infrastructure.</p>
                     </div>
 
                     <dl className="flex w-full flex-col justify-center gap-8 md:max-w-3xl md:flex-row md:gap-4 md:self-center">
                         {[
-                            { title: "5+", subtitle: "AI Projects Delivered" },
+                            { title: "10+", subtitle: "AI Projects Delivered" },
                             { title: "99.9%", subtitle: "Uptime SLA" },
                             { title: "<100ms", subtitle: "Average Latency" },
                         ].map((item, index) => (
@@ -361,11 +359,10 @@ const CTACardHorizontal = () => {
                 <div className="flex flex-col gap-x-8 gap-y-8 rounded-2xl bg-secondary px-6 py-10 lg:flex-row lg:p-16">
                     <div className="flex max-w-3xl flex-1 flex-col">
                         <h2 className="text-display-sm font-semibold text-primary">
-                            <span className="hidden md:inline">Start your 30-day free trial</span>
-                            <span className="md:hidden">Start your free trial</span>
+                            <span className="hidden md:inline">Work with Quagly Tech</span>
+                            {/* <span className="md:hidden">Start your free trial</span> */}
                         </h2>
-                        <p className="mt-4 text-lg text-tertiary lg:text-xl">Join over 4,000+ startups already growing with KVGAI
-                        Tech.</p>
+                        <p className="mt-4 text-lg text-tertiary lg:text-xl">Partner with us to design, deploy, and scale intelligent AI systems that deliver measurable business outcomes.</p>
                     </div>
                     <div className="flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-start">
                         <Button color="secondary" size="xl">
@@ -389,14 +386,14 @@ const TestimonialSimpleCentered02 = () => {
                     </div>
 
                     <blockquote className="text-display-sm font-medium text-primary md:text-display-lg">
-                        Love the simplicity of the service and the prompt customer support. We can't imagine working without it.
+                        Quagly Tech helped us move from fragmented AI experiments to a fully orchestrated, cost-efficient GenAI pipeline. Their deep technical expertise and responsiveness made a huge difference in accelerating our deployment
                     </blockquote>
                     <figcaption className="flex justify-center">
                         <div className="flex flex-col items-center gap-4">
                             <Avatar src="https://media.licdn.com/dms/image/v2/D4D03AQGhVAVv_nS-Ew/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1676404308950?e=1762387200&v=beta&t=AziGvTXTNDia9GdUIq8OcopN_jqJR7DXlUNRcz1uvF8" alt="Amelie Laurent" size="2xl" />
                             <div className="flex flex-col gap-1">
-                                <p className="text-lg font-semibold text-primary">Anubhav Elhence</p>
-                                <cite className="text-md text-tertiary not-italic">CEO, KVGAI Tech </cite>
+                                <p className="text-lg font-semibold text-primary">Deepak Chitkara</p>
+                                <cite className="text-md text-tertiary not-italic">CTO, Draco Automotive (UAE)</cite>
                             </div>
                         </div>
                     </figcaption>
@@ -478,9 +475,9 @@ const CTAScreenMockup01 = () => {
         <section className="overflow-hidden bg-primary py-16 md:py-24">
             <div className="mx-auto grid max-w-container grid-cols-1 items-center gap-16 px-4 md:px-8 lg:grid-cols-2">
                 <div className="flex w-full max-w-3xl flex-col">
-                    <h1 className="text-display-sm font-semibold text-primary md:text-display-lg">Join 4,000+ startups growing with KVGAI Tech</h1>
+                    <h1 className="text-display-sm font-semibold text-primary md:text-display-lg">Partner with Industry Leaders</h1>
                     <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
-                        {["30-day free trial", "Personalized onboarding", "Access to all features"].map((feat) => (
+                        {["🚀 Premium Project Engagements — tailored for enterprise-grade challenges", "🧠 Deep Tech Expertise — multi-agent orchestration, knowledge graphs, serverless AI", "🌎 Global Collaboration — teams in India & the U.S."].map((feat) => (
                             <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                         ))}
                     </ul>
@@ -517,13 +514,13 @@ const CTAScreenMockup01 = () => {
     );
 };
 
-const NewsletterSimpleLeft = () => {
+export const NewsletterSimpleLeft = () => {
     return (
         <section className="bg-secondary py-16 md:py-24">
             <div className="mx-auto flex w-full max-w-container flex-col items-start justify-between gap-8 px-4 md:px-8 lg:flex-row">
                 <div>
-                    <h1 className="text-display-sm font-semibold text-primary md:text-display-md">Sign up for our newsletter</h1>
-                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Be the first to know about releases and industry news and insights.</p>
+                    <h1 className="text-display-sm font-semibold text-primary md:text-display-md">Stay Ahead in Generative AI</h1>
+                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Get updates on cutting-edge architectures, real-world deployments, and Quagly Tech’s latest innovations.</p>
                 </div>
                 <Form
                     onSubmit={(e) => {
@@ -562,7 +559,7 @@ const NewsletterSimpleLeft = () => {
     );
 };
 
-const FooterLarge01 = () => {
+export const FooterLarge01 = () => {
     return (
         <footer className="bg-secondary_alt py-12 md:pt-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
