@@ -20,16 +20,16 @@ const headerNavItems: HeaderNavItem[] = [
     { label: "FAQ", href: "/faq" },
 ];
 
-const footerNavItems = [
-    { label: "About us", href: "/" },
-    { label: "Press", href: "/products" },
-    { label: "Careers", href: "/resources" },
-    { label: "Legal", href: "/pricing" },
-    { label: "Support", href: "/pricing" },
-    { label: "Contact", href: "/pricing" },
-    { label: "Sitemap", href: "/pricing" },
-    { label: "Cookie settings", href: "/pricing" },
-];
+// const footerNavItems = [
+//     { label: "About us", href: "/" },
+//     { label: "Press", href: "/products" },
+//     { label: "Careers", href: "/resources" },
+//     { label: "Legal", href: "/pricing" },
+//     { label: "Support", href: "/pricing" },
+//     { label: "Contact", href: "/pricing" },
+//     { label: "Sitemap", href: "/pricing" },
+//     { label: "Cookie settings", href: "/pricing" },
+// ];
 
 const MobileNavItem = (props: { className?: string; label: string; href?: string; children?: ReactNode }) => {
     const [isOpen, setIsOpen] = useState(false);
