@@ -63,30 +63,17 @@ const MobileNavItem = (props: { className?: string; label: string; href?: string
 
 const MobileFooter = ({ theme, toggleTheme }: { theme: string; toggleTheme: () => void }) => {
     return (
-        <div className="flex flex-col gap-8 border-t border-secondary px-4 py-6">
-            <div>
-                <ul className="grid grid-flow-col grid-cols-2 grid-rows-4 gap-x-6 gap-y-3">
-                    {footerNavItems.map((navItem) => (
-                        <li key={navItem.label}>
-                            <Button color="link-gray" size="lg" href={navItem.href}>
-                                {navItem.label}
-                            </Button>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className="flex flex-col gap-3">
-                <Button
-                    onClick={toggleTheme}
-                    color="secondary"
-                    size="lg"
-                    iconLeading={theme === "light" ? Moon01 : Sun}
-                    aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-                >
-                    {theme === "light" ? "Dark mode" : "Light mode"}
-                </Button>
-                <Button size="lg">Get started</Button>
-            </div>
+        <div className="flex flex-col gap-3 border-t border-secondary px-4 py-6">
+            <Button
+                onClick={toggleTheme}
+                color="secondary"
+                size="lg"
+                iconLeading={theme === "light" ? Moon01 : Sun}
+                aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+            >
+                {theme === "light" ? "Dark mode" : "Light mode"}
+            </Button>
+            <Button size="lg">Get started</Button>
         </div>
     );
 };

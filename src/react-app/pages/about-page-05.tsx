@@ -94,7 +94,7 @@ const teamMembers = [
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
-            { icon: Dribbble, href: "https://dribbble.com/" },
+            { icon: GitHub, href: "https://github.com/" },
         ],
     },
     {
@@ -105,29 +105,29 @@ const teamMembers = [
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
-            { icon: Dribbble, href: "https://dribbble.com/" },
+            { icon: GitHub, href: "https://github.com/" },
         ],
     },
     {
         name: "Gaurang Bansal",
         title: "Technical Project Manager",
         summary: "Leading AI project delivery and team coordination",
-        avatarUrl: "https://www.untitledui.com/images/avatars/sienna-hewitt?fm=webp&q=80",
+        avatarUrl: "https://www.untitledui.com/images/avatars/nikolas-gibbons?fm=webp&q=80",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
-            { icon: Dribbble, href: "https://dribbble.com/" },
+            { icon: GitHub, href: "https://github.com/" },
         ],
     },
     {
         name: "Shashwat Gupta",
         title: "Business Development Manager",
         summary: "US Based - Driving business growth and partnerships",
-        avatarUrl: "https://www.untitledui.com/images/avatars/lily-rose-chedjou?fm=webp&q=80",
+        avatarUrl: "/public/shashwat.jpg",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
-            { icon: Dribbble, href: "https://dribbble.com/" },
+            { icon: GitHub, href: "https://github.com/" },
         ],
     },
     {
@@ -138,7 +138,7 @@ const teamMembers = [
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
-            { icon: Dribbble, href: "https://dribbble.com/" },
+            { icon: GitHub, href: "https://github.com/" },
         ],
     },
     {
@@ -149,7 +149,7 @@ const teamMembers = [
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
-            { icon: Dribbble, href: "https://dribbble.com/" },
+            { icon: GitHub, href: "https://github.com/" },
         ],
     },
     {
@@ -160,7 +160,7 @@ const teamMembers = [
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
-            { icon: Dribbble, href: "https://dribbble.com/" },
+            { icon: GitHub, href: "https://github.com/" },
         ],
     },
     {
@@ -171,7 +171,7 @@ const teamMembers = [
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
-            { icon: Dribbble, href: "https://dribbble.com/" },
+            { icon: GitHub, href: "https://github.com/" },
         ],
     },
 ];
@@ -417,13 +417,13 @@ const TeamSectionSimple04 = () => {
                 <div className="mt-12 md:mt-16">
                     <ul className="grid w-full grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 md:gap-y-8 lg:grid-cols-3 xl:grid-cols-4">
                         {teamMembers.map((item) => (
-                            <li key={item.title} className="flex flex-col items-center gap-5 bg-secondary px-6 py-6 md:pr-4">
+                            <li key={item.title} className="flex h-full flex-col items-center gap-6 rounded-lg bg-secondary p-6">
                                 <Avatar src={item.avatarUrl} alt={item.name} size="2xl" className="size-24" />
-                                <div className="text-center">
+                                <div className="flex flex-1 flex-col items-center text-center">
                                     <h3 className="text-lg font-semibold text-primary">{item.name}</h3>
-                                    <p className="text-md text-brand-secondary">{item.title}</p>
-                                    <p className="mt-2 text-md text-tertiary">{item.summary}</p>
-                                    <ul className="mt-4 flex justify-center gap-4">
+                                    <p className="mt-1 text-md text-brand-secondary">{item.title}</p>
+                                    <p className="mt-3 text-md text-tertiary">{item.summary}</p>
+                                    <ul className="mt-auto flex justify-center gap-4 pt-5">
                                         {item.socials.map((social) => (
                                             <li key={social.href}>
                                                 <a

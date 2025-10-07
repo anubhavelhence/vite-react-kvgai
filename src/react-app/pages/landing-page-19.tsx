@@ -364,7 +364,8 @@ const CTACardHorizontal = () => {
                             <span className="hidden md:inline">Start your 30-day free trial</span>
                             <span className="md:hidden">Start your free trial</span>
                         </h2>
-                        <p className="mt-4 text-lg text-tertiary lg:text-xl">Join over 4,000+ startups already growing with Untitled.</p>
+                        <p className="mt-4 text-lg text-tertiary lg:text-xl">Join over 4,000+ startups already growing with KVGAI
+                        Tech.</p>
                     </div>
                     <div className="flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-start">
                         <Button color="secondary" size="xl">
@@ -477,7 +478,7 @@ const CTAScreenMockup01 = () => {
         <section className="overflow-hidden bg-primary py-16 md:py-24">
             <div className="mx-auto grid max-w-container grid-cols-1 items-center gap-16 px-4 md:px-8 lg:grid-cols-2">
                 <div className="flex w-full max-w-3xl flex-col">
-                    <h1 className="text-display-sm font-semibold text-primary md:text-display-lg">Join 4,000+ startups growing with Untitled</h1>
+                    <h1 className="text-display-sm font-semibold text-primary md:text-display-lg">Join 4,000+ startups growing with KVGAI Tech</h1>
                     <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                         {["30-day free trial", "Personalized onboarding", "Access to all features"].map((feat) => (
                             <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
