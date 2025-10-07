@@ -100,7 +100,7 @@ const teamMembers = [
         name: "Mehul Gera",
         title: "Managing Director",
         summary: "Ph.D. NTU Business School",
-        avatarUrl: "/public/mehul.jpeg",
+        avatarUrl: "/mehul.jpeg",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -111,7 +111,7 @@ const teamMembers = [
         name: "Gaurang Bansal",
         title: "Technical Project Manager",
         summary: "Leading AI project delivery and team coordination",
-        avatarUrl: "/public/Gaurang.jpeg",
+        avatarUrl: "/Gaurang.jpeg",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -122,7 +122,7 @@ const teamMembers = [
         name: "Shashwat Gupta",
         title: "Business Development Manager",
         summary: "US Based - Driving business growth and partnerships",
-        avatarUrl: "/public/shashwat.jpg",
+        avatarUrl: "/shashwat.jpg",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },

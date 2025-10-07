@@ -385,7 +385,7 @@ const TestimonialSimpleCentered02 = () => {
                         <KVGAILogo className="h-10" />
                     </div>
 
-                    <blockquote className="text-display-sm font-medium text-primary md:text-display-lg">
+                    <blockquote className="text-display-sm font-medium text-primary md:text-display-md">
                         Quagly Tech helped us move from fragmented AI experiments to a fully orchestrated, cost-efficient GenAI pipeline. Their deep technical expertise and responsiveness made a huge difference in accelerating our deployment
                     </blockquote>
                     <figcaption className="flex justify-center">
