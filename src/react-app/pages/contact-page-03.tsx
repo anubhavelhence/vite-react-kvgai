@@ -139,7 +139,7 @@ const ContactSectionIconCards03 = () => {
 
                 <div className="mt-12 flex flex-col gap-12 md:mt-16 md:gap-24">
                     <img
-                        src="/public/teamImageContactPage.jpg"
+                        src="/teamImageContactPage.jpg"
                         className="h-60 w-full object-cover md:h-100 lg:h-140"
                         alt="People discussion a topic"
                     />
