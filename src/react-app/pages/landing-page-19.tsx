@@ -189,7 +189,7 @@ interface FeatureTextIntegrationIcon extends TextCentered {
 }
 
 const FeatureTextIntegrationIconBox = ({ imgUrl, title, subtitle, footer }: FeatureTextIntegrationIcon) => (
-    <div className="mt-6 flex max-w-sm flex-col items-center gap-4 rounded-2xl bg-secondary px-6 pb-8 text-center">
+    <div className="mt-6 flex h-[250px] max-w-sm flex-col items-center gap-4 rounded-2xl bg-secondary px-6 pb-6 text-center">
         <span className="-mt-[26px] flex size-13 shrink-0 items-center justify-center rounded-lg bg-primary shadow-xs ring-1 ring-secondary ring-inset md:-mt-8 md:size-16 md:rounded-xl">
             <img
                 alt={title}
@@ -201,7 +201,7 @@ const FeatureTextIntegrationIconBox = ({ imgUrl, title, subtitle, footer }: Feat
             />
         </span>
 
-        <div>
+        <div className="flex flex-col flex-1 justify-start">
             <h3 className="text-lg font-semibold text-primary">{title}</h3>
             <p className="mt-1 text-md text-tertiary">{subtitle}</p>
         </div>
@@ -393,7 +393,8 @@ const TestimonialSimpleCentered02 = () => {
                             <Avatar src="https://inskin.in/cdn/shop/files/Dr._Deepak_Chitkara_inskin.jpg?crop=center&height=1000&v=1685081974&width=1000" alt="Amelie Laurent" size="2xl" />
                             <div className="flex flex-col gap-1">
                                 <p className="text-lg font-semibold text-primary">Deepak Chitkara</p>
-                                <cite className="text-md text-tertiary not-italic">CTO, Draco Automotive (UAE)</cite>
+                                <cite className="text-md text-tertiary not-italic">Associate Professor, BITS Pilani`<br />
+                                Founder Zernyx Innovations</cite>
                             </div>
                         </div>
                     </figcaption>
