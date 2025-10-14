@@ -393,7 +393,7 @@ const TestimonialSimpleCentered02 = () => {
                             <Avatar src="https://inskin.in/cdn/shop/files/Dr._Deepak_Chitkara_inskin.jpg?crop=center&height=1000&v=1685081974&width=1000" alt="Amelie Laurent" size="2xl" />
                             <div className="flex flex-col gap-1">
                                 <p className="text-lg font-semibold text-primary">Deepak Chitkara</p>
-                                <cite className="text-md text-tertiary not-italic">Associate Professor, BITS Pilani`<br />
+                                <cite className="text-md text-tertiary not-italic">Associate Professor, BITS Pilani<br />
                                 Founder Zernyx Innovations</cite>
                             </div>
                         </div>
