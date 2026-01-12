@@ -5,7 +5,7 @@ import { Avatar } from "@/components/base/avatar/avatar";
 import { Button } from "@/components/base/buttons/button";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { cx } from "@/utils/cx";
-import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
+import { FooterLarge01 } from "./landing-page-19";
 
 const faqsExtended = [
     {
@@ -466,10 +466,6 @@ const FAQPage05 = () => {
 
             <FeaturesIntegrationsIcons02 />
 
-            {/* <SimpleCentered /> */}
-            <NewsletterSimpleLeft/>
-
-            {/* <FooterLarge06 /> */}
             <FooterLarge01/>
         </div>
     );

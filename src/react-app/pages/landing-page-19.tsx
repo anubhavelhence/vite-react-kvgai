@@ -368,7 +368,6 @@ const CTACardHorizontal = () => {
                         <Button color="secondary" size="xl">
                             Learn more
                         </Button>
-                        <Button size="xl">Get started</Button>
                     </div>
                 </div>
             </div>
@@ -486,7 +485,6 @@ const CTAScreenMockup01 = () => {
                         <Button color="secondary" size="xl">
                             Learn more
                         </Button>
-                        <Button size="xl">Get started</Button>
                     </div>
                 </div>
 
@@ -624,8 +622,6 @@ const LandingPage19 = () => {
             <TestimonialSimpleCentered02 />
 
             <CTAScreenMockup01 />
-
-            <NewsletterSimpleLeft />
 
             <FooterLarge01 />
         </div>

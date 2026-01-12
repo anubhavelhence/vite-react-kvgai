@@ -28,7 +28,7 @@ import {  GitHub,  LinkedIn, X } from "@/components/foundations/social-icons";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
-import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
+import { FooterLarge01 } from "./landing-page-19";
 
 const jobs: JobCard01Props[] = [
     {
@@ -821,10 +821,6 @@ const AboutPage05 = () => {
 
             <TestimonialAbstractImage />
 
-            {/* <SimpleCentered /> */}
-            <NewsletterSimpleLeft/>
-
-            {/* <FooterLarge05 /> */}
             <FooterLarge01/>
         </div>
     );

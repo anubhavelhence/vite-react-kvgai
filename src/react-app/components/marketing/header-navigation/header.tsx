@@ -74,7 +74,6 @@ const MobileFooter = ({ theme, toggleTheme }: { theme: string; toggleTheme: () =
             >
                 {theme === "light" ? "Dark mode" : "Light mode"}
             </Button>
-            <Button size="lg">Get started</Button>
         </div>
     );
 };
@@ -172,7 +171,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                         </ul>
                     </nav>
 
-                    {/* Right side - Dark mode toggle and Get started button */}
+                    {/* Right side - Dark mode toggle */}
                     <div className="hidden items-center gap-3 md:flex">
                         <Button
                             onClick={toggleTheme}
@@ -181,9 +180,6 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                             iconLeading={theme === "light" ? Moon01 : Sun}
                             aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
                         />
-                        <Button color="primary" size={isFloating ? "md" : "lg"}>
-                            Get started
-                        </Button>
                     </div>
 
                     {/* Mobile menu and menu trigger */}
