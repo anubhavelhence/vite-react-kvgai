@@ -582,9 +582,22 @@ export const FooterLarge01 = () => {
                         ))}
                     </ul>
                 </nav> */}
-                <div className="mt-12 flex flex-col justify-between gap-6 border-t border-secondary pt-8 md:mt-16 md:flex-row md:items-center">
-                    <KVGAILogo className="h-8 w-min" />
-                    <p className="text-md text-quaternary">© 2025 KVGAI Tech. All rights reserved.</p>
+                <div className="mt-12 border-t border-secondary pt-8 md:mt-16">
+                    <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
+                        <KVGAILogo className="h-8 w-min" />
+                        <nav className="flex flex-wrap gap-x-6 gap-y-2">
+                            <Button color="link-gray" size="md" href="/privacy-policy">
+                                Privacy Policy
+                            </Button>
+                            <Button color="link-gray" size="md" href="/terms-conditions">
+                                Terms & Conditions
+                            </Button>
+                            <Button color="link-gray" size="md" href="/account-deletion-policy">
+                                Account Deletion
+                            </Button>
+                        </nav>
+                    </div>
+                    <p className="text-md text-quaternary mt-6">© 2025 KVGAI Tech. All rights reserved.</p>
                 </div>
             </div>
         </footer>
