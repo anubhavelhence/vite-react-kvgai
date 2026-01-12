@@ -1,4 +1,4 @@
-import { Trash01, Mail01, Settings02, LinkExternal01, Phone01, Clock, CheckCircle, AlertCircle } from "@untitledui/icons";
+import { Trash01, Mail01, LinkExternal01, Phone01, Clock, CheckCircle, AlertCircle } from "@untitledui/icons";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
