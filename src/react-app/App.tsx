@@ -6,9 +6,9 @@ import ContactPage03 from '@/pages/contact-page-03';
 import PrivacyPolicyPage from '@/pages/privacy-policy';
 import TermsConditionsPage from '@/pages/terms-conditions';
 import AccountDeletionPolicyPage from '@/pages/account-deletion-policy';
-import PrivacyPolicy1Page from '@/pages/privacy-policy-1';
-import TermsConditions1Page from '@/pages/terms-conditions-1';
-import AccountDeletionPolicy1Page from '@/pages/account-deletion-policy-1';
+import PrivacyPolicySmartMedPage from '@/pages/privacy-policy-smartmed';
+import TermsConditionsSmartMedPage from '@/pages/terms-conditions-smartmed';
+import AccountDeletionPolicySmartMedPage from '@/pages/account-deletion-policy-smartmed';
 import { ScrollToTop } from '@/components/ScrollToTop';
 
 function App() {
@@ -23,9 +23,9 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-conditions" element={<TermsConditionsPage />} />
         <Route path="/account-deletion-policy" element={<AccountDeletionPolicyPage />} />
-        <Route path="/privacy-policy-1" element={<PrivacyPolicy1Page />} />
-        <Route path="/terms-conditions-1" element={<TermsConditions1Page />} />
-        <Route path="/account-deletion-policy-1" element={<AccountDeletionPolicy1Page />} />
+        <Route path="/privacy-policy/smartmed" element={<PrivacyPolicySmartMedPage />} />
+        <Route path="/terms-conditions/smartmed" element={<TermsConditionsSmartMedPage />} />
+        <Route path="/account-deletion-policy/smartmed" element={<AccountDeletionPolicySmartMedPage />} />
       </Routes>
     </>
   );

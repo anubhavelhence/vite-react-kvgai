@@ -1,9 +1,9 @@
-import { File05, Mail01, Users01, Shield01, ImageIndentLeft, AlertTriangle, Settings01, CheckCircle } from "@untitledui/icons";
+import { File05, Mail01, Users01, Shield01, AlertTriangle, Settings01, CheckCircle, ShoppingCart01, Package } from "@untitledui/icons";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
 
-const TermsConditions1Page = () => {
+const TermsConditionsSmartMedPage = () => {
     return (
         <div className="bg-primary">
             <Header isFloating />
@@ -21,10 +21,10 @@ const TermsConditions1Page = () => {
                     <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                         <FeaturedIcon icon={File05} color="brand" theme="light" size="xl" />
                         <h1 className="mt-4 text-display-md font-semibold text-primary md:mt-6 md:text-display-lg">
-                            Terms & Conditions
+                            Terms & Conditions – SmartMed
                         </h1>
                         <p className="mt-4 text-lg text-tertiary md:text-xl">
-                            Please read these terms carefully before using This app
+                            Please read these terms carefully before using SmartMed
                         </p>
                         <p className="mt-6 text-sm text-quaternary">
                             Last updated: March 2026
@@ -39,7 +39,7 @@ const TermsConditions1Page = () => {
                     <div className="mx-auto max-w-3xl">
                         <div className="rounded-2xl bg-brand-secondary/10 p-6 ring-1 ring-brand-secondary/20 ring-inset md:p-8">
                             <p className="text-base text-tertiary md:text-lg">
-                                These Terms & Conditions govern your use of the This app mobile application, operated by <span className="font-semibold text-primary">KVGAI TECH PRIVATE LIMITED</span>. By using the app, you agree to these terms.
+                                These Terms & Conditions govern the use of the SmartMed mobile application, operated by <span className="font-semibold text-primary">KVGAI TECH PRIVATE LIMITED</span>. By using SmartMed, you agree to these terms.
                             </p>
                         </div>
                     </div>
@@ -66,24 +66,26 @@ const TermsConditions1Page = () => {
                                 </div>
                                 <div className="flex items-start gap-3 rounded-xl bg-secondary p-4 ring-1 ring-secondary ring-inset">
                                     <CheckCircle className="mt-0.5 size-5 shrink-0 text-success-primary" />
-                                    <span className="text-sm text-tertiary md:text-base">Must provide accurate information during signup</span>
+                                    <span className="text-sm text-tertiary md:text-base">Users must provide accurate information during signup</span>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Account & Login */}
+                        {/* Accounts */}
                         <div>
                             <div className="mb-6 flex items-center gap-3 md:gap-4">
                                 <FeaturedIcon icon={Shield01} color="brand" theme="modern" size="md" className="md:size-12" />
                                 <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    Account & Login
+                                    Accounts
                                 </h2>
                             </div>
+                            <p className="mb-4 text-sm text-tertiary md:text-base">
+                                SmartMed requires account creation using email and phone number. You are responsible for:
+                            </p>
                             <div className="space-y-3">
                                 {[
-                                    "The app requires account creation using email and password",
-                                    "Users are responsible for maintaining the confidentiality of their login credentials",
-                                    "You are responsible for all activity under your account"
+                                    "Keeping your login credentials secure",
+                                    "All activity performed through your account"
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-start gap-3">
                                         <CheckCircle className="mt-0.5 size-5 shrink-0 text-brand-secondary" />
@@ -93,20 +95,24 @@ const TermsConditions1Page = () => {
                             </div>
                         </div>
 
-                        {/* User Content */}
+                        {/* App Purpose */}
                         <div>
                             <div className="mb-6 flex items-center gap-3 md:gap-4">
-                                <FeaturedIcon icon={ImageIndentLeft} color="brand" theme="modern" size="md" className="md:size-12" />
+                                <FeaturedIcon icon={Package} color="brand" theme="modern" size="md" className="md:size-12" />
                                 <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    User Content
+                                    App Purpose
                                 </h2>
                             </div>
                             <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset md:p-8">
-                                <div className="space-y-3">
+                                <p className="mb-4 text-sm text-tertiary md:text-base">
+                                    SmartMed is designed to help pharmacies and medical stores track:
+                                </p>
+                                <div className="grid gap-3 sm:grid-cols-2 md:gap-4">
                                     {[
-                                        "Users can post images and content within the app",
-                                        "Users retain ownership of their content",
-                                        "By posting, you grant This app the right to display the content"
+                                        "Medicine inventory",
+                                        "Stock levels",
+                                        "Purchase and selling prices",
+                                        "Sales totals"
                                     ].map((item, idx) => (
                                         <div key={idx} className="flex items-start gap-3">
                                             <CheckCircle className="mt-0.5 size-5 shrink-0 text-success-primary" />
@@ -118,19 +124,41 @@ const TermsConditions1Page = () => {
                                     <div className="flex items-start gap-3">
                                         <AlertTriangle className="mt-0.5 size-5 shrink-0 text-warning-primary" />
                                         <span className="text-sm font-medium text-warning-primary">
-                                            Content that is offensive, illegal, misleading, or violates rights may be removed
+                                            SmartMed does not process payments. All financial values are entered by the user for record-keeping only.
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* App Usage - Prohibited Activities */}
+                        {/* User Data */}
+                        <div>
+                            <div className="mb-6 flex items-center gap-3 md:gap-4">
+                                <FeaturedIcon icon={ShoppingCart01} color="brand" theme="modern" size="md" className="md:size-12" />
+                                <h2 className="text-xl font-semibold text-primary md:text-display-xs">
+                                    User Data
+                                </h2>
+                            </div>
+                            <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset md:p-8">
+                                <div className="space-y-3">
+                                    <div className="flex items-start gap-3">
+                                        <CheckCircle className="mt-0.5 size-5 shrink-0 text-success-primary" />
+                                        <span className="text-sm text-tertiary md:text-base">You are responsible for the accuracy of the inventory and price data you enter into the app</span>
+                                    </div>
+                                    <div className="flex items-start gap-3">
+                                        <AlertTriangle className="mt-0.5 size-5 shrink-0 text-warning-primary" />
+                                        <span className="text-sm text-tertiary md:text-base">We are not responsible for losses caused by incorrect or outdated data</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Acceptable Use - Prohibited Activities */}
                         <div>
                             <div className="mb-6 flex items-center gap-3 md:gap-4">
                                 <FeaturedIcon icon={AlertTriangle} color="error" theme="modern" size="md" className="md:size-12" />
                                 <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    Prohibited Activities
+                                    Acceptable Use
                                 </h2>
                             </div>
                             <div className="rounded-2xl bg-error-secondary/30 p-6 ring-1 ring-error-secondary/50 ring-inset md:p-8">
@@ -139,9 +167,9 @@ const TermsConditions1Page = () => {
                                 </p>
                                 <div className="space-y-3">
                                     {[
-                                        "Misuse the app",
-                                        "Upload harmful, illegal, or copyrighted content",
-                                        "Attempt to disrupt app functionality or security"
+                                        "Use the app for illegal purposes",
+                                        "Upload false, harmful, or misleading data",
+                                        "Attempt to hack, disrupt, or misuse the system"
                                     ].map((item, idx) => (
                                         <div key={idx} className="flex items-start gap-3">
                                             <div className="mt-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-error-primary">
@@ -156,24 +184,24 @@ const TermsConditions1Page = () => {
                             </div>
                         </div>
 
-                        {/* App Changes & Liability */}
+                        {/* App Availability & Liability */}
                         <div className="grid gap-6 sm:grid-cols-2 md:gap-8">
                             <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset">
                                 <div className="mb-3 flex items-center gap-3">
                                     <FeaturedIcon icon={Settings01} color="brand" theme="modern" size="sm" />
-                                    <h3 className="text-lg font-semibold text-primary">App Changes</h3>
+                                    <h3 className="text-lg font-semibold text-primary">App Availability</h3>
                                 </div>
                                 <p className="text-sm text-tertiary">
-                                    We may update, modify, or discontinue features at any time to improve functionality or comply with legal requirements.
+                                    We may update, modify, or discontinue parts of SmartMed to improve performance or comply with legal requirements.
                                 </p>
                             </div>
                             <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset">
                                 <div className="mb-3 flex items-center gap-3">
                                     <FeaturedIcon icon={Shield01} color="brand" theme="modern" size="sm" />
-                                    <h3 className="text-lg font-semibold text-primary">Liability</h3>
+                                    <h3 className="text-lg font-semibold text-primary">Limitation of Liability</h3>
                                 </div>
                                 <p className="text-sm text-tertiary">
-                                    This app and KVGAI TECH PRIVATE LIMITED are not liable for damages from use or inability to use the app.
+                                    KVGAI TECH PRIVATE LIMITED is not responsible for business losses, incorrect stock values, or financial decisions made using the app.
                                 </p>
                             </div>
                         </div>
@@ -183,7 +211,7 @@ const TermsConditions1Page = () => {
                             <div className="flex flex-col items-center text-center">
                                 <FeaturedIcon icon={Mail01} color="brand" theme="modern" size="lg" />
                                 <h2 className="mt-4 text-xl font-semibold text-primary md:text-display-xs">
-                                    Questions About Terms?
+                                    Contact
                                 </h2>
                                 <p className="mt-2 max-w-md text-sm text-tertiary md:text-base">
                                     For any questions regarding these Terms & Conditions, contact us:
@@ -208,4 +236,4 @@ const TermsConditions1Page = () => {
     );
 };
 
-export default TermsConditions1Page;
+export default TermsConditionsSmartMedPage;
