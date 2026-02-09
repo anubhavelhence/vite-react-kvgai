@@ -58,7 +58,7 @@ const teamMembers = [
         name: "Anubhav Elhence",
         title: "CEO",
         summary: "Ph.D. BITS Pilani",
-        avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGhVAVv_nS-Ew/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1676404308950?e=1762387200&v=beta&t=AziGvTXTNDia9GdUIq8OcopN_jqJR7DXlUNRcz1uvF8",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGhVAVv_nS-Ew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1676404308950?e=1772064000&v=beta&t=Gb-Sd2Wy9aIhvNOaK34iMgz1Qdu-yPnz15bM4UQDREg",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -102,7 +102,7 @@ const teamMembers = [
         name: "Rishi Garg",
         title: "GenAI Expert",
         summary: "Hackathon Winner - Specializing in cutting-edge AI solutions",
-        avatarUrl: "https://media.licdn.com/dms/image/v2/D4E03AQGCMthHyA25Bg/profile-displayphoto-scale_200_200/B4EZkFd89.IIAg-/0/1756733363576?e=1762387200&v=beta&t=54lgHQcnMc3FzTOihwS9LM1g8P-04B1EDfvpxvvpeG8",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D4E03AQGCMthHyA25Bg/profile-displayphoto-crop_800_800/B4EZkFd89.IIAQ-/0/1756733363487?e=1772064000&v=beta&t=9KSxSHNzbSgMYegqYhBm6I-OWuZb-PD8KSOBOdIu3eQ",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -113,7 +113,7 @@ const teamMembers = [
         name: "Hardik Batwal",
         title: "Backend GenAI Engineer",
         summary: "Building robust AI backend systems and infrastructure",
-        avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQGYCC8Erf0Nyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724496368878?e=1762387200&v=beta&t=UL3tTBrfIV8YOtsPUhsR3UTI9VO-e8dW6D71c5l-bAY",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQHs_XcJyCuTKg/profile-displayphoto-crop_800_800/B56ZqRzi9wJ8AM-/0/1763382802601?e=1772064000&v=beta&t=jYfUMi2Q-3eCEWS9lz0dtWiCnNjLJX-gKzylchbeJwU",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -124,7 +124,7 @@ const teamMembers = [
         name: "Kartik Jain",
         title: "Backend GenAI Engineer",
         summary: "Developing advanced GenAI backend solutions",
-        avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGedTmtVDkjgA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721106144959?e=1762387200&v=beta&t=QQW3GE8frPIoyGzKTnliWLibT3oejHfB4SIC-bfJy_0",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGedTmtVDkjgA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721106144959?e=1772064000&v=beta&t=5viN_I_D71MecHlQM0Bcb6_U9xMhOPo7XorxorE70R0",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -135,7 +135,7 @@ const teamMembers = [
         name: "Sujit Kumar Pradhan",
         title: "Frontend Developer",
         summary: "Crafting beautiful and responsive user interfaces",
-        avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQFduKp9okD2MQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730548581594?e=1762387200&v=beta&t=rJxl2djKyEo7bwFqVDremiLyWf9TDHZHr4h1zYGT6O0",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQFduKp9okD2MQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730548581608?e=1772064000&v=beta&t=yTt3JcGtGY2Qj3EBQ2LEYinBF_gP8bCJFYgZV_O5kfA",
         socials: [
             { icon: X, href: "https://x.com/" },
             { icon: LinkedIn, href: "https://www.linkedin.com/" },
@@ -538,7 +538,7 @@ const reviews = [
         author: {
             name: "Kartik Jain",
             title: "Backend GenAI Engineer",
-            avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGedTmtVDkjgA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721106144959?e=1762387200&v=beta&t=QQW3GE8frPIoyGzKTnliWLibT3oejHfB4SIC-bfJy_0",
+            avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGedTmtVDkjgA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721106144959?e=1772064000&v=beta&t=5viN_I_D71MecHlQM0Bcb6_U9xMhOPo7XorxorE70R0",
         },
     },
     {
@@ -546,7 +546,7 @@ const reviews = [
         author: {
             name: "Hardik Batwal",
             title: "Backend GenAI Engineer",
-            avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQGYCC8Erf0Nyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724496368878?e=1762387200&v=beta&t=UL3tTBrfIV8YOtsPUhsR3UTI9VO-e8dW6D71c5l-bAY",
+            avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQHs_XcJyCuTKg/profile-displayphoto-crop_800_800/B56ZqRzi9wJ8AM-/0/1763382802601?e=1772064000&v=beta&t=jYfUMi2Q-3eCEWS9lz0dtWiCnNjLJX-gKzylchbeJwU",
         },
     },
     {
