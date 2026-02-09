@@ -142,6 +142,16 @@ const teamMembers = [
             { icon: GitHub, href: "https://github.com/" },
         ],
     },
+    {
+        name: "Arya Pitre",
+        title: "Product Experience Designer",
+        summary: "Designing intuitive and delightful product experiences",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D4D03AQEpJRnGHIqrVw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700732421462?e=1772064000&v=beta&t=Nttuhv0qQloj_Lxf6PPvS3aIM78U24ErdnyljzaqDa8",
+        socials: [
+            { icon: X, href: "https://x.com/" },
+            { icon: LinkedIn, href: "https://www.linkedin.com/in/arya-pitre-08949a225/" },
+        ],
+    },
 ];
 
 // const footerSocials = [
