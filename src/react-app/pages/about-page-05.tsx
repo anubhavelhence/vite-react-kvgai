@@ -152,6 +152,16 @@ const teamMembers = [
             { icon: LinkedIn, href: "https://www.linkedin.com/in/arya-pitre-08949a225/" },
         ],
     },
+    {
+        name: "Dishita Simlot",
+        title: "Business Operations",
+        summary: "Streamlining operations and driving business efficiency",
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQEveGmSH6lqVA/profile-displayphoto-shrink_800_800/B56ZcVmmOyHgAc-/0/1748414130091?e=1772064000&v=beta&t=gpdBVrKFhtNEC5ATkzFTAEDhBZD-5E1w4pkfxN2osl4",
+        socials: [
+            { icon: X, href: "https://x.com/" },
+            { icon: LinkedIn, href: "https://www.linkedin.com/in/dishita-simlot-06a611283/" },
+        ],
+    },
 ];
 
 // const footerSocials = [
