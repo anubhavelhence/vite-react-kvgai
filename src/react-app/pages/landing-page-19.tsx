@@ -595,7 +595,7 @@ export const FooterLarge01 = () => {
                             </Button>
                         </nav>
                     </div>
-                    <p className="text-md text-quaternary mt-6">© 2025 KVGAI Tech. All rights reserved.</p>
+                    <p className="text-md text-quaternary mt-6">© 2026 KVGAI Tech. All rights reserved.</p>
                 </div>
             </div>
         </footer>
