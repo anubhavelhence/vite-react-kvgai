@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
 
 const RAZORPAY_KEY_ID = "rzp_live_SE3HBe2FmjrwbJ";
-const BOOTCAMP_PRICE = 20;
+const BOOTCAMP_PRICE = 100;
 const BOOTCAMP_PRICE_PAISE = BOOTCAMP_PRICE * 100;
 const ORIGINAL_PRICE = 499;
 const TOTAL_SEATS = 50;
@@ -257,6 +257,7 @@ const HeroSection = () => {
                         </span>
                     </div>
                     <CTAButton />
+                    <p className="mt-1 text-xs text-gray-500">You are paying ₹{BOOTCAMP_PRICE} to reserve a seat for a live AI protocols bootcamp at BITS Pilani.</p>
                     <p className="mt-1 text-xs text-gray-500">Secure checkout via Razorpay • Instant confirmation on email</p>
                 </motion.div>
             </div>
@@ -266,7 +267,7 @@ const HeroSection = () => {
 
 // ─── SESSION BREAKDOWN ───
 const WhatYoullBuildSection = () => (
-    <section className="bg-[#0c0c14] py-16 md:py-24">
+    <section id="session-breakdown" className="bg-[#0c0c14] py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-6 md:px-8">
             <FadeIn className="text-center">
                 <h2 className="text-2xl font-bold text-white md:text-3xl">
@@ -363,7 +364,7 @@ const bonusItems = [
 ];
 
 const BonusSection = () => (
-    <section className="bg-[#0a0a0f] py-16 md:py-24">
+    <section id="what-you-get" className="bg-[#0a0a0f] py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-6 md:px-8">
             <FadeIn className="text-center">
                 <h2 className="text-2xl font-bold text-white md:text-3xl">What You Get</h2>
@@ -407,7 +408,7 @@ const FAQSection = () => {
         },
         {
             q: "What if I can't attend after paying?",
-            a: "We'll share the session recording and all materials with registered attendees. But the live experience with Q&A is far more valuable. Try to make it!",
+            a: "All payments are non-refundable once registration is confirmed. However, you'll still receive the session recording, demo repos, cheat sheet, and community access. If the event is cancelled by us, a full refund will be issued. The live experience with Q&A is far more valuable though — try to make it!",
         },
         {
             q: "What are MCP, A2A, and A2UI?",
@@ -420,7 +421,7 @@ const FAQSection = () => {
     ];
 
     return (
-        <section className="bg-[#0c0c14] py-16 md:py-24">
+        <section id="faq" className="bg-[#0c0c14] py-16 md:py-24">
             <div className="mx-auto max-w-3xl px-6 md:px-8">
                 <FadeIn className="text-center">
                     <h2 className="text-2xl font-bold text-white md:text-3xl">Frequently Asked Questions</h2>
@@ -462,6 +463,25 @@ const FAQSection = () => {
         </section>
     );
 };
+
+// ─── REFUND POLICY ───
+const RefundPolicySection = () => (
+    <section id="refund-policy" className="bg-[#0a0a0f] py-12 md:py-16">
+        <div className="mx-auto max-w-3xl px-6 md:px-8">
+            <FadeIn>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-8">
+                    <h2 className="text-xl font-bold text-white md:text-2xl">Refund &amp; Cancellation Policy</h2>
+                    <div className="mt-4 space-y-3 text-sm text-gray-400 leading-relaxed">
+                        <p>This is a low-cost, limited-seat live bootcamp. <span className="text-white font-medium">All payments are non-refundable</span> once the registration is confirmed.</p>
+                        <p>In case of event cancellation from our side, a <span className="text-white font-medium">full refund will be issued</span> within 5–7 business days to the original payment method.</p>
+                        <p>If you are unable to attend after registering, you will still receive the session recording, demo repos, cheat sheet, and community access — so nothing is lost.</p>
+                        <p className="text-gray-500">For any queries, reach out to us at <a href="mailto:support@kvgai.com" className="text-violet-400 hover:underline">support@kvgai.com</a></p>
+                    </div>
+                </div>
+            </FadeIn>
+        </div>
+    </section>
+);
 
 // ─── REGISTRATION FORM ───
 type FormStatus = "idle" | "loading" | "success" | "error";
@@ -614,6 +634,12 @@ const RegistrationSection = () => {
                                     <span className="hidden sm:inline">•</span>
                                     <span>Powered by Razorpay</span>
                                 </div>
+                                <p className="mt-2 text-center text-xs text-gray-500">
+                                    By registering, you agree to our{" "}
+                                    <Link to="/terms-conditions" className="text-violet-400 hover:underline">Terms &amp; Conditions</Link>,{" "}
+                                    <Link to="/privacy-policy" className="text-violet-400 hover:underline">Privacy Policy</Link>, and{" "}
+                                    <span className="text-violet-400 cursor-pointer hover:underline" onClick={() => document.getElementById("refund-policy")?.scrollIntoView({ behavior: "smooth" })}>Refund Policy</span>.
+                                </p>
                             </form>
                     </div>
                 </FadeIn>
@@ -624,15 +650,33 @@ const RegistrationSection = () => {
 
 // ─── FOOTER ───
 const FooterBootcamp = () => (
-    <footer className="border-t border-white/5 bg-[#0a0a0f] py-8 pb-24 md:pb-8">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row md:px-8">
-            <KVGAILogo className="h-7 brightness-0 invert opacity-60" />
-            <nav className="flex flex-wrap items-center gap-6 text-sm text-gray-500">
-                <Link to="/privacy-policy" className="transition hover:text-gray-300">Privacy Policy</Link>
-                <Link to="/terms-conditions" className="transition hover:text-gray-300">Terms & Conditions</Link>
-                <Link to="/contact" className="transition hover:text-gray-300">Contact</Link>
+    <footer className="border-t border-white/10 bg-[#0c0c14] pt-10 pb-32 md:pb-24">
+        <div className="mx-auto max-w-4xl px-6 md:px-8">
+            {/* Logo */}
+            <div className="flex justify-center">
+                <KVGAILogo className="h-7 brightness-0 invert opacity-80" />
+            </div>
+
+            {/* Nav links — grid on mobile, inline on desktop */}
+            <nav className="mt-6 grid grid-cols-2 gap-3 text-center text-sm text-gray-400 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-5 sm:gap-y-2">
+                <a href="#register" className="transition hover:text-white">Register</a>
+                <a href="#session-breakdown" className="transition hover:text-white">Session Breakdown</a>
+                <a href="#what-you-get" className="transition hover:text-white">What You Get</a>
+                <a href="#faq" className="transition hover:text-white">FAQ</a>
+                <a href="#refund-policy" className="transition hover:text-white">Refund Policy</a>
+                <Link to="/privacy-policy" className="transition hover:text-white">Privacy Policy</Link>
+                <Link to="/terms-conditions" className="col-span-2 transition hover:text-white">Terms & Conditions</Link>
             </nav>
-            <p className="text-sm text-gray-600">© 2026 KVGAI Tech</p>
+
+            {/* Divider */}
+            <div className="mx-auto mt-6 h-px w-full max-w-md bg-white/5" />
+
+            {/* Business info */}
+            <div className="mt-6 text-center">
+                <p className="text-sm text-gray-300">© 2026 KVGAI Tech</p>
+                <p className="mt-1.5 text-xs text-gray-400">India-based AI education &amp; consulting initiative</p>
+                <p className="mt-1 text-xs text-gray-400"><a href="mailto:support@kvgai.com" className="text-violet-400 hover:underline transition">support@kvgai.com</a></p>
+            </div>
         </div>
     </footer>
 );
@@ -643,8 +687,9 @@ const BootcampPage = () => (
         <HeroSection />
         <WhatYoullBuildSection />
         <BonusSection />
-        <FAQSection />
         <RegistrationSection />
+        <FAQSection />
+        <RefundPolicySection />
         <FooterBootcamp />
         <StickyCTA />
     </div>

@@ -32,7 +32,7 @@ app.post("/api/bootcamp/create-order", async (c) => {
 			Authorization: `Basic ${auth}`,
 		},
 		body: JSON.stringify({
-			amount: 2000, // ₹20 in paise
+			amount: 10000, // ₹100 in paise
 			currency: "INR",
 			receipt: `bootcamp_${Date.now()}`,
 			notes: {
