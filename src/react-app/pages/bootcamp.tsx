@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
 
 const RAZORPAY_KEY_ID = "rzp_live_SE3HBe2FmjrwbJ";
-const BOOTCAMP_PRICE = 100;
+const BOOTCAMP_PRICE = 30;
 const BOOTCAMP_PRICE_PAISE = BOOTCAMP_PRICE * 100;
-const ORIGINAL_PRICE = 499;
+const ORIGINAL_PRICE = 200;
 const TOTAL_SEATS = 50;
 
 declare global {

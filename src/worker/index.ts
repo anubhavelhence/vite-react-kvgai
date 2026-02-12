@@ -1,6 +1,9 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 
+const GOOGLE_SHEET_URL =
+	"https://script.google.com/macros/s/AKfycbxvJkp2Hm4l8BLNr1I_v71_LFFVb1GgODAEkPHRbpkXtb-kX5EZPrNOxNCf_rcU0jgtLg/exec";
+
 const app = new Hono<{ Bindings: Env & { RAZORPAY_KEY_ID: string; RAZORPAY_KEY_SECRET: string } }>();
 
 app.use("/api/*", cors());
@@ -32,7 +35,7 @@ app.post("/api/bootcamp/create-order", async (c) => {
 			Authorization: `Basic ${auth}`,
 		},
 		body: JSON.stringify({
-			amount: 10000, // ₹100 in paise
+			amount: 3000, // ₹30 in paise
 			currency: "INR",
 			receipt: `bootcamp_${Date.now()}`,
 			notes: {
@@ -98,15 +101,21 @@ app.post("/api/bootcamp/verify-payment", async (c) => {
 		return c.json({ error: "Payment verification failed" }, 400);
 	}
 
-	// Payment verified successfully
-	console.log("Payment verified:", {
-		orderId: body.razorpay_order_id,
-		paymentId: body.razorpay_payment_id,
-		name: body.name,
-		email: body.email,
-		phone: body.phone,
-		college: body.college,
-	});
+	// Payment verified successfully — log to Google Sheet async
+	c.executionCtx.waitUntil(
+		fetch(GOOGLE_SHEET_URL, {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({
+				name: body.name,
+				email: body.email,
+				phone: body.phone,
+				college: body.college || "",
+				paymentId: body.razorpay_payment_id,
+				orderId: body.razorpay_order_id,
+			}),
+		}).catch((err) => console.error("Google Sheet log failed:", err))
+	);
 
 	return c.json({
 		success: true,
