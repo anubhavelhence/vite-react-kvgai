@@ -521,7 +521,7 @@ const RegistrationSection = () => {
                 key: RAZORPAY_KEY_ID,
                 amount: BOOTCAMP_PRICE_PAISE,
                 currency: "INR",
-                name: "KVGAI Tech",
+                name: "KVGAI TECH PRIVATE LIMITED",
                 description: "Next-Gen AI Protocols Bootcamp — 13 Feb, BITS Pilani",
                 order_id: orderData.orderId,
                 prefill: { name, email, contact: phone },
@@ -638,7 +638,7 @@ const RegistrationSection = () => {
                                     By registering, you agree to our{" "}
                                     <Link to="/terms-conditions" className="text-violet-400 hover:underline">Terms &amp; Conditions</Link>,{" "}
                                     <Link to="/privacy-policy" className="text-violet-400 hover:underline">Privacy Policy</Link>, and{" "}
-                                    <span className="text-violet-400 cursor-pointer hover:underline" onClick={() => document.getElementById("refund-policy")?.scrollIntoView({ behavior: "smooth" })}>Refund Policy</span>.
+                                    <Link to="/refund-policy" className="text-violet-400 hover:underline">Refund Policy</Link>.
                                 </p>
                             </form>
                     </div>
@@ -663,9 +663,11 @@ const FooterBootcamp = () => (
                 <a href="#session-breakdown" className="transition hover:text-white">Session Breakdown</a>
                 <a href="#what-you-get" className="transition hover:text-white">What You Get</a>
                 <a href="#faq" className="transition hover:text-white">FAQ</a>
-                <a href="#refund-policy" className="transition hover:text-white">Refund Policy</a>
+                <Link to="/refund-policy" className="transition hover:text-white">Refund Policy</Link>
                 <Link to="/privacy-policy" className="transition hover:text-white">Privacy Policy</Link>
-                <Link to="/terms-conditions" className="col-span-2 transition hover:text-white">Terms & Conditions</Link>
+                <Link to="/terms-conditions" className="transition hover:text-white">Terms & Conditions</Link>
+                <Link to="/shipping-delivery" className="transition hover:text-white">Shipping & Delivery</Link>
+                <Link to="/contact" className="transition hover:text-white">Contact Us</Link>
             </nav>
 
             {/* Divider */}
@@ -673,9 +675,13 @@ const FooterBootcamp = () => (
 
             {/* Business info */}
             <div className="mt-6 text-center">
-                <p className="text-sm text-gray-300">© 2026 KVGAI Tech</p>
-                <p className="mt-1.5 text-xs text-gray-400">India-based AI education &amp; consulting initiative</p>
-                <p className="mt-1 text-xs text-gray-400"><a href="mailto:support@kvgai.com" className="text-violet-400 hover:underline transition">support@kvgai.com</a></p>
+                <p className="text-sm text-gray-300">© 2026 KVGAI TECH PRIVATE LIMITED</p>
+                <p className="mt-1.5 text-xs text-gray-400">2nd Floor, Scalex Loop, Bangalore, India</p>
+                <p className="mt-1 text-xs text-gray-400">
+                    <a href="mailto:support@kvgai.com" className="text-violet-400 hover:underline transition">support@kvgai.com</a>
+                    {" "} | {" "}
+                    <a href="tel:+917388889308" className="text-violet-400 hover:underline transition">+91 7388889308</a>
+                </p>
             </div>
         </div>
     </footer>

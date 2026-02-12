@@ -217,12 +217,18 @@ const FooterLarge01 = () => {
                             <Button color="link-gray" size="md" href="/terms-conditions">
                                 Terms & Conditions
                             </Button>
-                            <Button color="link-gray" size="md" href="/account-deletion-policy">
-                                Account Deletion
+                            <Button color="link-gray" size="md" href="/refund-policy">
+                                Refund Policy
+                            </Button>
+                            <Button color="link-gray" size="md" href="/shipping-delivery">
+                                Shipping & Delivery
                             </Button>
                         </nav>
                     </div>
-                    <p className="text-md text-quaternary mt-6">© 2025 KVGAI Tech. All rights reserved.</p>
+                    <div className="mt-6 flex flex-col gap-1">
+                        <p className="text-md text-quaternary">© 2026 KVGAI TECH PRIVATE LIMITED. All rights reserved.</p>
+                        <p className="text-sm text-quaternary">2nd Floor, Scalex Loop, Bangalore, India | support@kvgai.com | +91 7388889308</p>
+                    </div>
                 </div>
             </div>
         </footer>

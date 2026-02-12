@@ -562,24 +562,6 @@ export const FooterLarge01 = () => {
     return (
         <footer className="bg-secondary_alt py-12 md:pt-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
-                {/* <nav>
-                    <ul className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
-                        {footerNavList.map((category) => (
-                            <li key={category.label}>
-                                <h4 className="text-sm font-semibold text-quaternary">{category.label}</h4>
-                                <ul className="mt-4 flex flex-col gap-3">
-                                    {category.items.map((item) => (
-                                        <li key={item.label}>
-                                            <Button color="link-gray" size="lg" href={item.href} iconTrailing={item.badge} className="gap-1">
-                                                {item.label}
-                                            </Button>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </li>
-                        ))}
-                    </ul>
-                </nav> */}
                 <div className="mt-12 border-t border-secondary pt-8 md:mt-16">
                     <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
                         <KVGAILogo className="h-8 w-min" />
@@ -590,12 +572,21 @@ export const FooterLarge01 = () => {
                             <Button color="link-gray" size="md" href="/terms-conditions">
                                 Terms & Conditions
                             </Button>
-                            <Button color="link-gray" size="md" href="/account-deletion-policy">
-                                Account Deletion
+                            <Button color="link-gray" size="md" href="/refund-policy">
+                                Refund Policy
+                            </Button>
+                            <Button color="link-gray" size="md" href="/shipping-delivery">
+                                Shipping & Delivery
+                            </Button>
+                            <Button color="link-gray" size="md" href="/contact">
+                                Contact Us
                             </Button>
                         </nav>
                     </div>
-                    <p className="text-md text-quaternary mt-6">© 2026 KVGAI Tech. All rights reserved.</p>
+                    <div className="mt-6 flex flex-col gap-1">
+                        <p className="text-md text-quaternary">© 2026 KVGAI TECH PRIVATE LIMITED. All rights reserved.</p>
+                        <p className="text-sm text-quaternary">2nd Floor, Scalex Loop, Bangalore, India | support@kvgai.com | +91 7388889308</p>
+                    </div>
                 </div>
             </div>
         </footer>
