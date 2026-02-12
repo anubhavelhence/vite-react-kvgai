@@ -43,7 +43,7 @@ const TermsConditionsPage = () => {
                                 These Terms & Conditions ("Terms") govern your use of the website <span className="font-semibold text-primary">kvgai.com</span> and all related services, including bootcamps, digital products, and AI consulting, operated by <span className="font-semibold text-primary">KVGAI TECH PRIVATE LIMITED</span> ("KVGAI Tech", "we", "our", or "us"). By accessing our website or purchasing any service, you agree to be bound by these Terms.
                             </p>
                             <p className="mt-3 text-sm text-quaternary">
-                                Registered Office: 2nd Floor, Scalex Loop, Bangalore, India | Email: support@kvgai.com | Phone: +91 7388889308
+                                Registered Office: B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN | Email: support@kvgai.com | Phone: +91 7388889308
                             </p>
                         </div>
                     </div>
@@ -256,7 +256,7 @@ const TermsConditionsPage = () => {
                             <div className="rounded-2xl bg-brand-secondary/10 p-6 ring-1 ring-brand-secondary/20 ring-inset md:p-8">
                                 <h3 className="mb-3 text-lg font-semibold text-primary">Governing Law</h3>
                                 <p className="text-sm text-tertiary md:text-base">
-                                    These Terms shall be governed by and construed in accordance with the laws of <span className="font-semibold text-primary">India</span>. Any disputes shall be subject to the exclusive jurisdiction of the courts in <span className="font-semibold text-primary">Bangalore, Karnataka, India</span>.
+                                    These Terms shall be governed by and construed in accordance with the laws of <span className="font-semibold text-primary">India</span>. Any disputes shall be subject to the exclusive jurisdiction of the courts in <span className="font-semibold text-primary">Lucknow, Uttar Pradesh, India</span>.
                                 </p>
                             </div>
                         </div>
@@ -279,7 +279,7 @@ const TermsConditionsPage = () => {
                                     support@kvgai.com
                                 </a>
                                 <p className="mt-4 text-xs text-quaternary">
-                                    KVGAI TECH PRIVATE LIMITED — 2nd Floor, Scalex Loop, Bangalore, India
+                                    KVGAI TECH PRIVATE LIMITED — B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN
                                 </p>
                             </div>
                         </div>

@@ -42,7 +42,7 @@ const RefundPolicyPage = () => {
                                 This Refund & Cancellation Policy applies to all purchases made on <span className="font-semibold text-primary">kvgai.com</span>, operated by <span className="font-semibold text-primary">KVGAI TECH PRIVATE LIMITED</span>. All payments are processed securely via <span className="font-semibold text-primary">Razorpay</span>. Please read this policy carefully before making a purchase.
                             </p>
                             <p className="mt-3 text-sm text-quaternary">
-                                Registered Office: 2nd Floor, Scalex Loop, Bangalore, India | Email: support@kvgai.com | Phone: +91 7388889308
+                                Registered Office: B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN | Email: support@kvgai.com | Phone: +91 7388889308
                             </p>
                         </div>
                     </div>
@@ -189,7 +189,7 @@ const RefundPolicyPage = () => {
                                 </a>
                                 <p className="mt-2 text-sm text-tertiary">Phone: +91 7388889308 (Mon–Fri, 9am–6pm IST)</p>
                                 <p className="mt-4 text-xs text-quaternary">
-                                    KVGAI TECH PRIVATE LIMITED — 2nd Floor, Scalex Loop, Bangalore, India
+                                    KVGAI TECH PRIVATE LIMITED — B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN
                                 </p>
                             </div>
                         </div>

@@ -676,7 +676,8 @@ const FooterBootcamp = () => (
             {/* Business info */}
             <div className="mt-6 text-center">
                 <p className="text-sm text-gray-300">© 2026 KVGAI TECH PRIVATE LIMITED</p>
-                <p className="mt-1.5 text-xs text-gray-400">2nd Floor, Scalex Loop, Bangalore, India</p>
+                <p className="mt-1.5 text-xs text-gray-400">B-87, R S M Nagar, Hal, Lucknow, Uttar Pradesh 226016</p>
+                <p className="mt-1 text-xs text-gray-400">GSTIN: 09AALCK3280A1ZN</p>
                 <p className="mt-1 text-xs text-gray-400">
                     <a href="mailto:support@kvgai.com" className="text-violet-400 hover:underline transition">support@kvgai.com</a>
                     {" "} | {" "}

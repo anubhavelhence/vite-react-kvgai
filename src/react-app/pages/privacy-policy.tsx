@@ -44,7 +44,7 @@ const PrivacyPolicyPage = () => {
                             <div className="mt-4 grid gap-2 text-sm text-tertiary sm:grid-cols-2">
                                 <div className="flex items-start gap-2">
                                     <Building07 className="mt-0.5 size-4 shrink-0 text-brand-secondary" />
-                                    <span>Registered Office: 2nd Floor, Scalex Loop, Bangalore, India</span>
+                                    <span>Registered Office: B-87, R S M Nagar, Hal, Lucknow, UP 226016</span>
                                 </div>
                                 <div className="flex items-start gap-2">
                                     <Mail01 className="mt-0.5 size-4 shrink-0 text-brand-secondary" />
@@ -57,6 +57,10 @@ const PrivacyPolicyPage = () => {
                                 <div className="flex items-start gap-2">
                                     <Phone className="mt-0.5 size-4 shrink-0 text-brand-secondary" />
                                     <span>Phone: +91 7388889308</span>
+                                </div>
+                                <div className="flex items-start gap-2 sm:col-span-2">
+                                    <Shield01 className="mt-0.5 size-4 shrink-0 text-brand-secondary" />
+                                    <span>GSTIN: 09AALCK3280A1ZN</span>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +284,7 @@ const PrivacyPolicyPage = () => {
                                     </a>
                                 </div>
                                 <p className="mt-4 text-xs text-quaternary">
-                                    KVGAI TECH PRIVATE LIMITED — 2nd Floor, Scalex Loop, Bangalore, India
+                                    KVGAI TECH PRIVATE LIMITED — B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN
                                 </p>
                             </div>
                         </div>
