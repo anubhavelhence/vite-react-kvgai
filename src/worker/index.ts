@@ -43,7 +43,7 @@ app.post("/api/bootcamp/create-order", async (c) => {
 				email: body.email,
 				phone: body.phone,
 				college: body.college || "",
-				event: "Next-Gen AI Protocols Bootcamp - 14 Feb, 3-5 PM, Room 6109 NAB, BITS Pilani",
+				event: "Next-Gen AI Protocols Bootcamp - 26 Feb, 6-8 PM, Room 6109 NAB, BITS Pilani",
 			},
 		}),
 	});
