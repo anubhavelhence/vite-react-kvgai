@@ -3,7 +3,7 @@ import { motion, useInView, AnimatePresence } from "motion/react";
 import { Link } from "react-router-dom";
 import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
 
-const RAZORPAY_KEY_ID = "rzp_live_SE3HBe2FmjrwbJ";
+const RAZORPAY_KEY_ID = "rzp_live_SFSZXFIveWV8Ay";
 const BOOTCAMP_PRICE = 299;
 const BOOTCAMP_PRICE_PAISE = BOOTCAMP_PRICE * 100;
 const ORIGINAL_PRICE = 999;
@@ -137,7 +137,7 @@ const StickyCTA = () => {
                 >
                     <div className="mx-auto flex max-w-4xl items-center justify-between gap-4">
                         <div className="hidden sm:block">
-                            <p className="text-sm font-bold text-white">Next-Gen AI Protocols Bootcamp — 13th Feb, BITS Pilani</p>
+                            <p className="text-sm font-bold text-white">Next-Gen AI Protocols Bootcamp — 14th Feb, 3–5 PM, BITS Pilani</p>
                             <p className="text-xs text-gray-400">
                                 <span className="text-gray-500 line-through">₹{ORIGINAL_PRICE}</span>{" "}
                                 <span className="font-bold text-emerald-400">₹{BOOTCAMP_PRICE}</span>{" "}
@@ -219,7 +219,7 @@ const HeroSection = () => {
                 >
                     {[
                         {
-                            text: "13th February 2026",
+                            text: "14th February 2026",
                             icon: <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg>,
                         },
                         {
@@ -227,7 +227,7 @@ const HeroSection = () => {
                             icon: <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>,
                         },
                         {
-                            text: "2–3 Hours Live",
+                            text: "3:00 PM – 5:00 PM",
                             icon: <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
                         },
                         {
@@ -522,7 +522,7 @@ const RegistrationSection = () => {
                 amount: BOOTCAMP_PRICE_PAISE,
                 currency: "INR",
                 name: "KVGAI TECH PRIVATE LIMITED",
-                description: "Next-Gen AI Protocols Bootcamp — 13 Feb, BITS Pilani",
+                description: "Next-Gen AI Protocols Bootcamp — 14 Feb, 3–5 PM, BITS Pilani",
                 order_id: orderData.orderId,
                 prefill: { name, email, contact: phone },
                 theme: { color: "#7C3AED" },
@@ -567,7 +567,7 @@ const RegistrationSection = () => {
                                     <span className="text-4xl">🎉</span>
                                 </motion.div>
                                 <h2 className="mt-6 text-3xl font-bold text-white">You're In!</h2>
-                                <p className="mt-3 text-gray-400">You're registered for the Next-Gen AI Protocols Bootcamp — 13th Feb, Room 6109, NAB, BITS Pilani.</p>
+                                <p className="mt-3 text-gray-400">You're registered for the Next-Gen AI Protocols Bootcamp — 14th Feb, 3–5 PM, Room 6109, NAB, BITS Pilani.</p>
                                 <p className="mt-2 text-sm text-gray-500">A confirmation email with your receipt has been sent by Razorpay.</p>
                                 <div className="mt-6 rounded-xl border border-white/5 bg-white/[0.03] p-4 text-left">
                                     <p className="break-all text-sm text-gray-400"><span className="font-semibold text-gray-300">Payment ID:</span> <span className="font-mono">{paymentDetails.paymentId}</span></p>
