@@ -1,5 +1,4 @@
-import { File05, Mail01, Users01, Shield01, AlertTriangle, Settings01, CheckCircle, CreditCard02, Scale01, Building07 } from "@untitledui/icons";
-import { Link } from "react-router-dom";
+import { File05, Mail01, Users01, Shield01, CheckCircle, Globe01, MessageSquare01, CreditCard02 } from "@untitledui/icons";
 import { Header } from "@/components/marketing/header-navigation/header";
 import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
@@ -25,10 +24,10 @@ const TermsConditionsPage = () => {
                             Terms & Conditions
                         </h1>
                         <p className="mt-4 text-lg text-tertiary md:text-xl">
-                            Please read these terms carefully before using our website and services
+                            Please read these terms carefully before using the LandMarks application
                         </p>
                         <p className="mt-6 text-sm text-quaternary">
-                            Last updated: February 2026
+                            Last updated: March 2026
                         </p>
                     </div>
                 </div>
@@ -40,10 +39,7 @@ const TermsConditionsPage = () => {
                     <div className="mx-auto max-w-3xl">
                         <div className="rounded-2xl bg-brand-secondary/10 p-6 ring-1 ring-brand-secondary/20 ring-inset md:p-8">
                             <p className="text-base text-tertiary md:text-lg">
-                                These Terms & Conditions ("Terms") govern your use of the website <span className="font-semibold text-primary">kvgai.com</span> and all related services, including bootcamps, digital products, and AI consulting, operated by <span className="font-semibold text-primary">KVGAI TECH PRIVATE LIMITED</span> ("KVGAI Tech", "we", "our", or "us"). By accessing our website or purchasing any service, you agree to be bound by these Terms.
-                            </p>
-                            <p className="mt-3 text-sm text-quaternary">
-                                Registered Office: B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN | Email: support@kvgai.com | Phone: +91 7388889308
+                                These Terms & Conditions govern your use of the <span className="font-semibold text-primary">LandMarks</span> mobile application operated by <span className="font-semibold text-primary">KVGAI TECH PRIVATE LIMITED</span>. By downloading or using the app, you agree to comply with these terms.
                             </p>
                         </div>
                     </div>
@@ -66,33 +62,77 @@ const TermsConditionsPage = () => {
                             <div className="grid gap-3 sm:grid-cols-2 md:gap-4">
                                 <div className="flex items-start gap-3 rounded-xl bg-secondary p-4 ring-1 ring-secondary ring-inset">
                                     <CheckCircle className="mt-0.5 size-5 shrink-0 text-success-primary" />
-                                    <span className="text-sm text-tertiary md:text-base">Users must be at least 13 years old to use our services</span>
+                                    <span className="text-sm text-tertiary md:text-base">Users must be at least 13 years old to use the application</span>
                                 </div>
                                 <div className="flex items-start gap-3 rounded-xl bg-secondary p-4 ring-1 ring-secondary ring-inset">
                                     <CheckCircle className="mt-0.5 size-5 shrink-0 text-success-primary" />
-                                    <span className="text-sm text-tertiary md:text-base">Must provide accurate and complete information during registration</span>
+                                    <span className="text-sm text-tertiary md:text-base">Must provide accurate information during account registration</span>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Services */}
+                        {/* Account & Login */}
                         <div>
                             <div className="mb-6 flex items-center gap-3 md:gap-4">
-                                <FeaturedIcon icon={Building07} color="brand" theme="modern" size="md" className="md:size-12" />
+                                <FeaturedIcon icon={Shield01} color="brand" theme="modern" size="md" className="md:size-12" />
                                 <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    Services We Offer
+                                    Account & Login
                                 </h2>
                             </div>
                             <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset md:p-8">
-                                <p className="mb-4 text-sm text-tertiary md:text-base">
-                                    KVGAI TECH PRIVATE LIMITED provides the following services through kvgai.com:
-                                </p>
-                                <div className="space-y-3">
+                                <div className="space-y-3 text-sm text-tertiary md:text-base">
+                                    <p>
+                                        Users may create an account using email and password. Users are responsible for maintaining the confidentiality of their login credentials and are responsible for all activity under their account.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* User Content */}
+                        <div>
+                            <div className="mb-6 flex items-center gap-3 md:gap-4">
+                                <FeaturedIcon icon={MessageSquare01} color="brand" theme="modern" size="md" className="md:size-12" />
+                                <h2 className="text-xl font-semibold text-primary md:text-display-xs">
+                                    User Content
+                                </h2>
+                            </div>
+                            <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset md:p-8">
+                                <div className="space-y-3 text-sm text-tertiary md:text-base">
+                                    <p>
+                                        Users may post images, discussions, and other content within the app. Users retain ownership of their content but grant LandMarks the right to display the content within the platform.
+                                    </p>
+                                    <p>
+                                        Content that is illegal, harmful, misleading, offensive, or violates rights may be removed at our discretion.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Subscriptions */}
+                        <div>
+                            <div className="mb-6 flex items-center gap-3 md:gap-4">
+                                <FeaturedIcon icon={CreditCard02} color="brand" theme="modern" size="md" className="md:size-12" />
+                                <h2 className="text-xl font-semibold text-primary md:text-display-xs">
+                                    Subscriptions
+                                </h2>
+                            </div>
+                            <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset md:p-8">
+                                <div className="space-y-3 text-sm text-tertiary md:text-base">
+                                    <p>
+                                        LandMarks may offer auto-renewable subscription plans that provide access to premium features within the app.
+                                    </p>
+                                    <p className="font-semibold text-primary">
+                                        Subscription Details:
+                                    </p>
+                                </div>
+                                <div className="mt-4 space-y-3">
                                     {[
-                                        "AI Bootcamps & Workshops — live and recorded training sessions on AI protocols and technologies",
-                                        "Digital Products — demo repositories, cheat sheets, session recordings, and educational materials",
-                                        "AI Consulting — enterprise-grade AI solutions, agent orchestration, and deployment services",
-                                        "Community Access — private groups for networking, Q&A, and continued learning"
+                                        "Subscription Title: LandMarks Premium",
+                                        "Subscription Length: Monthly / Yearly",
+                                        "Payment will be charged to your Apple ID account at confirmation of purchase",
+                                        "Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period",
+                                        "Your account will be charged for renewal within 24 hours prior to the end of the current subscription period",
+                                        "You can manage or cancel subscriptions in your Apple Account Settings after purchase"
                                     ].map((item, idx) => (
                                         <div key={idx} className="flex items-start gap-3">
                                             <CheckCircle className="mt-0.5 size-5 shrink-0 text-brand-secondary" />
@@ -103,160 +143,48 @@ const TermsConditionsPage = () => {
                             </div>
                         </div>
 
-                        {/* Payment Terms */}
-                        <div>
-                            <div className="mb-6 flex items-center gap-3 md:gap-4">
-                                <FeaturedIcon icon={CreditCard02} color="brand" theme="modern" size="md" className="md:size-12" />
-                                <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    Payment Terms
-                                </h2>
-                            </div>
-                            <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset md:p-8">
-                                <div className="space-y-4 text-sm text-tertiary md:text-base">
-                                    <p>
-                                        All payments are processed securely through <span className="font-semibold text-primary">Razorpay</span>, a PCI-DSS compliant payment gateway. We accept UPI, credit cards, debit cards, net banking, and wallets.
-                                    </p>
-                                    <p>
-                                        All prices listed on kvgai.com are in <span className="font-semibold text-primary">Indian Rupees (INR)</span> and are inclusive of all applicable taxes unless stated otherwise.
-                                    </p>
-                                    <p>
-                                        Upon successful payment, you will receive a confirmation email from Razorpay with your payment receipt, including the Payment ID and Order ID. Please retain this for your records.
-                                    </p>
-                                    <p>
-                                        KVGAI Tech reserves the right to modify pricing at any time. Any price changes will not affect orders already confirmed and paid for.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Refund & Cancellation */}
+                        {/* Privacy Policy */}
                         <div>
                             <div className="mb-6 flex items-center gap-3 md:gap-4">
                                 <FeaturedIcon icon={Shield01} color="brand" theme="modern" size="md" className="md:size-12" />
                                 <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    Refund & Cancellation
+                                    Privacy Policy
                                 </h2>
                             </div>
                             <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset md:p-8">
-                                <div className="space-y-3 text-sm text-tertiary md:text-base">
-                                    <p>
-                                        Our complete Refund & Cancellation Policy is available at{" "}
-                                        <Link to="/refund-policy" className="font-semibold text-brand-secondary hover:underline">
-                                            kvgai.com/refund-policy
-                                        </Link>.
-                                    </p>
-                                    <p>
-                                        In summary: All bootcamp payments are non-refundable once registration is confirmed, except in the case of event cancellation by KVGAI Tech, in which case a full refund will be issued within 5–7 business days.
-                                    </p>
-                                    <p>
-                                        If you are unable to attend a registered event, you will still receive all digital deliverables (session recording, demo repos, cheat sheet, and community access).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Intellectual Property */}
-                        <div>
-                            <div className="mb-6 flex items-center gap-3 md:gap-4">
-                                <FeaturedIcon icon={Shield01} color="brand" theme="modern" size="md" className="md:size-12" />
-                                <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    Intellectual Property
-                                </h2>
-                            </div>
-                            <div className="space-y-3">
-                                {[
-                                    "All content on kvgai.com — including text, images, logos, code, and digital materials — is the property of KVGAI TECH PRIVATE LIMITED",
-                                    "Bootcamp recordings, demo repos, and cheat sheets are provided for personal, non-commercial use only",
-                                    "You may not redistribute, resell, or publicly share any purchased or delivered digital content without prior written consent"
-                                ].map((item, idx) => (
-                                    <div key={idx} className="flex items-start gap-3">
-                                        <CheckCircle className="mt-0.5 size-5 shrink-0 text-brand-secondary" />
-                                        <span className="text-sm text-tertiary md:text-base">{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* Prohibited Activities */}
-                        <div>
-                            <div className="mb-6 flex items-center gap-3 md:gap-4">
-                                <FeaturedIcon icon={AlertTriangle} color="error" theme="modern" size="md" className="md:size-12" />
-                                <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    Prohibited Activities
-                                </h2>
-                            </div>
-                            <div className="rounded-2xl bg-error-secondary/30 p-6 ring-1 ring-error-secondary/50 ring-inset md:p-8">
-                                <p className="mb-4 text-sm font-semibold text-error-primary md:text-base">
-                                    You agree not to:
+                                <p className="text-sm text-tertiary md:text-base">
+                                    Please review our Privacy Policy for details on how we collect and use user data:{" "}
+                                    <a href="/privacy-policy" className="font-semibold text-brand-secondary hover:underline">
+                                        kvgai.com/privacy-policy
+                                    </a>
                                 </p>
-                                <div className="space-y-3">
-                                    {[
-                                        "Use our website or services for any unlawful purpose",
-                                        "Attempt to gain unauthorized access to our systems or infrastructure",
-                                        "Redistribute, resell, or pirate any paid content (recordings, repos, materials)",
-                                        "Misrepresent your identity or provide false information during registration"
-                                    ].map((item, idx) => (
-                                        <div key={idx} className="flex items-start gap-3">
-                                            <div className="mt-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-error-primary">
-                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                                                    <path d="M1 1L9 9M1 9L9 1" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                                                </svg>
-                                            </div>
-                                            <span className="text-sm font-medium text-error-primary md:text-base">{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
                             </div>
                         </div>
 
-                        {/* Dispute Resolution */}
+                        {/* Standard Apple EULA */}
                         <div>
-                            <div className="mb-6 flex items-center gap-3 md:gap-4">
-                                <FeaturedIcon icon={Scale01} color="brand" theme="modern" size="md" className="md:size-12" />
-                                <h2 className="text-xl font-semibold text-primary md:text-display-xs">
-                                    Dispute Resolution
-                                </h2>
-                            </div>
                             <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset md:p-8">
-                                <div className="space-y-3 text-sm text-tertiary md:text-base">
-                                    <p>
-                                        In the event of any dispute arising from payments, services, or the use of kvgai.com, we encourage you to first contact us at <a href="mailto:support@kvgai.com" className="font-semibold text-brand-secondary hover:underline">support@kvgai.com</a> for amicable resolution.
-                                    </p>
-                                    <p>
-                                        If a payment dispute or chargeback is initiated through your bank or payment provider, we will cooperate fully and provide transaction records. Chargebacks filed without first contacting us may result in suspension of access to purchased content.
-                                    </p>
-                                </div>
+                                <h3 className="mb-3 text-lg font-semibold text-primary">Standard Apple Terms of Use (EULA)</h3>
+                                <p className="text-sm text-tertiary md:text-base">
+                                    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-secondary hover:underline">
+                                        https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+                                    </a>
+                                </p>
                             </div>
                         </div>
 
-                        {/* Liability & Governing Law */}
+                        {/* Limitation of Liability & Changes */}
                         <div className="grid gap-6 sm:grid-cols-2 md:gap-8">
                             <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset">
-                                <div className="mb-3 flex items-center gap-3">
-                                    <FeaturedIcon icon={Settings01} color="brand" theme="modern" size="sm" />
-                                    <h3 className="text-lg font-semibold text-primary">Changes to Terms</h3>
-                                </div>
+                                <h3 className="mb-3 text-lg font-semibold text-primary">Limitation of Liability</h3>
                                 <p className="text-sm text-tertiary">
-                                    We may update these Terms from time to time. Changes will be posted on this page with the updated date. Continued use of our website or services after any changes constitutes acceptance of the revised Terms.
+                                    LandMarks and KVGAI TECH PRIVATE LIMITED shall not be liable for any damages arising from the use or inability to use the application.
                                 </p>
                             </div>
                             <div className="rounded-2xl bg-secondary p-6 ring-1 ring-secondary ring-inset">
-                                <div className="mb-3 flex items-center gap-3">
-                                    <FeaturedIcon icon={Shield01} color="brand" theme="modern" size="sm" />
-                                    <h3 className="text-lg font-semibold text-primary">Limitation of Liability</h3>
-                                </div>
+                                <h3 className="mb-3 text-lg font-semibold text-primary">Changes to Terms</h3>
                                 <p className="text-sm text-tertiary">
-                                    KVGAI TECH PRIVATE LIMITED shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website, services, or digital products. Our total liability is limited to the amount paid by you for the specific service in question.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Governing Law */}
-                        <div>
-                            <div className="rounded-2xl bg-brand-secondary/10 p-6 ring-1 ring-brand-secondary/20 ring-inset md:p-8">
-                                <h3 className="mb-3 text-lg font-semibold text-primary">Governing Law</h3>
-                                <p className="text-sm text-tertiary md:text-base">
-                                    These Terms shall be governed by and construed in accordance with the laws of <span className="font-semibold text-primary">India</span>. Any disputes shall be subject to the exclusive jurisdiction of the courts in <span className="font-semibold text-primary">Lucknow, Uttar Pradesh, India</span>.
+                                    We may update these Terms & Conditions periodically. Continued use of the app constitutes acceptance of the updated terms.
                                 </p>
                             </div>
                         </div>
@@ -269,18 +197,26 @@ const TermsConditionsPage = () => {
                                     Questions About Terms?
                                 </h2>
                                 <p className="mt-2 max-w-md text-sm text-tertiary md:text-base">
-                                    For any questions regarding these Terms & Conditions, contact us:
+                                    If you have questions regarding these terms, contact:
                                 </p>
-                                <a
-                                    href="mailto:support@kvgai.com"
-                                    className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-brand-secondary px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-secondary_hover md:text-base"
-                                >
-                                    <Mail01 className="size-5" />
-                                    support@kvgai.com
-                                </a>
-                                <p className="mt-4 text-xs text-quaternary">
-                                    KVGAI TECH PRIVATE LIMITED — B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN
-                                </p>
+                                <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:gap-4">
+                                    <a
+                                        href="mailto:support@kvgai.com"
+                                        className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand-secondary px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-secondary_hover md:text-base"
+                                    >
+                                        <Mail01 className="size-5" />
+                                        support@kvgai.com
+                                    </a>
+                                    <a
+                                        href="https://kvgai.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary ring-1 ring-secondary transition-colors hover:bg-secondary ring-inset md:text-base"
+                                    >
+                                        <Globe01 className="size-5" />
+                                        kvgai.com
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
