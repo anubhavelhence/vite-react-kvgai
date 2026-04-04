@@ -4,7 +4,6 @@ import {
     ArrowLeft,
     ArrowRight,
     ChartBreakoutSquare,
-    Clock,
     Command,
     MessageChatCircle,
     MessageHeartCircle,
@@ -13,7 +12,6 @@ import {
 } from "@untitledui/icons";
 import { AnimatePresence, motion } from "motion/react";
 import type { Transition } from "motion/react";
-import { Avatar } from "@/components/base/avatar/avatar";
 import { Button } from "@/components/base/buttons/button";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
 import { StarIcon } from "@/components/foundations/rating-stars";

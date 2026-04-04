@@ -198,7 +198,6 @@ const RefundPolicyPage = () => {
                 </div>
             </section>
 
-            <NewsletterSimpleLeft />
             <FooterLarge01 />
         </div>
     );

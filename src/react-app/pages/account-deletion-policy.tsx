@@ -242,7 +242,6 @@ const AccountDeletionPolicyPage = () => {
                 </div>
             </section>
 
-            <NewsletterSimpleLeft />
             <FooterLarge01 />
         </div>
     );

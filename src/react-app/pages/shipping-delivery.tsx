@@ -192,7 +192,6 @@ const ShippingDeliveryPage = () => {
                 </div>
             </section>
 
-            <NewsletterSimpleLeft />
             <FooterLarge01 />
         </div>
     );

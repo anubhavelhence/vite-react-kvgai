@@ -218,7 +218,6 @@ const PrivacyPolicyPage = () => {
                 </div>
             </section>
 
-            <NewsletterSimpleLeft />
             <FooterLarge01 />
         </div>
     );

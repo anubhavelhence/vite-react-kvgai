@@ -1,4 +1,3 @@
-import { Fragment, type ReactNode } from "react";
 import { CheckCircle, ZapFast } from "@untitledui/icons";
 import { Avatar } from "@/components/base/avatar/avatar";
 import { Button } from "@/components/base/buttons/button";

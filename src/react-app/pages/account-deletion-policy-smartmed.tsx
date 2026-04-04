@@ -180,7 +180,6 @@ const AccountDeletionPolicySmartMedPage = () => {
                 </div>
             </section>
 
-            <NewsletterSimpleLeft />
             <FooterLarge01 />
         </div>
     );

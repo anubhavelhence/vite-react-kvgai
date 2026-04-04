@@ -240,7 +240,6 @@ const PrivacyPolicySmartMedPage = () => {
                 </div>
             </section>
 
-            <NewsletterSimpleLeft />
             <FooterLarge01 />
         </div>
     );
