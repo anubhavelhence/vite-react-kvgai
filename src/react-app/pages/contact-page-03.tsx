@@ -84,7 +84,7 @@ const ContactFormAndMap = () => {
 
             <iframe
                 title="Our address"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.0!2d80.94!3d26.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUxJzAwLjAiTiA4MMKwNTYnMjQuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d77.59!3d12.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzEyLjAiTiA3N8KwMzUnMjQuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
                 className="hidden h-240 w-full border-none lg:block"
                 data-chromatic="ignore"
             />
@@ -100,14 +100,14 @@ const ContactSectionSimpleIcons04 = () => {
                     <div className="w-full max-w-3xl">
                         <div className="text-sm font-semibold text-brand-secondary md:text-md">Our location</div>
                         <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Visit our office</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Find us at our office in Lucknow.</p>
+                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Find us at our office in Bangalore.</p>
                     </div>
 
                     <ul className="grid w-full grid-cols-1 gap-x-16 gap-y-6 md:gap-y-8 justify-items-center">
                         {[
                             {
-                                title: "Lucknow",
-                                subtitle: "B-87, R S M Nagar, Hal\nLucknow, UP 226016",
+                                title: "Bangalore",
+                                subtitle: "2nd Floor, Scalex Loop\nBangalore, India",
                             },
                         ].map((item) => (
                             <li key={item.title} className="flex flex-col items-center text-center">
@@ -155,9 +155,9 @@ const ContactSectionIconCards03 = () => {
 
                             {
                                 title: "Visit us",
-                                subtitle: "Visit our office in Lucknow.",
-                                href: "https://maps.google.com/?q=R+S+M+Nagar+Lucknow+226016",
-                                cta: "B-87, R S M Nagar, Hal\nLucknow, UP 226016",
+                                subtitle: "Visit our office in Bangalore.",
+                                href: "https://maps.google.com/?q=Scalex+Loop+Bangalore+India",
+                                cta: "2nd Floor, Scalex Loop\nBangalore, India",
                                 icon: MarkerPin02,
                             },
                             { title: "Call us", subtitle: "Mon-Fri from 9am to 6pm IST.", href: "tel:+917388889308", cta: "+91 7388889308", icon: Phone },
@@ -223,11 +223,14 @@ const FooterLarge01 = () => {
                             <Button color="link-gray" size="md" href="/shipping-delivery">
                                 Shipping & Delivery
                             </Button>
+                            <Button color="link-gray" size="md" href="/careers">
+                                Careers
+                            </Button>
                         </nav>
                     </div>
                     <div className="mt-6 flex flex-col gap-1">
                         <p className="text-md text-quaternary">© 2026 KVGAI TECH PRIVATE LIMITED. All rights reserved.</p>
-                        <p className="text-sm text-quaternary">B-87, R S M Nagar, Hal, Lucknow, Uttar Pradesh 226016 | support@kvgai.com | +91 7388889308</p>
+                        <p className="text-sm text-quaternary">2nd Floor, Scalex Loop, Bangalore, India | support@kvgai.com | +91 7388889308</p>
                         <p className="text-sm text-quaternary">GSTIN: 09AALCK3280A1ZN</p>
                     </div>
                 </div>

@@ -3,9 +3,7 @@ import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Moon01, Sun } from "@untitledui/icons";
 import { Button as AriaButton, Dialog as AriaDialog, DialogTrigger as AriaDialogTrigger, Popover as AriaPopover } from "react-aria-components";
-import { Button } from "@/components/base/buttons/button";
-import { KVGAILogo, KVGAILogoMinimal } from "@/components/foundations/logo/kvgai-logo";
-// import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
+import { KVGAILogo } from "@/components/foundations/logo/kvgai-logo";
 import { useTheme } from "@/providers/theme-provider";
 import { cx } from "@/utils/cx";
 
@@ -17,29 +15,18 @@ type HeaderNavItem = {
 
 const headerNavItems: HeaderNavItem[] = [
     { label: "About", href: "/about" },
-    { label: "Bootcamp", href: "/bootcamp" },
+    { label: "Careers", href: "/careers" },
     { label: "FAQ", href: "/faq" },
     { label: "Contact", href: "/contact" },
 ];
 
-// const footerNavItems = [
-//     { label: "About us", href: "/" },
-//     { label: "Press", href: "/products" },
-//     { label: "Careers", href: "/resources" },
-//     { label: "Legal", href: "/pricing" },
-//     { label: "Support", href: "/pricing" },
-//     { label: "Contact", href: "/pricing" },
-//     { label: "Sitemap", href: "/pricing" },
-//     { label: "Cookie settings", href: "/pricing" },
-// ];
-
-const MobileNavItem = (props: { className?: string; label: string; href?: string; children?: ReactNode }) => {
+const MobileNavItem = (props: { label: string; href?: string; children?: ReactNode }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     if (props.href) {
         return (
             <li>
-                <Link to={props.href} className="flex items-center justify-between px-4 py-3 text-md font-semibold text-primary hover:bg-primary_hover">
+                <Link to={props.href} className="flex items-center px-5 py-3 text-md font-medium text-primary hover:bg-primary_hover">
                     {props.label}
                 </Link>
             </li>
@@ -47,35 +34,17 @@ const MobileNavItem = (props: { className?: string; label: string; href?: string
     }
 
     return (
-        <li className="flex flex-col gap-0.5">
+        <li className="flex flex-col">
             <button
                 aria-expanded={isOpen}
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex w-full items-center justify-between px-4 py-3 text-md font-semibold text-primary hover:bg-primary_hover"
+                className="flex w-full items-center justify-between px-5 py-3 text-md font-medium text-primary hover:bg-primary_hover"
             >
-                {props.label}{" "}
-                <ChevronDown
-                    className={cx("size-4 stroke-[2.625px] text-fg-quaternary transition duration-100 ease-linear", isOpen ? "-rotate-180" : "rotate-0")}
-                />
+                {props.label}
+                <ChevronDown className={cx("size-4 text-fg-quaternary transition duration-200", isOpen ? "-rotate-180" : "rotate-0")} />
             </button>
             {isOpen && <div>{props.children}</div>}
         </li>
-    );
-};
-
-const MobileFooter = ({ theme, toggleTheme }: { theme: string; toggleTheme: () => void }) => {
-    return (
-        <div className="flex flex-col gap-3 border-t border-secondary px-4 py-6">
-            <Button
-                onClick={toggleTheme}
-                color="secondary"
-                size="lg"
-                iconLeading={theme === "light" ? Moon01 : Sun}
-                aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-            >
-                {theme === "light" ? "Dark mode" : "Light mode"}
-            </Button>
-        </div>
     );
 };
 
@@ -83,10 +52,11 @@ interface HeaderProps {
     items?: HeaderNavItem[];
     isFullWidth?: boolean;
     isFloating?: boolean;
+    variant?: "default" | "dark";
     className?: string;
 }
 
-export const Header = ({ items = headerNavItems, isFullWidth, isFloating, className }: HeaderProps) => {
+export const Header = ({ items = headerNavItems, isFullWidth, isFloating, variant = "default", className }: HeaderProps) => {
     const headerRef = useRef<HTMLElement>(null);
     const { theme, setTheme } = useTheme();
 
@@ -94,42 +64,46 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
         setTheme(theme === "light" ? "dark" : "light");
     };
 
+    const isDark = variant === "dark";
+
     return (
         <header
             ref={headerRef}
             className={cx(
-                "relative flex h-18 w-full items-center justify-center md:h-20",
-                isFloating && "h-16 md:h-19 md:pt-3",
-                isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
+                "relative z-50 flex w-full items-center justify-center py-3 md:py-4",
+                isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : !isDark && "max-md:has-aria-expanded:bg-primary",
                 className,
             )}
         >
-            <div className="flex size-full max-w-container flex-1 items-center pr-3 pl-4 md:px-8">
-                <div
-                    className={cx(
-                        "flex w-full items-center justify-between gap-4",
-                        isFloating && "ring-secondary_alt md:rounded-2xl md:bg-primary md:py-3 md:pr-3 md:pl-4 md:shadow-xs md:ring-1",
-                    )}
-                >
-                    {/* Logo on the left */}
-                    <Link to="/" className="flex items-center">
-                        <KVGAILogo className="h-8 md:max-lg:hidden" />
-                        <KVGAILogoMinimal className="hidden h-8 md:inline-block lg:hidden" />
+            <div className="mx-auto w-full max-w-container px-4 md:px-6">
+                <div className={cx(
+                    "flex w-full items-center justify-between rounded-xl border px-3 py-2 backdrop-blur-md md:px-5 md:py-2.5",
+                    isDark
+                        ? "border-white/10 bg-white/5"
+                        : "border-secondary bg-primary/90"
+                )}>
+
+                    {/* Logo */}
+                    <Link to="/" className="flex shrink-0 items-center">
+                        <KVGAILogo className="h-9 md:h-10" variant={isDark ? "dark" : "default"} />
                     </Link>
 
-                    {/* Desktop navigation - centered */}
-                    <nav className="absolute ml-32 max-md:hidden">
-                        <ul className="flex items-center gap-0.5">
+                    {/* Desktop nav */}
+                    <nav className="hidden md:flex md:flex-1 md:justify-center">
+                        <ul className="flex items-center gap-1">
                             {items.map((navItem) => (
                                 <li key={navItem.label}>
                                     {navItem.menu ? (
                                         <AriaDialogTrigger>
-                                            <AriaButton className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus-visible:outline-2 focus-visible:outline-offset-2">
-                                                <span className="px-0.5">{navItem.label}</span>
-
-                                                <ChevronDown className="size-4 rotate-0 stroke-[2.625px] text-fg-quaternary transition duration-100 ease-linear in-aria-expanded:-rotate-180" />
+                                            <AriaButton className={cx(
+                                                "flex cursor-pointer items-center gap-1 rounded-lg px-3.5 py-2 text-sm font-medium transition duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 outline-focus-ring",
+                                                isDark
+                                                    ? "text-white/70 hover:bg-white/10 hover:text-white"
+                                                    : "text-tertiary hover:bg-secondary hover:text-primary"
+                                            )}>
+                                                {navItem.label}
+                                                <ChevronDown className="size-3.5 text-inherit transition duration-200 in-aria-expanded:-rotate-180" />
                                             </AriaButton>
-
                                             <AriaPopover
                                                 className={({ isEntering, isExiting }) =>
                                                     cx(
@@ -144,16 +118,12 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                                                 triggerRef={(isFloating && isFullWidth) || isFullWidth ? headerRef : undefined}
                                             >
                                                 {({ isEntering, isExiting }) => (
-                                                    <AriaDialog
-                                                        className={cx(
-                                                            "mx-auto origin-top outline-hidden",
-                                                            isFloating && "max-w-7xl px-8 pt-3",
-                                                            // Have to use the scale animation inside the popover to avoid
-                                                            // miscalculating the popover's position when opening.
-                                                            isEntering && !isFullWidth && "duration-200 ease-out animate-in zoom-in-95",
-                                                            isExiting && !isFullWidth && "duration-150 ease-in animate-out zoom-out-95",
-                                                        )}
-                                                    >
+                                                    <AriaDialog className={cx(
+                                                        "mx-auto origin-top outline-hidden",
+                                                        isFloating && "max-w-7xl px-8 pt-3",
+                                                        isEntering && !isFullWidth && "duration-200 ease-out animate-in zoom-in-95",
+                                                        isExiting && !isFullWidth && "duration-150 ease-in animate-out zoom-out-95",
+                                                    )}>
                                                         {navItem.menu}
                                                     </AriaDialog>
                                                 )}
@@ -162,9 +132,14 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                                     ) : (
                                         <Link
                                             to={navItem.href || "#"}
-                                            className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus:outline-offset-2 focus-visible:outline-2"
+                                            className={cx(
+                                                "flex cursor-pointer items-center rounded-lg px-3.5 py-2 text-sm font-medium transition duration-150 focus:outline-offset-2 focus-visible:outline-2 outline-focus-ring",
+                                                isDark
+                                                    ? "text-white/70 hover:bg-white/10 hover:text-white"
+                                                    : "text-tertiary hover:bg-secondary hover:text-primary"
+                                            )}
                                         >
-                                            <span className="px-0.5">{navItem.label}</span>
+                                            {navItem.label}
                                         </Link>
                                     )}
                                 </li>
@@ -172,71 +147,67 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                         </ul>
                     </nav>
 
-                    {/* Right side - Dark mode toggle */}
-                    <div className="hidden items-center gap-3 md:flex">
-                        <Button
+                    {/* Dark mode toggle */}
+                    <div className="hidden shrink-0 md:flex">
+                        <button
                             onClick={toggleTheme}
-                            color="secondary"
-                            size={isFloating ? "md" : "lg"}
-                            iconLeading={theme === "light" ? Moon01 : Sun}
+                            className={cx(
+                                "flex size-9 items-center justify-center rounded-lg transition duration-150",
+                                isDark
+                                    ? "text-white/60 hover:bg-white/10 hover:text-white"
+                                    : "text-fg-quaternary hover:bg-secondary hover:text-primary"
+                            )}
                             aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-                        />
+                        >
+                            {theme === "light" ? <Moon01 className="size-[18px]" /> : <Sun className="size-[18px]" />}
+                        </button>
                     </div>
 
-                    {/* Mobile menu and menu trigger */}
+                    {/* Mobile menu */}
                     <AriaDialogTrigger>
                         <AriaButton
                             aria-label="Toggle navigation menu"
                             className={({ isFocusVisible, isHovered }) =>
                                 cx(
                                     "group ml-auto cursor-pointer rounded-lg p-2 md:hidden",
-                                    isHovered && "bg-primary_hover",
+                                    isHovered && (isDark ? "bg-white/10" : "bg-secondary"),
                                     isFocusVisible && "outline-2 outline-offset-2 outline-focus-ring",
                                 )
                             }
                         >
-                            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path
-                                    className="hidden text-secondary group-aria-expanded:block"
-                                    d="M18 6L6 18M6 6L18 18"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                                <path
-                                    className="text-secondary group-aria-expanded:hidden"
-                                    d="M3 12H21M3 6H21M3 18H21"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
+                            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path className="hidden group-aria-expanded:block" d="M18 6L6 18M6 6L18 18" stroke={isDark ? "white" : "currentColor"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                <path className="group-aria-expanded:hidden" d="M3 12H21M3 6H21M3 18H21" stroke={isDark ? "white" : "currentColor"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </AriaButton>
                         <AriaPopover
                             triggerRef={headerRef}
-                            className="h-calc(100%-72px) scrollbar-hide w-full overflow-y-auto shadow-lg md:hidden"
+                            className="scrollbar-hide w-full overflow-y-auto md:hidden"
                             offset={0}
                             crossOffset={20}
                             containerPadding={0}
                             placement="bottom left"
                         >
                             <AriaDialog className="outline-hidden">
-                                <nav className="w-full bg-primary shadow-lg">
-                                    <ul className="flex flex-col gap-0.5 py-5">
+                                <nav className="w-full border-t border-secondary bg-primary shadow-lg">
+                                    <ul className="flex flex-col py-3">
                                         {items.map((navItem) =>
                                             navItem.menu ? (
-                                                <MobileNavItem key={navItem.label} label={navItem.label}>
-                                                    {navItem.menu}
-                                                </MobileNavItem>
+                                                <MobileNavItem key={navItem.label} label={navItem.label}>{navItem.menu}</MobileNavItem>
                                             ) : (
                                                 <MobileNavItem key={navItem.label} label={navItem.label} href={navItem.href} />
                                             ),
                                         )}
                                     </ul>
-
-                                    <MobileFooter theme={theme} toggleTheme={toggleTheme} />
+                                    <div className="border-t border-secondary px-5 py-4">
+                                        <button
+                                            onClick={toggleTheme}
+                                            className="flex w-full items-center justify-center gap-2 rounded-lg border border-secondary py-2.5 text-sm font-medium text-primary transition hover:bg-secondary"
+                                        >
+                                            {theme === "light" ? <Moon01 className="size-4" /> : <Sun className="size-4" />}
+                                            {theme === "light" ? "Dark mode" : "Light mode"}
+                                        </button>
+                                    </div>
                                 </nav>
                             </AriaDialog>
                         </AriaPopover>

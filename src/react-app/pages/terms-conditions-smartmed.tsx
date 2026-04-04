@@ -1,6 +1,6 @@
 import { File05, Mail01, Users01, Shield01, AlertTriangle, Settings01, CheckCircle, ShoppingCart01, Package } from "@untitledui/icons";
 import { Header } from "@/components/marketing/header-navigation/header";
-import { FooterLarge01, NewsletterSimpleLeft } from "./landing-page-19";
+import { FooterLarge01 } from "./landing-page-19";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
 
 const TermsConditionsSmartMedPage = () => {

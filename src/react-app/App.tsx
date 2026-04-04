@@ -9,7 +9,7 @@ import AccountDeletionPolicyPage from '@/pages/account-deletion-policy';
 import PrivacyPolicySmartMedPage from '@/pages/privacy-policy-smartmed';
 import TermsConditionsSmartMedPage from '@/pages/terms-conditions-smartmed';
 import AccountDeletionPolicySmartMedPage from '@/pages/account-deletion-policy-smartmed';
-import BootcampPage from '@/pages/bootcamp';
+import CareersPage from '@/pages/careers';
 import RefundPolicyPage from '@/pages/refund-policy';
 import ShippingDeliveryPage from '@/pages/shipping-delivery';
 import { ScrollToTop } from '@/components/ScrollToTop';
@@ -31,7 +31,7 @@ function App() {
         <Route path="/privacy-policy/smartmed" element={<PrivacyPolicySmartMedPage />} />
         <Route path="/terms-conditions/smartmed" element={<TermsConditionsSmartMedPage />} />
         <Route path="/account-deletion-policy/smartmed" element={<AccountDeletionPolicySmartMedPage />} />
-        <Route path="/bootcamp" element={<BootcampPage />} />
+        <Route path="/careers" element={<CareersPage />} />
       </Routes>
     </>
   );
