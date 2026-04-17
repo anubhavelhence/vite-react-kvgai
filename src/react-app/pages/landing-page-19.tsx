@@ -165,7 +165,7 @@ const FeaturesSection = () => {
 /* ─── INTEGRATIONS ─── */
 const IntegrationsSection = () => {
     const integrations = [
-        { title: "Claude Code", subtitle: "AI-powered code understanding and automation.", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/1200px-Claude_AI_symbol.svg.png" },
+        { title: "Claude Code", subtitle: "AI-powered code understanding and automation.", logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/claude-color.png" },
         { title: "Slack", subtitle: "Trigger workflows and summarize discussions.", logo: "https://www.untitledui.com/logos/integrations/slack.svg" },
         { title: "Google Drive", subtitle: "Secure document retrieval and knowledge extraction.", logo: "https://www.untitledui.com/logos/integrations/google_drive.svg" },
         { title: "LangGraph", subtitle: "Multi-agent orchestration and coordination.", logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.69.0/files/light/langgraph.png" },

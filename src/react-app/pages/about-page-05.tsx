@@ -22,14 +22,13 @@ import { FooterLarge01 } from "./landing-page-19";
 
 /* ─── DATA ─── */
 const teamMembers = [
-    { name: "Anubhav Elhence", title: "CEO", summary: "Ph.D. BITS Pilani", avatarUrl: "/anubhav.jpg", linkedin: "https://www.linkedin.com/" },
-    { name: "Mehul Gera", title: "Managing Director", summary: "Ph.D. NTU Business School", avatarUrl: "/mehul.jpeg", linkedin: "https://www.linkedin.com/" },
-    { name: "Gaurang Bansal", title: "Technical Project Manager", summary: "Leading AI project delivery and team coordination", avatarUrl: "/Gaurang.jpeg", linkedin: "https://www.linkedin.com/" },
-    { name: "Shashwat Gupta", title: "Business Development Manager", summary: "US Based - Driving business growth and partnerships", avatarUrl: "/shashwat.jpg", linkedin: "https://www.linkedin.com/" },
-    { name: "Rishi Garg", title: "GenAI Expert", summary: "Hackathon Winner - Cutting-edge AI solutions", avatarUrl: "/rishi_garg.jpg", linkedin: "https://www.linkedin.com/" },
-    { name: "Hardik Batwal", title: "Backend GenAI Engineer", summary: "Building robust AI backend systems", avatarUrl: "/hardik_batwal.jpg", linkedin: "https://www.linkedin.com/" },
-    { name: "Kartik Jain", title: "Backend GenAI Engineer", summary: "Developing advanced GenAI solutions", avatarUrl: "/kartik_jain.jpg", linkedin: "https://www.linkedin.com/" },
-    { name: "Sujit Kumar Pradhan", title: "Frontend Developer", summary: "Crafting responsive user interfaces", avatarUrl: "/sujit_kumar.jpg", linkedin: "https://www.linkedin.com/" },
+    { name: "Anubhav Elhence", title: "CEO", summary: "Ph.D. BITS Pilani", avatarUrl: "/anubhav.jpg", linkedin: "https://www.linkedin.com/in/anubhavelhence/" },
+    { name: "Mehul Gera", title: "Managing Director", summary: "Ph.D. NTU Business School", avatarUrl: "/mehul.jpeg", linkedin: "https://www.linkedin.com/in/mehul-gera/" },
+    { name: "Gaurang Bansal", title: "Technical Project Manager", summary: "Leading AI project delivery and team coordination", avatarUrl: "/Gaurang.jpeg", linkedin: "https://www.linkedin.com/in/gaurang18/" },
+    { name: "Shashwat Gupta", title: "Business Development Manager", summary: "US Based - Driving business growth and partnerships", avatarUrl: "/shashwat.jpg", linkedin: "https://www.linkedin.com/in/gupta-shashwat/" },
+    { name: "Rishi Garg", title: "GenAI Expert", summary: "Hackathon Winner - Cutting-edge AI solutions", avatarUrl: "/rishi_garg.jpg", linkedin: "https://www.linkedin.com/in/rishigarg03/" },
+    { name: "Hardik Batwal", title: "Backend GenAI Engineer", summary: "Building robust AI backend systems", avatarUrl: "/hardik_batwal.jpg", linkedin: "https://www.linkedin.com/in/hardik-batwal-888427239/" },
+    { name: "Kartik Jain", title: "Backend GenAI Engineer", summary: "Developing advanced GenAI solutions", avatarUrl: "/kartik_jain.jpg", linkedin: "https://www.linkedin.com/in/-kartikjain/" },
     { name: "Arya Pitre", title: "Product Experience Designer", summary: "Designing intuitive product experiences", avatarUrl: "/arya_pitre.jpg", linkedin: "https://www.linkedin.com/in/arya-pitre-08949a225/" },
 ];
 
