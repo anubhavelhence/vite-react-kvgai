@@ -30,6 +30,7 @@ const teamMembers = [
     { name: "Hardik Batwal", title: "Backend GenAI Engineer", summary: "Building robust AI backend systems", avatarUrl: "/hardik_batwal.jpg", linkedin: "https://www.linkedin.com/in/hardik-batwal-888427239/" },
     { name: "Kartik Jain", title: "Backend GenAI Engineer", summary: "Developing advanced GenAI solutions", avatarUrl: "/kartik_jain.jpg", linkedin: "https://www.linkedin.com/in/-kartikjain/" },
     { name: "Arya Pitre", title: "Product Experience Designer", summary: "Designing intuitive product experiences", avatarUrl: "/arya_pitre.jpg", linkedin: "https://www.linkedin.com/in/arya-pitre-08949a225/" },
+    { name: "Harish Lamba", title: "App Developer", summary: "Building cross-platform mobile experiences", avatarUrl: "/harish_lamba.jpg", linkedin: "https://www.linkedin.com/in/harish-lamba-44a51a23a/" },
 ];
 
 const values = [

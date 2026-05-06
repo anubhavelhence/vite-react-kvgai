@@ -100,14 +100,18 @@ const ContactSectionSimpleIcons04 = () => {
                     <div className="w-full max-w-3xl">
                         <div className="text-sm font-semibold text-brand-secondary md:text-md">Our location</div>
                         <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Visit our office</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Find us at our office in Bangalore.</p>
+                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Find us at our offices in Bangalore and Gurugram.</p>
                     </div>
 
-                    <ul className="grid w-full grid-cols-1 gap-x-16 gap-y-6 md:gap-y-8 justify-items-center">
+                    <ul className="grid w-full grid-cols-1 gap-x-16 gap-y-6 md:grid-cols-2 md:gap-y-8 justify-items-center">
                         {[
                             {
                                 title: "Bangalore",
                                 subtitle: "2nd Floor, Scalex Loop\nBangalore, India",
+                            },
+                            {
+                                title: "Gurugram",
+                                subtitle: "9K, Block N, N-14, DLF Phase 2\nSector 25, Gurugram, Shahpur\nHaryana 122002, India",
                             },
                         ].map((item) => (
                             <li key={item.title} className="flex flex-col items-center text-center">
