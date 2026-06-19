@@ -235,7 +235,7 @@ const FooterLarge01 = () => {
                     <div className="mt-6 flex flex-col gap-1">
                         <p className="text-md text-quaternary">© 2026 KVGAI TECH PRIVATE LIMITED. All rights reserved.</p>
                         <p className="text-sm text-quaternary">2nd Floor, Scalex Loop, Bangalore, India | support@kvgai.com | +91 7388889308</p>
-                        <p className="text-sm text-quaternary">GSTIN: 09AALCK3280A1ZN</p>
+                        <p className="text-sm text-quaternary">GSTIN: 29AALCK3280A1ZL</p>
                     </div>
                 </div>
             </div>

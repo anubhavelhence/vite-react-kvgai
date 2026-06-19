@@ -42,7 +42,7 @@ const ShippingDeliveryPage = () => {
                                 <span className="font-semibold text-primary">KVGAI TECH PRIVATE LIMITED</span> provides digital products and services only. We do not ship any physical goods. All deliverables are provided electronically via email, shared links, or online platforms.
                             </p>
                             <p className="mt-3 text-sm text-quaternary">
-                                Registered Office: B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN | Email: support@kvgai.com
+                                Registered Office: B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 29AALCK3280A1ZL | Email: support@kvgai.com
                             </p>
                         </div>
                     </div>
@@ -183,7 +183,7 @@ const ShippingDeliveryPage = () => {
                                 </a>
                                 <p className="mt-2 text-sm text-tertiary">Phone: +91 7388889308 (Mon–Fri, 9am–6pm IST)</p>
                                 <p className="mt-4 text-xs text-quaternary">
-                                    KVGAI TECH PRIVATE LIMITED — B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 09AALCK3280A1ZN
+                                    KVGAI TECH PRIVATE LIMITED — B-87, R S M Nagar, Hal, Lucknow, UP 226016 | GSTIN: 29AALCK3280A1ZL
                                 </p>
                             </div>
                         </div>

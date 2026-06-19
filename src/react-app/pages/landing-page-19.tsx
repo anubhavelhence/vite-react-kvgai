@@ -362,7 +362,7 @@ export const FooterLarge01 = () => {
 
                 <div className="mt-12 border-t border-secondary pt-6">
                     <p className="text-sm text-quaternary">&copy; 2026 KVGAI TECH PRIVATE LIMITED. All rights reserved.</p>
-                    <p className="mt-1 text-xs text-quaternary">2nd Floor, Scalex Loop, Bangalore, India &middot; GSTIN: 09AALCK3280A1ZN</p>
+                    <p className="mt-1 text-xs text-quaternary">2nd Floor, Scalex Loop, Bangalore, India &middot; GSTIN: 29AALCK3280A1ZL</p>
                 </div>
             </div>
         </footer>
